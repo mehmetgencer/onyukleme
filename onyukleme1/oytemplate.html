@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mehmet Gencer" >
+    <title>Önyükleme1 : {{doctitle}}</title>
+    <link href="css/oy.css" rel="stylesheet">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="unite1.html">Ünite-1</a></li>
+        <li><a href="unite2.html">Ünite-2</a></li> 
+        <li><a href="unite3.html">Ünite-3</a></li> 
+        <li><a href="unite4.html">Ünite-4</a></li> 
+        <li><a href="unite5.html">Ünite-5</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul> 
+    </div>
+  </div>
+</nav>
+
+<img class="oyicon" src="images/icon.gif" alt=""></img>
+{{ unit }}
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[href^='http']").attr('target','_blank');
+});
+</script>
+
+<div class="license">{% block footerinfo%}
+{% endblock %}
+<p>Bu eğitim müfredatı Emmanuel Schanzer tarafından hazırlanmış "Bootstrap" projesinden uyarlanmıştır: 
+<a href="http://www.BootstrapWorld.org" target="_blank">www.BootstrapWorld.org</a>. 
+Burada paylaşılan her türlü malzeme <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons 3.0 Unported License</a> 
+lisansı koşulları dahilinde temin edilmektedir.</p>
+</div> 
+</body>
+</html>

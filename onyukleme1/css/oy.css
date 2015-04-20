@@ -1,0 +1,119 @@
+body {
+    font-family: Times,Times New Roman,Roboto;
+    background-color: lightyellow;
+}
+.document {
+    width: 7.5in;
+    margin-left: 25px;
+}
+.oyicon{
+    float: left;
+}
+.align-right {
+    clear:both;
+    float: right;
+}
+.clearpar {
+    clear: both;
+    padding-top:30px; 
+}
+h2 {
+    clear: both;
+    background-color: lightgray;
+    color: white;
+}
+.teacher-note {
+    background-color: gray;
+    display: none; /*fix this later*/
+}
+.time {
+        float:right;
+}
+.literal {
+    font-size: larger;
+    color: blue;
+}
+.literal-block {
+    margin-left: 60px;
+    background-color: #ddd;
+    padding: 10px;
+    color: blue;
+}
+.toctable {
+    border: 1px solid;
+    background-color: lightblue;
+    
+}
+.toctable td{
+    /*border: 1px solid;*/
+}
+.toctable tr:first-child {
+    font-weight: bold;
+    font-size: larger;
+}
+.dc {
+    display: inline-block;
+    padding-top: 6px;
+    margin: 5px;
+    clear: none;
+    border: 2px solid #000;
+    background: none repeat scroll 0% 0% #FFF;
+    border-radius: 20px;
+    text-align: center;
+}
+.dcop {
+display: block;
+height: 20px;
+text-align: center;
+width: 100%;
+border-bottom: 2px solid #000;
+border-radius: 15px 15px 0px 0px;
+}
+.dcval {
+display: inline-block;
+margin: 10px 10px 5px;
+vertical-align: top;
+}
+
+.exercise-table {
+    counter-reset: rowNumber;
+}
+
+.exercise-table tr {
+    counter-increment: rowNumber;
+}
+
+.exercise-table tr td:first-child::before {
+    content: counter(rowNumber);
+    /*min-width: 1em;*/
+    margin-right: 0.5em;
+    padding:3px;
+    background-color: gray;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius:3px;
+    min-width: 35px;
+}
+.exercise-table tr td:nth-child(2)::before {
+    content: counter(rowNumber,lower-latin);
+    min-width: 1em;
+    margin-right: 0.5em;
+    padding:3px;
+    background-color: gray;
+    vertical-align:top;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius:3px;
+    min-width: 15px;
+}
+div.license {
+    background-color: lightgray;
+    border-top: 2px dashed #000;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: small;
+}

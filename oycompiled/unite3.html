@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mehmet Gencer" >
+    <title>Önyükleme1 : Ünite 3 Tanımlamalara Giriş</title>
+    <link href="css/oy.css" rel="stylesheet">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="unite1.html">Ünite-1</a></li>
+        <li><a href="unite2.html">Ünite-2</a></li> 
+        <li><a href="unite3.html">Ünite-3</a></li> 
+        <li><a href="unite4.html">Ünite-4</a></li> 
+        <li><a href="unite5.html">Ünite-5</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul> 
+    </div>
+  </div>
+</nav>
+
+<img class="oyicon" src="images/icon.gif" alt=""></img>
+<div class="document">
+<div class="section" id="unite-3-tanimlamalara-giris">
+<h1>Ünite 3 Tanımlamalara Giriş</h1>
+<table class='toctable'><tr><td>TOPLAM SÜRE:</td><td>100 dakika</td></tr><tr><td><a href='#sec1'>Gözden Geçirme</a></td><td>5 dakika</td></tr><tr><td><a href='#sec2'>Değişken Tanımlama </a></td><td>10 dakika</td></tr><tr><td><a href='#sec3'>Değişken Tanımlama (Cebir)</a></td><td>10 dakika</td></tr><tr><td><a href='#sec4'>Oyun Resimleri</a></td><td>30 dakika</td></tr><tr><td><a href='#sec5'>Fonksiyon Tanımlama </a></td><td>20 dakika</td></tr><tr><td><a href='#sec6'>Fonksiyon Tanımlama (Cebir) </a></td><td>20 dakika</td></tr><tr><td><a href='#sec7'>Kapanış </a></td><td>5 dakika</td></tr></table>
+<p>Öğrencilere Tanımlamalar penceresi gösterilir ve çeşitli türlerde değerler tanımlamak için gerekli sözdizimi öğretilir. Ayrıca fonksiyon ve örnek tanımlama için gerekli sözdizimini öğrenirler.</p>
+<div class="section" id="gozden-gecirme-sure-5-dakika">
+<h2><a name='sec1'></a>Gözden Geçirme<span class='time'>(Süre: 5 dakika)</span></h2>
+<p>Şimdiye kadar, Değerlendirme Çemberleri'ni gördünüz, Sözleşmeleri öğrendiniz ve farklı veri türlerini deneyimlediniz. Bunların her birinin ne olduklarını hatırladığınızdan emin olun ve eğer gerekli ise, geçmiş derslere bilgilerinizi tazelemesi amacıyla göz atın.</p>
+<p>Şekiller çizen üç tane fonksiyon düşünebiliyor musunuz? Tekrar geriye dönüp Sözleşme sayfasına bakmadan, bu fonksiyonların sözleşmeleri yazamayı deneyin. Hangi tür veri sürekli tırnak işaretleri arasında oluyordu? Ekranın sol alt köşesinin koordinatları nelerdi? Veya sağ yukarı tarafın?</p>
+</div>
+<div class="section" id="degisken-tanimlama-sure-10-dakika">
+<h2><a name='sec2'></a>Değişken Tanımlama <span class='time'>(Süre: 10 dakika)</span></h2>
+<p>Varsayalım ki elli tane aynı, içi dolu, kırmızı üçgen resmi elde etmek istiyoruz. Bu demek oluyor ki <tt class="docutils literal">(triangle 50 &quot;solid&quot; &quot;red&quot;)</tt> kodunu elli defa yazmalıyız! Daha da kötüsu, bu üçgenlerde bir değişiklik yapmak istersek, bütün ifadelerde bunu tekrarlamalıyız! İyi programcılar çabalarının bu harcanmaması gerektiğini bilirler, bu yüzden programlama dillerinde böyle tekrarları önlemek için yollar eklerle. Bir şeyi, bir defa yazarlar, dilin içersinde bu şey için kısayol oluştururlar ve daha sonra kısayolu istedikleri kadar kullanırlar.</p>
+<p>Programlama dilimizdeki değişkenleri isimlendirmek için <tt class="docutils literal">define</tt> ifadesini kullanıyoruz. <a class="reference external" href="http://www.wescheme.org/openEditor?interactionsText=&amp;definitionsText=(define%20şekil1%20(triangle%2050%20%22solid%22%20%22red%22))%0A">Örnek bir tanımlamaya</a> bakalım, burada <tt class="docutils literal">şekil1</tt> içi dolu, kırmızı bir üçgen olarak tanımlanmış. &quot;Run&quot; tuşuna bastığınızda, <tt class="docutils literal">şekil1</tt> 'i Etkileşimler Penceresinde değerlendirebilirsiniz ve bilgisayar size üçgeni gösterecek. Eğer &quot;Run&quot; tuşuna basmadan <tt class="docutils literal">şekil1</tt>'i sadece yazsaydınız ne olurdu tahmin edebiliyor musunuz?</p>
+<p class="teacher-note">Öğrencilerin, şekil1'in &quot;Run&quot; tuşuna basılmadan değerlendirildirdiklerinde neler olduğunu anladıklarından emin olun. Böylece hatayı okuya ve anlayabilirler. Benzer şekilde, onlara şekil1'in tanımlasını değiştirin ve tekrar &quot;Run&quot; tuşuna basmadan değerlendirtin. Bu onların, bilgisayarın tanımlamaları okudugunu ve yapılan herhangi bir değişikliğin yeniden okunması gerektiğini anlamaları için önemli.</p>
+<p>Tanımlamalar editörün yukarı bölümünde yer alan (Etkileşim Penceresi'nin üstündeki) Tanımlamalar Penceresi denen yere yazılırlar.</p>
+<ul class="simple">
+<li>şekil1 tanımlamasını Tanımlamalar Penceresine girin.</li>
+<li>Bilgisayarın bu tanımlamayı okuması için &quot;Run&quot; tuşuna tıklayın.</li>
+<li>Etkileşim penceresinde <tt class="docutils literal">şekil1</tt>'i hesaplatığında ne olacağını düşünüyorsunuz?</li>
+<li>Tanımlamalar penceresine yeni bir satır ekle, <tt class="docutils literal">şekil1</tt> tanımının hemen üstüne, ismi <tt class="docutils literal">şekil2</tt> olan, içi dolu, mavi renkli ve yarıçapı 20 olan bir daire tanımlayın.</li>
+<li>&quot;Run&quot; tuşuna bas ve <tt class="docutils literal">şekil2</tt>'i hesaplatmayı deneyin.</li>
+<li>Bir sonraki satırda, age isminde senin olduğun yaşı gösteren bir sayı değeri tanımlayın.</li>
+<li>Bir sonraki satırda, name isminde senin adını temsil eden bir kelime değeri tanımlayın.</li>
+</ul>
+<p><strong>Her seferinde &quot;Run&quot; tuşuna basıldığında, bilgisayar bütün tanımlamaları okur ve dile ekler. Eğer bir tanımlama değişmiş ise, bilgisayar yeniden &quot;Run&quot; tuşuna basılana kadar önceki tanımlamayı kullanmaya devam eder.</strong></p>
+<p>Tanımlamalar Penceresine bir yeni satır daha ekleyelim, <tt class="docutils literal"><span class="pre">göz-rengi</span></tt> isminde göz renginizi belirten bir tanımlama yapalım. Ama henüz &quot;Run&quot; tuşuna basmayın!</p>
+<ul class="simple">
+<li>Etkileşimler Penceresine gidin ve <tt class="docutils literal"><span class="pre">göz-rengi</span></tt>'ni çalıştırmayı deneyin. Bilgisayarın <tt class="docutils literal"><span class="pre">göz-rengi</span></tt>'nin ne olduğunu bilmediğini söyleyen bir hata almış olmalısınız, çünkü tanımlamayı ekledikten sonra &quot;Run&quot; tuşuna basmadınız.</li>
+<li>&quot;Run&quot; tuşuna tıklayın.</li>
+<li>Etkileşim Penceresinde tekarar <tt class="docutils literal"><span class="pre">göz-rengi</span></tt>'ni çağırmayı deneyin. Bu sefer hata almamış olmalısınız.</li>
+</ul>
+<p>Tanımlamalar kullanışlıdır çünkü onları daha sonra tekrar kullanabiliriz. Örneğin; <tt class="docutils literal"><span class="pre">göz-rengi</span></tt>'ni başka bir ifadenin içinde kullanabiliriz, mesela <tt class="docutils literal">(circle 10 &quot;solid&quot; <span class="pre">göz-rengi)</span></tt>. Tanımlamaları, diğer ifadelerin içinde kullanma pratiği yapalım.</p>
+<p>Tanımlamalar Penceresinde, aşağıdaki tanımlamaları yaratın ve Etkileşim Penceresinde onları kontrol edin:</p>
+<ul class="simple">
+<li><tt class="docutils literal">ödül</tt> isminde içi dolu sarı bir yıldız tanımlayın (istediğiniz boyutu seçebilirsiniz).</li>
+<li><tt class="docutils literal">büyük</tt> isminde <tt class="docutils literal">scale</tt>'i kullanarak <tt class="docutils literal">ödül</tt>'ı üç kat büyüten bir değer tanımlayın.</li>
+<li><tt class="docutils literal">yatık</tt> isminde <tt class="docutils literal">rotate</tt>'ı kullanarak büyük sarı yıldızın 45 derece döndüren bir değer tanımlayın.</li>
+<li>Etkileşim Penceresine <tt class="docutils literal">yatık</tt> yazın ve büyük, eğimli, sarı yıldız aldığınızdan emin olun.</li>
+<li>Ortaya çıktı ki yeşil yıldızlar, sarı yıldızlardan daha popülermiş. <tt class="docutils literal">ödül</tt> ifadesini değiştirerek yıldızın sarı yerine yeşil olmasını sağla.yın &quot;Run&quot; tuşuna tıklayın, böylece bilgisayar yeni tanımlamanızı okuyabilsin.</li>
+<li>Şimdiyse Etkileşim Penceresine tekrar <tt class="docutils literal">yatık</tt> yazın. Hangi renk yıldız elde ettiniz? Eğer <tt class="docutils literal">büyük</tt> ve <tt class="docutils literal">yatık</tt>'ı kendi tanımlamalarını kullanarak tanımladıysanız, eğimli yeşil bir yıldız görmüş olmalısınız! Eğer yeşil bir yıldız görmediyseniz, bunun gerçekleşmesi için tanımlamalarını düzeltmeyi deneyin.</li>
+</ul>
+<p class="teacher-note">Öğrencilere define 'ı deneyimleleri için yeterli zaman ayrılması oldukça önemlidir. Örğrenciler, tanımlanmış isimlerin, değerin yerine kullanılabileceklerini öğrenmeleri gerekmektedir. Onlara farklı değerler tanımlatıp (her biri farklı türlerde) sonrasında başka ifadelerin içinde kullanıldığını örnekler uygulayın.</p>
+</div>
+<div class="section" id="degisken-tanimlama-cebir-sure-10-dakika">
+<h2><a name='sec3'></a>Değişken Tanımlama (Cebir)<span class='time'>(Süre: 10 dakika)</span></h2>
+<p>Bizim programlama dilimizde, değişkenler aşağıdaki gibi tanımlanırlar:</p>
+<pre class="literal-block">
+(define x 4)
+(define y (+ 4 9))
+(define z (* x 2))
+</pre>
+<p>Değerler sabit (ilk örnekteki gibi), bir ifadenin sonucu (ikinci örnek), hatta başka bir başka değişken cinsinden (üçüncü örnek) olabilirler. Aynı şeyi cebirde de yapabiliriz:</p>
+<ul class="simple">
+<li>x=4</li>
+<li>y=4+9</li>
+<li>z=x×2</li>
+</ul>
+<p>Aşağıdaki üç cebirsel tanımı, Racket programlama dili tanımlarına çevirin:</p>
+<pre class="literal-block">
+liralar=16.50
+
+ayak=2×3
+
+inç=ayak×12
+</pre>
+<p class="teacher-note">Bu aktivite için, bütün Racket ifadelerini tahtanın bir tarafına yazın ve diğer tarafınaysa cebirsel ifadeleri ekleyin. Mümkün olduğunca birbirlerine yakın olmalarını sağlayın, böylece iki dil arasındaki bağlantıyı güçlendirebilirsiniz.</p>
+<p>Çalışma kitaplarınızın sondaki &quot;EK A&quot; kısmını açın. Bir grup değer tanımlaması yazılmış kod göreceksiniz. İki dakika tutup, onları matematiksel tanımlamalara çevirin.</p>
+</div>
+<div class="section" id="oyun-resimleri-sure-30-dakika">
+<h2><a name='sec4'></a>Oyun Resimleri<span class='time'>(Süre: 30 dakika)</span></h2>
+<p>Video oyunu dosyasını açın (<a class="reference external" href="http://www.wescheme.org/openEditor?publicId=RGeN089PiR">online oyun taslağı</a> kullanarak kodu görebilisiniz). &quot;Run&quot; tuşuna tıklayın (resimlerin yüklenmesi için birkaç saniye beklemeniz gerekebilir!). Video oyununun çalıştığı pencere görüntülencek ama hiç birşeyin hareket etmedğini fark ediceksiniz - &quot;yukarı&quot; veya &quot;aşağı&quot; ok tuşlarına bassanız bile! Şimdilik &quot;kapatma&quot; butonuna tıklayıp, koda geri dönelim.</p>
+<p>Bu dosya sizin tanımlayacağınız, oyun karakterlerinin nasıl gözükeceği, hareket edip ve etkileşime geçeceğini gösteren bir tanımlamalar listesi içerir. Aşağıya doğru kaydırdıkca, sizin için doldurulmuş bir dizi sahte tanımlama göreceksiniz. Kendi oyununuz için yapacağınız tanımlamalar tamamen size bağlı!</p>
+<p>Ekranın en aşağısına kadar kaydırın, tanımlanız gereken her şeyi tek tek okuyun. En sona geldip tanımlanın parçası olarak kullanılan <tt class="docutils literal">(make_game <span class="pre">...)</span></tt>'ı gördüğünüzde durun. <tt class="docutils literal">make_game</tt> e verilen değerler hakkında ne fark ediyorsunuz?</p>
+<p><tt class="docutils literal">make_game</tt> sizin yaptığınız bütün tanımlamaları alarak onları birleştiren ve çalışan bir oyuna çeviren, bizim tarafımızdan verilmiş olan bir fonksiyon. make_game perde arkasında, bütün tanımlamalarınızı, her saniyenin onda birinde tekrar çağrılan dev bir fonksiyona ekler ve tanımlamalarınızı kullanarak o anda neler olacağına karar verir.</p>
+<p class="teacher-note">Öğrencilerinize Önyükleme 2'nin onlara bu fonksiyonun nasıl yazılacağını ve onu değiştirerek daha gelişmiş oyunlar (çoklu oyuncu, labirent, v.s.) yaratmayı göstereceğini hatırlatabilirsiniz.</p>
+<p>Tanımlamalar Penceresinde, bu programın birtakım değerler tanımladığını göreceksiniz, örneğin; BAŞLIK bir kelime türünden &quot;My Game&quot; olarak tanımlanmıştır.</p>
+<ul class="simple">
+<li>Eğer Etkileşim penceresine BAŞLIK yazarsanız, ne sonucu vereceğini düşünüyorsunuz?</li>
+<li>Gördüğünüz diğer tanımlamalar neler?</li>
+<li>Değerleri nelerdir?</li>
+<li>Türleri nelerdir?</li>
+<li>ARKAPLAN dan başlayarak, her değeri Etkileşim penceresinde hesaplatmayı deneyin.</li>
+</ul>
+<p class="teacher-note">Bu aktivitenin amacını öğrencilerin kodu okurmasını ve konuşması hakkında kendilerine güvenmelerini sağlamaktır. Öğrencilerin gerek kendi aralarında gerekse eğitmen ile sesli bir şekilde konuştuklarından emin olun.</p>
+<p>Eğer burada verilen tanımlamaları beğenmediyseniz, onları değiştirebilirsiniz! Ekranın üst tarafında gözükenleri <tt class="docutils literal">BAŞLIK</tt> ve <tt class="docutils literal"><span class="pre">BAŞLIK-RENGİ</span></tt>'ni kullanarak değiştirebilirsin ve istersen oyun resimleri tanımlamalarını da değiştirebilirsiniz (Yeni resim dosyalarını araç çubuğundaki &quot;Images&quot; düğmesine basıp, karşınıza çıkan ekrandan &quot;upload&quot; u seçerek yükleyebilirsiniz).</p>
+<p class="teacher-note">Resimler PNG veya GIF formatında olmalıdırlar. Arkaplan resimleri 640x480 ve karakter resimleri hiçbir boyuttunda 200 px den büyük olmamalıdır. Karakter resimlerinin şeffaf arkaplanı olduğundan emin olun! TAVSİYE: karakterler için canlandırılmış GIF dosyaları kullanılması sadece oyunun güzel görünmesini değil, aynı zamanda genelde şeffaf arkaplanları oldukları için kullanılması daha iyi olabilir.Oyun dosya ve resimlerini ayarlmak hakkında daha fazla talimatı Öğretmenler Kılavuzu'nda.</p>
+<p>Tanımlamalarındaki resimlerden birinin daha büyük veya küçük olmasını isterseniz, <tt class="docutils literal">scale</tt> fonksiyonunu kullanın:</p>
+<pre class="literal-block">
+; scale : Sayı Resim -&gt; Resim
+</pre>
+<p>Bu fonksiyon Sayı'yı esas alarak Resim'i yeniden boyutlandırır. Örneğin, <tt class="docutils literal">(scale 10 (triangle 5 &quot;solid&quot; <span class="pre">&quot;green&quot;))</span></tt> küçük üçgeni on kat daha büyük hale getirir ya da <tt class="docutils literal">(scale 0.5 (rectangle 200 100 &quot;outline&quot; <span class="pre">&quot;purple&quot;))</span></tt> dikdörtgeni yarı boyutuna küçültür.</p>
+<p>Resimleri <tt class="docutils literal">scale</tt> kullanarak büyültüp, küçültme üzerine pratik yapın. Daha fazla fonksiyonla deney yapmak isterseniz aşağıdaki sözleşmeleri kullanın:</p>
+<pre class="literal-block">
+; flip-vertical : Resim -&gt; Resim
+
+; flip-horizontal : Resim -&gt; Resim
+
+; rotate : Sayı Resim -&gt; Resim
+</pre>
+<p><a class="reference external" href="http://www.wescheme.org/openEditor?interactionsText=(scale%203%20(star%2050%20%22solid%22%20%22red%22))&amp;">Bu örnek ile oynamayı deneyin</a></p>
+<p class="teacher-note">Eğer öğrenciler bu bölümde zorlanırsalar, Değerlendirme Çemberi ve sözleşmeler bölümüne geri dönebilirsiniz. Örneğin; rotate için ilk önce bir çember çizdirin ve sonrasında Sözleşme kullanarak girdilerinin neler olduklarını bulmalarını sağlayın. İkinci girdiye geldiklerinde (image) hangi şekli döndürmek istediklerini sorun. Cevapları ne olursa olsun, sözleşme sayfalarına bakıp Değerlendirme Çemberi içine çizmelerini isteyin. Bu iş doğru bir şekilde bittiğinde, onu koda çevirmeleri sağlayın. Kendilerine güvenleri geldiklerinde, onları başka bir fonksiyon daha kullanmaya teşvik edin, belki döndürülmüş bir şekli dikine çevirme.</p>
+<p>Bu programdaki bir başka tanımlama ise EKRANGÖRÜNTÜSÜ, Bu ifade put-image fonksiyonunu kullanarak, resimleri üst üste koyar, koordinatları kullanarak her birinin nerelerde olması gerektiğine karar verir.</p>
+<p>Video oyunları için yapılan reklamlarda, genellikle değişmeyen oyun içi aksiyon resimleri kullanılır, böylece insanlar oynarken nasıl gözüktüceğini bilirler. Video oyununuzun resmini almak için, <cite>EKRANGÖRÜNTÜSÜ</cite> tanımlamanız içindeki koordinatları değiştirin (Hatırlatma: ekran 640 pixel genişliğinde ve 480 pixel uzunluğunda!).</p>
+<p class="teacher-note">Bu koordinatları hatırlatmak için oldukça iyi bir fırsat, özellikle de pratik yapmaya ihtiyacı olan öğrenciler için.</p>
+<p>Bir programlama dilinde, değerleri tanımlayabiliyor olmak yazılımcıların kodlarını sadeleştirmesini ve hem daha okunabilir hem de kolay bakımı yapılabilir hale getiren, oldukca güçlü bir araçtır.</p>
+</div>
+<div class="section" id="fonksiyon-tanimlama-sure-20-dakika">
+<h2><a name='sec5'></a>Fonksiyon Tanımlama <span class='time'>(Süre: 20 dakika)</span></h2>
+<p>Programın içersinde birçok benzer ifadeler varken, değerleri tanımlamak oldukça yardımcı olur. Bazen program içerisinde tam aynı olmasalar da oldukça benzeyen ifadelere bulunur. Elli tane içi dolu yeşil üçgene sahip olan bir program, hepsi aynı boyutta olduğu sürece tek bir değer ile sadeleştirilebilir. Ancak, program farklı boyutlarda elli tane yeşil üçgene sahipse ne olacak?</p>
+<p>Daha önceden kullanmış olduğunuz bir resim fonksiyonunu düşünelim, mesela <tt class="docutils literal">star</tt> ve <tt class="docutils literal">circle</tt>. Girdileri alıp, resim üretirler. Benzer şekilde, biz de boyutunu girdi olarak alan, bize yeşil üçgen üreten bir fonksiyon istiyoruz. Programlama dili bize bu fonskiyonu önceden vermiyor ama kendi fonksiyonumuzu tanımlamamızıı sağlıyor. Girdi olarak bir sayı alan ve bize istediğimiz boyutta yeşil üçgen üreten, kendi fonksiyonumuzu tanımlamak istiyoruz (isim olarak ona <tt class="docutils literal">yü</tt> verelim).</p>
+<ul class="simple">
+<li><tt class="docutils literal">(yü 10)</tt> şu kodun kısayolu olurdu: <tt class="docutils literal">(triangle 10 &quot;solid&quot; &quot;green&quot;)</tt></li>
+<li><tt class="docutils literal">(yü 20)</tt> şu kodun kısayolu olurdu: <tt class="docutils literal">(triangle 20 &quot;solid&quot; &quot;green&quot;)</tt></li>
+<li><tt class="docutils literal">(yü 1980)</tt> şu kodun kısayolu olurdu: <tt class="docutils literal">(triangle 1980 &quot;solid&quot; &quot;green&quot;)</tt></li>
+<li><tt class="docutils literal">(yü 98)</tt> şu kodun kısayolu olurdu: <tt class="docutils literal">(triangle 98 &quot;solid&quot; &quot;green&quot;)</tt></li>
+<li>ve benzeri...</li>
+</ul>
+<p>Fonksiyon tanımlamak için ihtiyacımız olan sözlü soru şu şekilde ifade edilebilir:</p>
+<p><strong>``yü`` isminde, bir sayı alan ve istenilen büyüklükte içi dolu yeşil üçgen üreten bir fonksiyon tanımla.</strong></p>
+<p>Şanslıyız ki, belirli adımları takip ederek problemi çözecek fonksiyonu tanımlayabiliriz. <tt class="docutils literal">yü</tt> tanımlamıza yardım edicek adımların üzerinde çalışmaya başlayalım.</p>
+<p class="teacher-note">Bunu daha çok elle tutulur yapmak için, bir öğrencinizi gt olarak &quot;hareket&quot; etmesini isteyin. Fonksiyonu çagırmak için başka bir öğrenci &quot;gt yirmi!&quot; diye seslensin (hem fonksiyonun ismi hemde girdiyi söylediklerinden emin olun). gt ise cevap olarak çalıştığının ve girdiyi aldığının göstergesi olarak &quot;triangle 20 solid green&quot; versin.</p>
+<p><strong>Adım 1: Sözleşmeyi Yazın</strong></p>
+<p>Fonksiyon tanımlamanın ilk adımı onun Sözleşmesi'nin hazırlanmasıdır. Sözleşme bir fonksiyon hakkında üç esas bilgiyi özetler:</p>
+<ul class="simple">
+<li>Fonksiyon <strong>İsmi</strong>: bu durumda, daha önceden verilen <tt class="docutils literal">yü</tt></li>
+<li>Fonksiyonun <strong>Girdisi</strong>, hangi türde bilgi beklediğini gösterir. Bu durumda, sadece bir Sayı (boyutu temsil eden).</li>
+<li>Fonksiyonun <strong>Çıktısı</strong>, onun ne çeşit veri ürettiğini gösterir: bu durumda içi dolu yeşil bir üçgen ürettiği için, çıktımız Görüntü'dür.</li>
+</ul>
+<p><tt class="docutils literal">yü</tt> için kod olarak yazılmış Sözleşme aşağıdadır. Satır noktalı virgül ile başlıyor, ardından isim ile devam ediyor, bir virgül, Girdi, ok işareti ve sonrasında Çıktı:</p>
+<pre class="literal-block">
+; yü : Sayı -&gt; Resim
+</pre>
+<p>Yazılı problemler fonksiyonun İsmi, Girdisi ve çıktısı hakkında ipuçları verirler. Problemi dikkatlice okuduğunuzdan emin olun! Bazı problemler birden fazla veya farklı türlerde Girdi alabilen fonksiyonları tarif edebilirler.</p>
+<p>Çalışma kitaplarınızdan Sayfa 9'da &quot;hızlı fonksiyonlar&quot; yazan bölümü açın ve <tt class="docutils literal">yü</tt> fonksiyonu için Sözleşme yazın.</p>
+<p class="teacher-note">Öğrencilere farklı yazılı problemler vermek ve onların herbirisi için Sözleşmelerini yazmalarını istemek iyi bir fikir olabilir.
+Sözleşmeler Racket'ta yorum olarak yazılırlar: Racket ne zaman noktalı virgülle başlayan bir satır görse geri kalanını işleme sokmaz. Bu demek oluyor ki Racket size asla hatalı biçimlendirilmiş yorum hatası vermicektir. Ayrıca bu, öğrencilerinizin Sözleşmelerini daha yakından incelemeniz gerektiği anlamına geliyor çünkü, bilgisayar onları (biçim veya içerik) kontrol etmicektir.</p>
+<p><strong>Adım 2: Örnekler Verin</strong></p>
+<p>Fonksiyonu yazmaya başlamadan önce birkaç örneğini düşünmek her zaman iyi bir fikirdir. Örnekler, fonksiyonun ne üretemeye çalışacağını gösterirler. Bu programlama dilinde önceden tanımlı EXAMPLE adında (İngilizce Örnek demektir) bize bir fonksiyonun ne üreteceğini göstermemizde yardımcı olan bir araç bulanmaktadır. Sözleşmenin hemen altında yazılmış olan iki örneğe bakabilirsiniz:</p>
+<pre class="literal-block">
+; yü : Sayı -&gt; Resim
+
+(EXAMPLE (yü   50) (triangle   50 &quot;solid&quot; &quot;green&quot;))
+
+(EXAMPLE (yü  100) (triangle  100 &quot;solid&quot; &quot;green&quot;))
+</pre>
+<p>Bu örnekler bilgisayara, <tt class="docutils literal">(yü 50)</tt> yazmanın <tt class="docutils literal">(triangle 50 &quot;solid&quot; &quot;green&quot;)</tt> ile aynı sonucu üretmesi gerektiğini söylüyorlar. Aynı şekilde <tt class="docutils literal">(yü 100)</tt> da <tt class="docutils literal">(triangle 100 &quot;solid&quot; &quot;green&quot;)</tt> koduna eşittir. Problemimiz bize <tt class="docutils literal">yü</tt> ismini kullanmamızı ve içi dolu yeşil üçgen üretmemizi şart koşuyor.</p>
+<p>Çalışma kitabınıza, kendiniz iki tane bu fonksiyonlardan yazın.</p>
+<p>Programcılar genellikle her fonksiyon için birkaç örnek yazarlar. Örnekler programcı tarafından yapacağı iş hakkında düşünmek üzere kullanılan yollardan birisidir. Ayrıca, örnekler ifadelerin hangilerinin değiştirebileceğini veya girdiye göre nasıl farklılaşabileceklerini gösterirler.</p>
+<p>Aşağıdaki örnekleri kağıt üstüne yazıp farklı olan bölümleri çember içine alın:</p>
+<pre class="literal-block">
+(EXAMPLE (yü   50) (triangle   50 &quot;solid&quot; &quot;green&quot;))
+
+(EXAMPLE (yü  100) (triangle  100 &quot;solid&quot; &quot;green&quot;))
+</pre>
+<p>İfadede hangi bölümlerin değiştiğini bulduktan sonra, onları bir çember ile işaretleyin ve onu tanımlayan bir isim verin. Mesela; bizim iki <tt class="docutils literal">yü</tt> örneğimizde, çemberin boyutunu belirten alanı işaretledik. Çembere alınmış ve isimlendirilmiş ifadeniz aşağıdaki şemaya benzer şekilde olmalıdır:</p>
+<img alt="images/unite3_marked.png" src="images/unite3_marked.png" />
+<p class="teacher-note">Öğrencilerin neleri çembere aldığına yakından ilgi gösterin: Örneğin iki tarafındaki (sol tarafa kullanılan fonksiyon ve sağ taraftaki ifade) değerleri işaretlemelidirler; ayrıca bütün ifade boyunca aynı kavramı ve ismi kullanmalıdırlar. Çemberler değişkenlere karşılık gelmektedir, bu yüzden değişkenler örneğin hem sağ hem de sol taraftada yer almalıdırlar.</p>
+<p><strong>Adım 3: Fonksiyon Tanımlama</strong></p>
+<p>Sözleşmeyi ve iki örneği yazıktan ve çemberleri isimlendirdikten sonra fonksiyonun kendisini tanımlamak oldukça basittir.</p>
+<ul class="simple">
+<li><tt class="docutils literal">EXAMPLE</tt> satırlarınızdan birinde aynı kalan herşeyi (çember içine alınmamış olan herşey) kopyalayın (kağıt üstüne veya metin düzenleyiciye)</li>
+<li>Her çemberin bulunduğu yere, öncesinden vermiş olduğunuz ismi yazın.</li>
+<li><tt class="docutils literal">EXAMPLE</tt>'ı <tt class="docutils literal">define</tt> ile değiştirin.</li>
+</ul>
+<pre class="literal-block">
+; yü : Sayı -&gt; Resim
+
+(EXAMPLE (yü   50) (triangle   50 &quot;solid&quot; &quot;green&quot;))
+
+(EXAMPLE (yü  100) (triangle  100 &quot;solid&quot; &quot;green&quot;))
+
+(define  (yü boy) (triangle size &quot;solid&quot; &quot;green&quot;))
+</pre>
+<ul class="simple">
+<li>Öncelikle kağıt üstünde gt fonskiyonunu tanımlayıp, Sözleşme, Örnekleri yazdıktan daha sonra Tanımlamalar Penceresinde tanımlamayı yapın.</li>
+<li>Bilgisayarın bu tanımı okuması için &quot;Run&quot; tuşuna tıklayın.</li>
+<li>Etkileşimler Penceresinde, <tt class="docutils literal">(yü 100)</tt> yazarak tanımladığınız fonsiyonu çağırın.</li>
+<li>Farklı sayılar kullanarak fonksiyonu deneyin.</li>
+</ul>
+<p><a class="reference external" href="http://www.wescheme.org/openEditor?definitionsText=;%20yü%20:%20Sayı%20-%3E%20Image%0A(EXAMPLE%20(yü%2050)%20(triangle%2050%20%22solid%22%20%22green%22))%0A(EXAMPLE%20(yü%2095)%20(triangle%2095%20%22solid%22%20%22green%22))%0A(define%20(yü%20boy)%20(triangle%20boy%20%22solid%22%20%22green%22))">Cevabınız buna benzer gözükmeli</a>.</p>
+<p>Bu adımlar, problemlere göre fonksiyon tanımlamamıza yardımcı olan, <strong>Tasarım Reçetesi</strong> olarak bilinen güçlü bir araçtır.</p>
+<p><strong>Alıştırma: ``md`` adında bir sayı alan ve verilen boyutta içi dolu bir mavi daire üreten fonksiyonu yazın.</strong></p>
+<p>Çalışma kitabınızda (hala 9.sayfa), bu fonksiyon için Sözleşme yazın.</p>
+<ul class="simple">
+<li>Fonksiyonun İsmi nedir?</li>
+<li>Fonksiyonun Girdisi nedir?</li>
+<li>Fonksiyonun Çıktısı nedir?</li>
+</ul>
+<p>Yazmış olduğunuz Sözleşmeyi kullanarak, fonksiyon için iki tane Örnek yazın.</p>
+<ul class="simple">
+<li>Sözleşmenin hangi bölümü örneğin sol tarafını yazarken size yardımcı oldu?</li>
+<li>Sözleşmenin hangi bölümü size fonksiyonun ne türde bir girdiye ihtiyacı olduğunu söylüyor?</li>
+<li>Fonksiyonun Çıktısı örnekleri yazmanızda nasıl yardımcı oldu?</li>
+</ul>
+<p>Bu iki örneğe bakarak, değiştirebilir olan bölümleri işaretleyip, değişken ismi verelim.</p>
+<ul class="simple">
+<li>Seçtiğiniz değişken ismi <tt class="docutils literal">yü</tt> için seçtiğiniz ile aynı mı? Eğer öyleyse neden veya neden değil?</li>
+<li>Fonksiyonu tanımlamadan önce değişkenleri isimlerini seçmek neden yararlıdır?</li>
+</ul>
+<p>Şimdi, yazmış olduğunuz örnekleri kullanarak <strong>Fonksiyon Tanımlaması</strong>'nı yapın.</p>
+<p class="teacher-note">Sözleşmenin her bölümünü doğrulmak için sorular sorun daha sonra geriye yazılı probleme referans vererek Örnekleri doğrulayın, son olarak yazılı probleme ve Sözleşmeye refarans vererek yapılan tanımlamanın her adımını doğrulayın. Aynı değişken ismi birden çok fonksiyonda kullanılabilir, tıpkı matematikte olduğu gibi (örneğin bir çok fonksiyonun değişken ismi olarak x'ı kullanması gibi).</p>
+<p>Bu problemi çalışınca aşağıdaki sonuca ulaşıyoruz:</p>
+<pre class="literal-block">
+; bc : Sayı -&gt; Resim
+
+(EXAMPLE (bc     16) (circle     16 &quot;solid&quot; &quot;blue&quot;))
+
+(EXAMPLE (bc    421) (circle    421 &quot;solid&quot; &quot;blue&quot;))
+
+(define  (bc yarıçap) (circle yarıçap &quot;solid&quot; &quot;blue&quot;))
+</pre>
+<p><strong>Alıştırma: ``nokta` isminde, bir Renk alan ve karşılığında verilen renkte, içi dolu, yarıçapı 20 olan bir daire üreten fonksiyonu yazın.</strong></p>
+<p>Çalışma kitabınızda (hala 9.sayfa), bu fonksiyon için Sözleşme yazın.</p>
+<ul class="simple">
+<li>Fonksiyonun İsmi nedir?</li>
+<li>Fonksiyonun Girdisi nedir?</li>
+<li>Fonksiyonun Çıktısı nedir?</li>
+</ul>
+<p>Yazmış olduğunuz Sözleşmeyi kullanarak, fonksiyon için iki tane Örnek yazın ve sonrasında değişkenleri çember içine alıp isimlendirin.</p>
+<ul class="simple">
+<li>Sözleşmenin hangi bölümü örneğin sol tarafını yazarken size yardımcı oldu?</li>
+<li>Sözleşmenin hangi bölümü size fonksiyonun ne türde bir girdiye ihtiyacı olduğunu söylüyor?</li>
+<li>Fonksiyonun Çıktısı örnekleri yazmanızda nasıl yardımcı oldular?</li>
+<li>Bu örneklerde değişen bölümler için verilebilecek en iyi değişken ismi nedir?</li>
+</ul>
+<p>Şimdi, yazmış olduğunuz örnekleri kullanarak Fonksiyon Tanımlaması yapın.</p>
+<p>Bu problemi çalışınca aşağıdaki sonuca ulaşıyoruz:</p>
+<pre class="literal-block">
+; nokta : String -&gt; Image
+
+(EXAMPLE (nokta  &quot;red&quot;) (circle 15 &quot;solid&quot;  &quot;red&quot;))
+
+(EXAMPLE (nokta &quot;blue&quot;) (circle 15 &quot;solid&quot; &quot;blue&quot;))
+
+(define  (nokta  renk) (circle 15 &quot;solid&quot;  renk))
+</pre>
+</div>
+<div class="section" id="fonksiyon-tanimlama-cebir-sure-20-dakika">
+<h2><a name='sec6'></a>Fonksiyon Tanımlama (Cebir) <span class='time'>(Süre: 20 dakika)</span></h2>
+<p>Racket'da tanıtılmış bir çok fonksiyon gördünüz, örneğin: <tt class="docutils literal">(define (f x) (+ x 1))</tt></p>
+<ul class="simple">
+<li>Bu fonksiyonun ismi nedir?</li>
+<li>Kaç değişken alıyor?</li>
+<li>Değişken(ler)in ismi nedir?</li>
+<li>Bu fonksiyon <tt class="docutils literal">x</tt> değişkeni ile ne yapıyor?</li>
+<li><tt class="docutils literal">g</tt> isminde <tt class="docutils literal">q</tt> değişkenini alan ve onu 20 ile çarpan bir fonksiyon tanımlayın.</li>
+</ul>
+<p class="teacher-note">Öğrencilerin fonksiyon isminin <tt class="docutils literal">f</tt> (&quot;fx&quot; veya &quot;f'in x'i&quot; değil) olduğunu anladıklarından emin olun. Sözlü anlatımları, Racket sözdizimiyle tanılamaya çevirme konusunda rahat olana kadar alıştırma yapmalarını sağlayın.</p>
+<p>Bu fonksiyonları cebirsel hala çevirmek için, değerlere benzer bir işlem uygularız. İşte <span class="math">\(f\)</span>
+ fonksiyonun cebirsel sözdizimiyle yazılmış şekli: <span class="math">\(f(x)=x+1\)</span>
+</p>
+<p><tt class="docutils literal">f</tt> fonksiyonuna yaptığımız çeviri işlemini model alarak, g fonksiyonunu da cebirsel fonksiyona çevirin. Bu bittikten sonra <tt class="docutils literal">h</tt> isminde, <tt class="docutils literal">x</tt> adında bir değişken alıp, onu 2 ile bölen bir fonksiyon tanımlayın.</p>
+<p>Çalışma kitaplarınızın sonunda &quot;EK A&quot; kısmında yer alan bütün Racket program kodu fonskiyonlarını cebirsel fonksiyonara çevirin.</p>
+</div>
+<div class="section" id="kapanis-sure-5-dakikda">
+<h2><a name='sec7'></a>Kapanış <span class='time'>(Süre: 5 dakikda)</span></h2>
+<p>Bu ünitede, değerleri isimlendirmeyi ve fonksiyonlar tanımlayı öğrendiniz. İsimlendirdiğiniz değerleri oyununuzun görsel nesneleri için kullanacaksınız. Fonksiyonları is oyun içindeki nesnelerin hareket etmesi için kullanacaksınız. Yakında göreceğiniz gibi, fonksiyonlar oyun yapımında oldukca önemlidirler. Bir sonraki ünitede, birşeylerin ekranda hareket etmesini sağlayan ilk fonksiyonunuzu yazmak dahil olmak üzere, onlarla biraz daha pratik yapacaksınız.</p>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[href^='http']").attr('target','_blank');
+});
+</script>
+
+<div class="license">
+
+<p>Bu eğitim müfredatı Emmanuel Schanzer tarafından hazırlanmış "Bootstrap" projesinden uyarlanmıştır: 
+<a href="http://www.BootstrapWorld.org" target="_blank">www.BootstrapWorld.org</a>. 
+Burada paylaşılan her türlü malzeme <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons 3.0 Unported License</a> 
+lisansı koşulları dahilinde temin edilmektedir.</p>
+</div> 
+</body>
+</html>
