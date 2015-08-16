@@ -1,13 +1,15 @@
 RST=./rstoy.py
 
 compile:
-	for u in 1 2 3 4 5;do \
+	for u in 1 2 3 4 5 6 7 8 9;do \
 		$(RST) onyukleme1/unite$$u.rst onyukleme1/oytemplate.html > oycompiled/unite$$u.html; \
 	done
 	$(RST) -n onyukleme1/index.rst onyukleme1/oytemplate_index.html > oycompiled/index.html;
 	cp -a onyukleme1/images oycompiled/
 	cp -a onyukleme1/css oycompiled/
 	mkdir oycompiled/resources || echo "resources dir already exists";cp -a onyukleme1/IsDefteri.pdf oycompiled/resources/
+	cp -a onyukleme1/Unite7LuigininPizzasi.pdf oycompiled/resources/
+	cp -a onyukleme1/Unite8Hazirlik.pdf oycompiled/resources/
 	chmod -R a+rx oycompiled
 
 publish:

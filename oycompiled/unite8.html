@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mehmet Gencer" >
+    <title>Önyükleme1 : Ünite 8: Çarpışma Tespiti</title>
+    <link href="css/oy.css" rel="stylesheet">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="unite1.html">Ünite-1</a></li>
+        <li><a href="unite2.html">Ünite-2</a></li> 
+        <li><a href="unite3.html">Ünite-3</a></li> 
+        <li><a href="unite4.html">Ünite-4</a></li> 
+        <li><a href="unite5.html">Ünite-5</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul> 
+    </div>
+  </div>
+</nav>
+
+<img class="oyicon" src="images/icon.gif" alt=""></img>
+<div class="document">
+<div class="section" id="unite-8-carpisma-tespiti">
+<h1>Ünite 8: Çarpışma Tespiti</h1>
+<table class='toctable'><tr><td>TOPLAM SÜRE:</td><td>85 dakika</td></tr><tr><td><a href='#sec1'>1-Boyutta Uzaklık </a></td><td>20 dakika</td></tr><tr><td><a href='#sec2'>2-Boyutta Uzaklık </a></td><td>35 dakika</td></tr><tr><td><a href='#sec3'>çarpıştı? </a></td><td>25 dakika</td></tr><tr><td><a href='#sec4'>Kapanış </a></td><td>5 dakika</td></tr></table>
+<p>Öğrenciler Pisagor Teoremini türetir, tartışır ve kanıtlar ve ardından çarpışmalarıtespit etmek için bu teoremi kullanırlar.(Boolean'larla birlikte)</p>
+<p><strong>Hazırlık</strong>: <a class="reference external" href="resources/Unite8Hazirlik.pdf">Ünite 8 Hazırlık</a> egzersizini yapın.</p>
+<div class="section" id="boyutta-uzaklik-sure-20-dakika">
+<h2><a name='sec1'></a>1-Boyutta Uzaklık <span class='time'>(Süre: 20 dakika)</span></h2>
+<p>Boşlukta hareket eden ve her birinin kendi(x,y) koordinatları iki nesne olduğunu farzedelim. Bunların kenarları ne zaman üst üste gelmeye başlar? Eğer bunların koordinatları aynıysa (x1=x2, y1=y2) bunlar kesinlikle üst üste gelir, ama ya eğer bunların koordinatları küçük uzaklıklarla ayrılmışsa? Peki bunların kenarları değmeden ne kadar küçük bir uzaklık gerekiyor?</p>
+<p class="teacher-note">Görsel araçlar burda anahtar öğeler:bu diagramın panoda olduğuna emin olun</p>
+<img alt="images/unite8_overlap.png" class="align-right" src="images/unite8_overlap.png" />
+<p>Tek boyutta, iki nesnenin üst üste geldiğini hesaplamak kolaydır.Bu örnekte, kırmızı çemberin yarıçapı 1,mavi çemberin yarıçapı 1.5 tir. Çemberler arası uzaklık çemberlerin yarıçapları toplamından (1+1.5=2.5) küçük olursa çemberler üst üste gelir. Bu çemberlerin arasındaki mesafe nasıl hesaplandı? Bu örnekte bunların uzaklıkları 3 birimdir, çünkü 4−1=3.</p>
+<p><div class='exercise'>
+Eğer çemberlerin yerleri değiştirilirse aralarındaki uzaklık değişir mi? Neden evet ya da neden hayır?
+</div></p>
+<p class="teacher-note">Birkaç örnek üzerinde çalışıp sayı duğrusunu kullanarak öğrencilere nasıl iki nokta arasındaki uzaklığı hesaplayacaklarını sorduk. Öğrenciler bu işi de iyi yapabildiler:bir sayı doğrusu çiz, iki öğrenci bu sayı doğrusunun farklı noktalarında durdular,kendi araçları ve kesicileriyle objelere farklı boyutlar verdiler.Öğrencileri aralarındaki mesafeyi hesaplayabilmek için birbirine değinceye kadar sayı doğrusu üzerinde hareket ettir Videomuzun ilk saniyelerinde Bootstrap video bu alıştırmanın nasıl olduğu gösteriliyor.</p>
+<p>Sana verilen oyun kodu iki nokta arasındaki uzaklığı gösteren <tt class="docutils literal"><span class="pre">çizgi-uzunluğu</span></tt> fonksiyonunu içeririr. <tt class="docutils literal"><span class="pre">çizgi-uzunluğu</span></tt> fonksiyonu 2 sayıyı girdi olarak alır ve aralarındaki mesafeyi hesaplar.</p>
+<p><div class='exercise'>
+Aşağıdaki örneklerin sonucunun <tt class="docutils literal"><span class="pre">çizgi-uzunluğu</span></tt> fonksiyonuna göre ne olmasını beklersiniz:</p>
+<pre class="literal-block">
+(çizgi-uzunluğu 2 5)
+
+(çizgi-uzunluğu 5 2)
+</pre>
+<p>Sizce ilk girdinin küçük veya büyük olması farketmeksizin aynı sonucu elde edebilir miyiz?
+</div></p>
+<p class="teacher-note">Eğer vaktiniz olsa ve kodunuzu örneklerle daha sağlamlaştırmak isteseniz, (EXAMPLE (line-length 2 5) ___) örneğinde olduğu gibi boşlukları dolduran öğrencileriniz olabilir, çemberler arası farkı bulan, ilk rakamın büyük veya küçük olduğunda fark olup olamayacağını hesaplayan. Bundan dolayı line-length fonksiyonunu kodunun bir şarta ihtiyacı olduğu önerilir. Bu durumda ilk şartımız sonucun mutlak değerini almamak olur. (abs fonksiyonu bunu yapar does this); Eğer mutlak değeri bilen eski öğrencilerle çalışıyorsanız onlara gösterebilirsiniz. cond kullanarak, ve ayrıca örnekteki yapının nasıl yükseltiğini vurgulayarak.</p>
+<p>Oyunundaki <tt class="docutils literal"><span class="pre">çizgi-uzunluğu</span></tt> ve <tt class="docutils literal">çarpıştı?</tt> fonksiyonlarını bulana kadar kodun aşağı kısımlarına ilerleyin. <tt class="docutils literal"><span class="pre">çizgi-uzunluğu</span></tt> fonksiyonunun iki sayı arasındaki farkı bulurken bir koşullu ifade kullanarak hangi sayının daha büyük olduğunu kontrol ettiğine  dikkat edin.</p>
+<p><tt class="docutils literal"><span class="pre">çizgi-uzunluğu</span></tt> fonksiyonunun neden <tt class="docutils literal">cond?</tt> fonksiyonuna ihtiyacı olduğunu açıklayabilir misin? Kodda dikkat edilmesi gereken  iki koşul nelerdir?</p>
+<p class="teacher-note">Bu iki koşul:  A küçüktür B,     B küçük veya eşittir A</p>
+<img alt="images/unite8_overlap2.png" class="align-right" src="images/unite8_overlap2.png" />
+<p>Ne yazık ki, <tt class="docutils literal"><span class="pre">çizgi-uzunluğu</span></tt> fonksiyonu sadece 1 boyutta iki nokta arasındaki (x,y) uzaklığı hesaplayabilir. Peki 2 boyutlu bir düzlemde hareket eden iki nesne arasındaki uzaklık nasıl hesaplanabilir? (Oyun içerisindeki nesne)? <tt class="docutils literal"><span class="pre">çizgi-uzunluğu</span></tt> fonksiyonu gösterilen grafikteki dikey ve yatay doğruları x-koordinatları ve y-koordinatları arasındaki uzaklığı kullanarak hesaplayabilir. Ancak,bu bize bu iki merkez arasındaki uzaklığı söylemez.</p>
+<img alt="images/unite8_overlap3.png" class="align-right" src="images/unite8_overlap3.png" />
+<p>Bir nesnenin merkezinden diğer nesnenin merkezine çizilen doğru kenarları A, B ve C olan bir dik üçgen yaratır.A ve B yatay ve dikey uzaklıklar olup C ile birlikte iki koordinat arasındaki uzaklığı oluşturur. <tt class="docutils literal"><span class="pre">çizgi-uzunluğu</span></tt> fonksiyonu A ve B yi hesaplamak için kullanılabilir fakat C yi nasıl hesaplayacağız?</p>
+<p class="teacher-note">Öğrencilerin oyun bütün oyun dosyaları <em>distances-color</em> denilen boş string kümelerine sahiptir.&quot;&quot;. Bunu değiştirdiğimizde örneğin &quot;yellow&quot; veya &quot;red&quot;, oyun her karakter arasına dik üçgenler çizer ve aralarındaki mesafeleri renkle doldurur.Bunu kendi oyununuzu kullanarak kanıtlayabilirsiniz ve bununla birlikte bunu takip eden öğrencilere sahip olabilirsiniz. İpucu: Dik üçgenleri olabildiğince kolay görmeniz için, arkaplanınız basit olsun.(siyah kare ve yavaş inen animasyon fonksiyonlarıyla)</p>
+<p>Bir dik üçgende, 90-derecelik açının karşısındaki kenara <em>hipotenüs</em> denir. Çarpışma Tespitini düşündüğümüzde zaman eğer hipotenüs objelerin yarıçapları toplamından küçük ise objeler çarpışır. Hipotenüsün uzunluğunu bilmek çarpışma olup olmayacağına karar vermek açısından önemlidir.</p>
+</div>
+<div class="section" id="boyutta-uzaklik-sure-35-dakika">
+<h2><a name='sec2'></a>2-Boyutta Uzaklık <span class='time'>(Süre: 35 dakika)</span></h2>
+<p>Eski uygarlıklar da aynı problemle uğraştılar: onlar da 2 boyutta nesneler arası uzaklığı bulmak için çabaladılar.Hadi bu problemi detaylı olarak inceleyelim: Dik üçgendeki hipotenüsün uzunluğunu hesaplamayı nasıl ifade edebiliriz?</p>
+<p class="teacher-note">Bu alıştırma küçük gruplara ayrılmış öğrencilerle çok iyi yapıldı(2-3 her grupta). Pisagor Teoreminin kanıt malzemelerini [1, 2] her gruba dağıtalım ve onlara hepsini inceletelim:            Bir büyük ve içinde bir küçük beyaz kareler.            Aynı boyutta 4 tane gri üçgen.</p>
+<img alt="images/unite8_pisagor.png" class="align-right" src="images/unite8_pisagor.png" />
+<p>Herhangi bir dik üçgeni kullanarak hipotenüsünün bir karenin her dört kenarını oluşturduğu bir çizim yapmak mümkündür. Çizimde gösterildiği gibi beyaz kare 4 tane aynı boyutta kenarları A ve B olan dik üçgen ile çevrilmiştir.  Karenin kendisi her biri C uzunlukta ve bu üçgenlerin hipotenüsü olan dört kenara sahiptir. Eğer karenin alanı kenar∗kenar diye ifade ediliyorsa o zaman beyaz karenin alanı <span class="math">\(C^2\)</span> olur.</p>
+<p class="teacher-note">Öğrencilere gri üçgenleri kağıtlarına çizdir,diagramı eşleştir.</p>
+<img alt="images/unite8_anim.gif" class="align-right" src="images/unite8_anim.gif" />
+<p>Gri üçgenleri hareket ettirerek karemizin içine sığabilecek 2 tane dikdörtgen oluşturmak mümkündür. Üçgenlerin kapladığı bölge kayarken, küçülüp büyümemiştir.Benzer şekilde beyaz boşluk iki tane küçük kareye bölünür ama toplamda geriye yine aynı boyut kalır. A ve B kenarlarının uzunluğunu kullanarak iki karenin de alanları hesaplanabilir.</p>
+<p><div class='exercise'>
+Küçük karenin alanı nedir? Büyük karenin alanı nedir?
+</div></p>
+<p>Üçgenin kenar uzunluğunun karenin de bir kenar uzunluğu olabileceğini açık bir şekilde gösterebilirsiniz.</p>
+<img alt="images/unite8_pisagor3.png" class="align-right" src="images/unite8_pisagor3.png" />
+<p>Küçük karenin alanı <span class="math">\(A^2\)</span>, ve büyük karenin alanı <span class="math">\(B^2\)</span>.Bu kareler asıl karenin ikiye bölünmesi ile oluştuğu için bu karelerin alanlarının toplamının asıl karenin alanına eşit olacağını biliyoruz:</p>
+<div class="math">
+\begin{equation*}
+A^2+B^2=C^2
+\end{equation*}
+</div>
+<p><div class='exercise'>
+Bu eşitlik A ve B nin diğer herhanhi bir değeri için de sağlanır mı?
+</div></p>
+<p>C yi bulabilmek için A ve B nin karesinin toplamını kök içine almak gerekir:</p>
+<div class="math">
+\begin{equation*}
+\sqrt{A^2+B^2}=C
+\end{equation*}
+</div>
+<p><div class='exercise'>
+İşdefterinde sayfa 29u açın, orda aynı formülün yazılı olduğunu göreceksiniz,bu sefer de <tt class="docutils literal"><span class="pre">çizgi-uzunluğu</span></tt> fonksiyonunu kullanarak x ve y eksenleri boyunca uzaklık hesaplayacağız. Değerlendirme çemberinin bir kısmı burada tamamlandı, ama geri kalanını kendiniz bitirmelisiniz. Bir kere bitirince, oradaki işlemleri sayfanın altına koda çevirin.
+</div></p>
+<p class="teacher-note">Öğrencilere A ve B nin line-length le hesaplanmış yatay ve dikey uzunluklar olduğunu hatırlatın.</p>
+<p>Sayfa 29 daki kod tam olarak merkezleri (3,0) ve (0,4) olan objeler arası uzaklığı hesaplar. Peki ya diğer noktalar? Herhangi iki noktalar kümesi arasındaki uzaklığı hesaplayabilen bir fonksiyon iyi olurdu.</p>
+<p><div class='exercise'>
+İşdefterinizde sayfa 30'u aç, ve tasarım reçetesini kullanarak kendi <tt class="docutils literal">uzaklık</tt> fonksiyonunu yaz. Önceki sayfadaki örneklerden yararlanmakta özgürsün ama daha sonra yeni kendi fonksiyonunu yazmalısın.
+</div></p>
+<p class="teacher-note">UYARI:Öğrencilerin line-length düzgün koordinatlar verdiğine emin olun. Bir çok öğrenci yanlışlıkla x koordinatları yerine px ve py koordinatlarını yazıyor.Öğrencilerin çalışmalarını dikkatlice kontrol edin.</p>
+</div>
+<div class="section" id="carpisti-sure-25-dakika">
+<h2><a name='sec3'></a>çarpıştı? <span class='time'>(Süre: 25 dakika)</span></h2>
+<p>Şimdiye kadar <tt class="docutils literal">uzaklık</tt> denilen fonksiyonu tanımladınız: Bu fonksiyonun 4 girdisi var(Bunlar oX, oY, nX ve nY) ve bu fonksiyon bu koordinatlar arası uzaklığı olarak çıktı verir. Eğer oyuncu (320, 240) noktasında duruyorsa ve nesne (400, 159) noktasında ise uzaklık <tt class="docutils literal">(uzaklık 320 240 400 159)</tt> ifadesiyle hesaplanır.</p>
+<p><div class='exercise'>
+Her bir oyuncu ve tehlikenin koordinatları için distance fonksiyonunu kullanan bir ifade yazın ve bu ifade noktalar araasındaki uzaklığı hesaplasın. Kod veya değerlendirme çemberi olarak yazabilirsiniz.</p>
+<ul class="simple">
+<li>Oyuncu (100, 225) noktasında ve tehlike (174, 300) noktasında.</li>
+<li>Oyuncu (48, 20) noktasında ve tehlike (210, 160) noktasında.</li>
+<li>Oyuncu (300, 60) noktasında ve tehlike (130, 240) noktasında.</li>
+</ul>
+<p></div></p>
+<p>Artık iki nesne arasındaki uzaklığı hesaplamayı biliyorsunuz, şimdi iki nesnenin ne zaman çarpışacağına karar vermelisiniz.Bunu daha önceki ünitede çemberleri kullanmayla: yani iki çemberin çarpışması için yarıçapları toplamından az uzaklık olması gerektiğini söylemiştik.Eğer sizin objenizin şekli çemberden daha ilginç ise bu hesaplama bu hesaplamanın daha zor olacağı kesindir. Neyse ki çoğu oyun bu kesinliğe sahip olmak zorunda değildir (insanlara çarpışma anının etkisini göstermek için hızlı hareket ederler). Biz sadece nesnelerin yeterince yakın olduğunu anlamalı ve çarpışma tespitini yapmalıyız.</p>
+<p class="teacher-note">Siz diğer şekiller arasında çarpışma tespitinin nasıl hesaplanacağını bulmak için öğrencilerle ekstra zaman harcayabilirsiniz.Bootstrap ın geri kalanında buna ihtiyacımız yok fakat eğer matematik öğretiyorsanız bu ekstra geometriyle birleştirmek için iyi bir yoldur.</p>
+<p>Oyun için seçtiğiniz resimler çok küçük olmadığı sürece,genellikle 50 pixel oyuncu ve tehlike arasındaki uzaklığı tespit etmek için yeterlidir. Eğer çok küçük resimler kullanıyorsanız karakterler arası uzaklık 20 nin altında olduğunda da çarpışma tespiti yapmayı isteyebilirsiniz.</p>
+<p><div class='exercise'>
+(320, 240) noktası ile (400, 159) noktası arasındaki uzakluğın 50 den az olup olmadığını nasıl kontrol edersiniz. Aynı zamanda bu koordinatlar arasındaki uzaklığın 20 den az olup olmadığını nasıl anlarsınız.
+</div></p>
+<p><div class='exercise'>
+Çalışma Kitabında 31. sayfayı açınız, ve tasarım reçetesini kullanarak eğer koordinatlar arası uzaklık 50 den az ise true sonucunu çıkar. İPUCU: uzaklık fonksiyonunu kullanmalısınız.
+</div></p>
+<p><div class='exercise'>
+<tt class="docutils literal">çarpıştı?</tt> fonksiyonunun tanımını kendi oyun dosyanızın içine giriniz. Oyununuzu oynayınız ve oyuncu ile tehlikeyi çarpıştırınız. Oyununuz artık <tt class="docutils literal">çarpıştı?</tt> fonksiyonunu yazmadan önceki halinden farklı şeyler yapıyor mu?
+</div></p>
+</div>
+<div class="section" id="kapanis-sure-5-dakika">
+<h2><a name='sec4'></a>Kapanış <span class='time'>(Süre: 5 dakika)</span></h2>
+<p>Tebrikler-oyununuz tamamlandı! Yazdığınız tüm kodları listelemek için bir dakikanızı ayırın ve neler öğrendiğinizi bir düşünün.The Circles of Evaluation programı, veritürleri Number, String, Image ve Boolean gibi,Contract(range,domain)lerin önemi, yazılan kodların amacı ve parçalı fonksiyonlar. Yeni bir programlama dilinin hepsini, ve hatta kelime problemlerini ve programlama zorluklarını çözmeni sağlayan dizayn yöntemlerini ve bu yöntemlerde her aşamaya tek tek odaklanıp bir aşama bitmeden diğerine devam öğrendin.</p>
+<p><div class='exercise'>
+Programcilar birşeyi calistirinca, kodlarinin hep ustunden gecerler ve okunabilir oldugundan, acik ve diger insanlar icin anlasilir oldugundan emin olurlar.İyi calisan bir araba guzel olabilir ama tamir edilmesi veya geliştirilmesi mümkün değilse sadece iyi olması değerini belirlemez. Kodunuzun içten ve dıştan güzel göründüğüne emin olun.</p>
+<ul class="simple">
+<li>Bütün fonksiyonların contract larını doğru yazılmış mı?</li>
+<li>Bütün fonksiyonlardaki kodların yazılış amacı tam olarak amacı ifade edebiliyor mu?</li>
+<li>Bütün fonksiyonlar en az iki ÖRNEK içeriyor mu?</li>
+<li>&quot;Run&quot; a bastığın zaman bütün örneklerin düzgün çalışıyor mu?</li>
+</ul>
+<p></div></p>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[href^='http']").attr('target','_blank');
+});
+</script>
+
+<div class="license">
+
+<p>Bu eğitim müfredatı Emmanuel Schanzer tarafından hazırlanmış "Bootstrap" projesinden uyarlanmıştır: 
+<a href="http://www.BootstrapWorld.org" target="_blank">www.BootstrapWorld.org</a>. 
+Burada paylaşılan her türlü malzeme <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons 3.0 Unported License</a> 
+lisansı koşulları dahilinde temin edilmektedir.</p>
+</div> 
+</body>
+</html>

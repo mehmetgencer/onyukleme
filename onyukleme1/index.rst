@@ -15,6 +15,11 @@ dili kullanılarak yapılır ve çalışmalar için sadece bir web tarayıcısı
 * `Ünite 3 <unite3.html>`_: Öğrenciler Tanımlar penceresiyle tanışırlar, ve farklı tipte değerleri tanımlamak için gerekli sözdizimini öğrenirler. Ayrıca fonksiyonları tanımlama ve örnekler yaratma için gerekli sözdizimini öğrenirler. 
 * `Ünite 4 <unite4.html>`_: Öğrenciler Tasarım Reçete'sini basit problemlere uygulayarak öğrenmeye devam ederler.
 * `Ünite 5 <unite5.html>`_: Öğrenciler fonksiyonlar tanımlayarak oyunlarının bir animasyon karesinden diğerine özelliklerini ifade ederler, böylece tehlike, hedef, ve oyuncuyu hareket ettirirler.
+* `Ünite 6 <unite6.html>`_: Öğrenciler mantıksal değerleri öğrenir, onları değerleri kontrol edebilen programlar yazmak için kullanırlar, ve bu programları kullanarak bazı senaryoları modellerler.
+* `Ünite 7 <unite7.html>`_: Öğrenciler geometri ve koşullu dallanma kullanarak tuşlara basılınca oyun karakterlerini hareket ettirirler.
+* `Ünite 8 <unite8.html>`_: Öğrenciler Pisagor teoremini türetirler, tartışırlar, ispat ederler, ve bu teoremi —mantıksal değerlerle birlikte— kullanarak oyundaki nesnelerin yollarının kesişmesi durumunu tespit ederler.
+* `Ünite 9 <unite9.html>`_: Öğrenciler oyun detaylarını girerler ve açılış partisine hazırlanırlar!
+
 
 İhityacınız olan linkler:
 
@@ -22,4 +27,4 @@ dili kullanılarak yapılır ve çalışmalar için sadece bir web tarayıcısı
 * `online oyun taslağı`_
 * `online roket animasyon programı`_
 
-6, 7, 8, ve 9. ünitelerin çevirisi henüz tamamlanmamıştır.
+

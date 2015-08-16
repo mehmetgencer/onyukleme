@@ -65,6 +65,8 @@ def tweaks(htm):
     #retval=re.sub(".+\(Süre:.+?\)", tweak_sure, htm)
     retval=re.sub("<h2>(?P<title>.+)(?P<surelab>\(Süre:.+?(?P<time>[0-9]+).+?\))</h2>", tweak_sure, htm)
     retval=re.sub("\$dc\{.+?\}", tweak_dc, retval)
+    retval=re.sub("\$oyexercisestart", "<div class='exercise'>", retval)
+    retval=re.sub("\$oyexerciseend", "</div>", retval)
     retval=re.sub("<h1>(?P<title>.+?)</h1>", tweak_headerAndToc, retval)
     #debug("TOC:",toc)
     return retval
