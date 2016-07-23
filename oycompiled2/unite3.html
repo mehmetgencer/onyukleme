@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mehmet Gencer" >
+    <title>Önyükleme1 : Ünite 2: Veri yapılarına giriş</title>
+    <link href="css/oy.css" rel="stylesheet">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="unite1.html">Ünite-1</a></li>
+        <li><a href="unite2.html">Ünite-2</a></li> 
+        <li><a href="unite3.html">Ünite-3</a></li> 
+        <li><a href="unite4.html">Ünite-4</a></li> 
+        <li><a href="unite5.html">Ünite-5</a></li> 
+        <li><a href="unite6.html">Ünite-6</a></li>
+        <li><a href="unite7.html">Ünite-7</a></li> 
+        <li><a href="unite8.html">Ünite-8</a></li> 
+        <li><a href="unite9.html">Ünite-9</a></li> 
+        <li><a href="unite10.html">Ünite-10</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul> 
+    </div>
+  </div>
+</nav>
+
+<img class="oyicon" src="images/pict.png" alt=""></img>
+<div class="document">
+<div class="section" id="unite-2-veri-yapilarina-giris">
+<h1>Ünite 2: Veri yapılarına giriş</h1>
+<table class='toctable'><tr><td>TOPLAM SÜRE:</td><td>100 dakika</td></tr><tr><td><a href='#sec1'>Gözden geçirme: Party yapısı </a></td><td>15 dakika</td></tr><tr><td><a href='#sec2'>Sizin Fırın </a></td><td>80 dakika</td></tr><tr><td><a href='#sec3'>Kapanış </a></td><td>5 dakika</td></tr></table>
+<p>Geçen derste hazır yapılmış veri yapıları (Kekler) ile çalışan öğrenciler bu kez kendi veri yapılarınıtanımlayarak, alanlarına erişerek, ve onları ğreten fonksiyonlar tanımlayarak anlayışlarını genelleştiriler.</p>
+<div class="section" id="gozden-gecirme-party-yapisi-sure-15-dakika">
+<h2><a name='sec1'></a>Gözden geçirme: Party yapısı <span class='time'>(Süre: 15 dakika)</span></h2>
+<p>Geçen derste Cake isimli yeni bir veri yapısı öğrendiniz. Ancak Cake tek yapı cinsi değil: istediğimizi yaratabiliriz. Şimdi başka bir tane yaratalım. Bu egzersizde siz bir parti planlayıcı olacaksınız. Veri yapıları planlamakta olduğunuz her partiyi temsil etmek, yerini, temasını, ve misafir sayısını takip etmek için önemli olacak.</p>
+<ul class="simple">
+<li>Partinin yerini temsil etmek için hangi veri tipi uygun olur?</li>
+<li>Peki ya partinin teması? (Bu tema mesela &quot;50'ler&quot; veya &quot;laser işaretleme&quot; gibi birşey olabilir)</li>
+<li>Peki davetli sayısı?</li>
+</ul>
+<p>İşkitabınızın 13. sayfasında Party yapısının tanımını doldurun:</p>
+<pre class="literal-block">
+# a Party is a location, theme, and number of guests
+data Party:
+  | party(location :: String,
+          theme    :: String,
+          guests   :: Number)
+end
+</pre>
+<p>Bir kez Party yapısı tanımlandığında yeni bazı kod parçalarına erişiminiz olur: party oluşturacak bir fonksiyon, ve yer, tema, davetli sayısı bilgilerine erişim için 3 tane nokta-erişimcisi.</p>
+<ul class="simple">
+<li>Bir Party oluşturan fonksiyonun adı nedir?</li>
+<li>Fonksiyonun girdi alanı nedir?</li>
+<li>Fonksiyonn çıktı alanı nedir?</li>
+<li>Sayfa 13'te oluşturucu fonksiyonu kullanarak iki tane Party örneği tanımlayın.</li>
+<li>Partilerinizin hemn altına party2'nin alanlarına nasıl erişeceğinizi yazın. party2'nin yer bilgisine nasıl erişirsiniz?</li>
+<li><a class="reference external" href="https://code.pyret.org/editor#program=0B--4mkdvhyEycmZVOVpHV0pHSkUhttps://code.pyret.org/editor#share=0B--4mkdvhyEybVlrdGxiQ1Q0ZGM&amp;v=80ba55b">Parti Planlayıcı</a> dosyasını açın. Tanımlar kısmında ilk dört satırı inceleyin. İşkitabınıza yazdığınız Party tanımıyla örtüşüyor mu?</li>
+<li>Şimdi kendiniz iki tane Party tanımlayın. Planladığınız parti ne olursa olsungirdilerin doğru sırada verildiğinden emin olun.</li>
+</ul>
+</div>
+<div class="section" id="sizin-firin-sure-80-dakika">
+<h2><a name='sec2'></a>Sizin Fırın <span class='time'>(Süre: 80 dakika)</span></h2>
+<p>Geçenderste Cake isimli yeni bir veri yapısı öğrenmiştiniz.</p>
+<ul class="simple">
+<li>Bir Cake nedir? Cake veri yapısının parçaları nelerdir?</li>
+<li>hangi fonksiyon bir Cake oluşturur.</li>
+<li>Bir Cake'in çeşit bilgisine nasıl erişirsiniz? Peri ya rengine?</li>
+</ul>
+<p>Bir fırın işletmenin parçası olarak Cake'ler için sipariş alacağız ve müşterilere bu siparişe uygun hazırlayacağız. Bunu yapmak için gerekli fonksiyonları nasıl yazacağımıza bakalım.</p>
+<p>İşkitabınızda sayfa 14'e gidin. <cite>change-flavor</cite> isimli bir fonksiyon yazın.Bir Cake ve bir metin alsın ve verilenle aynı ancak sadece çeşidi istenilene uygun değiştirilmiş bir Cake döndürsün.</p>
+<ul class="simple">
+<li>Bu fonksiyonun girdi alanı nedir? Hangi Cake'i aldığımızı ve hangi çeşit olacağını bilmemiz gerekiyor.</li>
+<li>Buna karşılık fırınımız ne verecek, yani <cite>change-flavor</cite> un çıktı alanı ne olacak.</li>
+</ul>
+<p>Örnek:</p>
+<pre class="literal-block">
+# change-flavor: Cake String -&gt; Cake:
+# consumes a Cake and produces a Cake that is the same as the original, but has the given flavor.
+</pre>
+<p>İlk örneğinizde orijinal <cite>cake1</cite>'i kullanın ve ınu çilekli yapın. Biliyoruz ki müşterimiz geriye bir Cake dönmesini bekler: yanlış çeşitte yapılmış bir Cake'i fırına geri götürüp karşılığında bir hata mesajı almayı beklemezsiniz! Ama fonksiyonumuzdan aynı Cake'i de geri döndürmeyeceğiz.  rengi, mesajı, kat sayısı aynı, ama sadece çeşidi farklı bir Cake yapmalıyız.</p>
+<p>Bir fonksiyonun çıktı alanı olarak Cake yazdığınız anda bilirsiniz ki <cite>cake</cite> oluşturucusunu çağırmanız ve ona beş şey vermeniz gerekecek: çeşit, renk, mesaj, kat sayısı, ve dondurmalı-mı bilgileri:</p>
+<pre class="literal-block">
+examples:
+    change-flavor(cake1, &quot;strawberry&quot;) is cake(....)
+end
+</pre>
+<ul class="simple">
+<li>Cake'in renginin ne olacağını da biliyoruz: verilen Cake ile aynı! Peki verilen Cake'in sadece renk kısmını elde edip onu cake fonksiyonunda nasıl kullancaksınız? Nokta- erişimcisini kullanarak! Cake'in mesajı da değişmiyor. Onu cake1'den nasıl alacaksınız?</li>
+<li>Çeşidi değiştirirseniz katların da değişmesi gerekmez. cake1'den kat sayısını nasıl alırsınız.</li>
+</ul>
+<p>Cake uyapısın son alanın unutmayın: <cite>is-iceCream</cite>! <cite>change-flavor</cite> için verilen amaç ifadesi Cake'in içinin değişmesine ilişkin birşey söylemiyor, o halde orijinal is-iceCream'i cake1'den nasıl alacaksınız?:</p>
+<pre class="literal-block">
+examples:
+    change-flavor(cake1, &quot;strawberry&quot;) is cake(&quot;strawberry&quot;,
+                                     cake1.color,
+                                     cake1.message,
+                                     cake1.layers,
+                                     cake1.is-iceCream)
+end
+</pre>
+<ul class="simple">
+<li>change-flavor fonksiyonu için bir örnek daha yazın, bu kez cake2'yi vanilyalı yapın.</li>
+<li>Daha sonra örnekten örneğe neyin değiştiğini çember içine alıp etiketleyin. Bu fonksiyon kaç tane değişkene ihtiyaç duyuyor? Şimdi de yazdığınız örneklerin yardımıyla fonksiyon tanımını yapın.</li>
+</ul>
+<p>Değişen şeyleri değişkenlerle yer değiştirince tanımınız şöyle görünecektir:</p>
+<pre class="literal-block">
+fun change-flavor(a-cake, new-flavor):
+        cake(new-flavor,
+                a-cake.color,
+                a-cake.message,
+                a-cake.layers,
+                a-cake.is-iceCream)
+  end
+</pre>
+<p>İşkitabınızda 15. sayfaya gidin. Fırınınızın bazı Cake'lerin dondurulup dondurulmayacağını bilmesi gerekiyor. Eğer sıcaklık 32 dereceden yüksek ve verilen pasta dondurmalı ise fonksiyon doğru değerini döndürmelidir.</p>
+<ul class="simple">
+<li>Fonksiyon için sözleşme ve Amaç İfadesini yazın</li>
+<li><cite>erir-mi</cite>'in nasıl kullanılacağına dair iki örnek yazın</li>
+<li>Örnekten örneğe neyin değiştiğini işaretleryip bir değişken ismiyle etiketleyin.</li>
+<li>Fonksiyonu tanımlayın.</li>
+</ul>
+</div>
+<div class="section" id="kapanis-sure-5-dakika">
+<h2><a name='sec3'></a>Kapanış <span class='time'>(Süre: 5 dakika)</span></h2>
+<p>Şimdiye kadar üç veri yapısıyla çalıştık: Coord, Party, ve Cake. Sonraki derste bir oyunu ayrıştırırken yeni bir veri yapısına bakacaksınız, ve onu kendi oyununuzda kullanmanız gerekecek.</p>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[href^='http']").attr('target','_blank');
+});
+</script>
+
+<div class="license">
+
+<p>Bu eğitim müfredatı Emmanuel Schanzer tarafından hazırlanmış "Bootstrap" projesinden uyarlanmıştır: 
+<a href="http://www.BootstrapWorld.org" target="_blank">www.BootstrapWorld.org</a>. 
+Burada paylaşılan her türlü malzeme <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons 3.0 Unported License</a> 
+lisansı koşulları dahilinde temin edilmektedir.</p>
+</div> 
+</body>
+</html>

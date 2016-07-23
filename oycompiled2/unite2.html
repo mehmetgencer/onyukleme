@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mehmet Gencer" >
+    <title>Önyükleme1 : Ünite 2: Veri yapılarına giriş</title>
+    <link href="css/oy.css" rel="stylesheet">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="unite1.html">Ünite-1</a></li>
+        <li><a href="unite2.html">Ünite-2</a></li> 
+        <li><a href="unite3.html">Ünite-3</a></li> 
+        <li><a href="unite4.html">Ünite-4</a></li> 
+        <li><a href="unite5.html">Ünite-5</a></li> 
+        <li><a href="unite6.html">Ünite-6</a></li>
+        <li><a href="unite7.html">Ünite-7</a></li> 
+        <li><a href="unite8.html">Ünite-8</a></li> 
+        <li><a href="unite9.html">Ünite-9</a></li> 
+        <li><a href="unite10.html">Ünite-10</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul> 
+    </div>
+  </div>
+</nav>
+
+<img class="oyicon" src="images/pict.png" alt=""></img>
+<div class="document">
+<div class="section" id="unite-2-veri-yapilarina-giris">
+<h1>Ünite 2: Veri yapılarına giriş</h1>
+<table class='toctable'><tr><td>TOPLAM SÜRE:</td><td>90 dakika</td></tr><tr><td><a href='#sec1'>Gözden geçirme </a></td><td>15 dakika</td></tr><tr><td><a href='#sec2'>Veri Yapılarına Giriş </a></td><td>30 dakika</td></tr><tr><td><a href='#sec3'>Pastalar  </a></td><td>30 dakika</td></tr><tr><td><a href='#sec4'>Nokta-Erişimi </a></td><td>10 dakika</td></tr><tr><td><a href='#sec5'>Kapanış </a></td><td>5 dakika</td></tr></table>
+<p>Öğrenciler veri yapılarına duyulan ihtiyacı keşfederler ve nasıl tanımlanacakları konusunda pratik yaparlar.</p>
+<div class="section" id="gozden-gecirme-sure-15-dakika">
+<h2><a name='sec1'></a>Gözden geçirme <span class='time'>(Süre: 15 dakika)</span></h2>
+<p>Önceki ünitede Önyükleme 1'de gördüğünüz hemen herşeyi gözden geçirdiniz: Veri tipleri, sözleşmeler, ve tasarım reçetesi. Nu ünitede bunların üzerine ve ötesine geçeceksiniz, ve Önyükleme 2'de yapacağınız herşeyin temelini oluşturan yeni bir veri tipi öğreneceksiniz.</p>
+<p>Önceki ünitedeki konuların zihninizde taze olduğundan emin olmak için şu aktiviteyi yapın:</p>
+<p>İşkitabınızın 8. sayfasına gidin. <tt class="docutils literal"><span class="pre">iki-kat-yarıçap</span></tt> isimli bir fonksiyon yazın, öyle ki bu fonksiyon girdi olarak bir yarıçap ve renk alsın. Sonra istenen renkte ve verilenin iki katı yarıçapa sahip çerçeve bir çember üretsin.</p>
+<p>Tasarım reçetesini nasıl kullanacağınızı hatırlayın.</p>
+<p><strong>Adım 1: Sözleşme ve amaç tanımı yazın</strong></p>
+<ul>
+<li><p class="first">Fonksiyonun ismi ne? Nereden biliyorsunuz?</p>
+</li>
+<li><p class="first">Girdileri kaç tane?</p>
+</li>
+<li><p class="first">Girdi veri tipleri neler?</p>
+</li>
+<li><p class="first">Çıktısı nedir?</p>
+</li>
+<li><p class="first">Sizce bu fonksiyon ne işlem yapıyor? Bunun için iyi bi amaç tanımı ne olmalıdır?</p>
+<blockquote>
+<p># double-radius : Number String -&gt; Image</p>
+<p># Makes an outlined circle that has twice the given radius.</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>Adım 2: Örnekler</strong></p>
+<p>Sadece Sözleşme ve amaç tanımını kullanarak aşağıdaki soruları cevaplamaya çalışın</p>
+<ul class="simple">
+<li>Her örnek fonksiyon ismiyle başlar. Fonksiyonun ismini nerede bulacaksınız?</li>
+<li>Her örnek bazı girdiler içeir. Bu fonksiyonun kaç girdisi olacağını, ve onların veri tiplerini nereden bulacaksınız?</li>
+<li>Her örnek fonksiyonun bu girdilerle üretmesi gereken ifadeyi içerir. Bu fonksiyonun ne yapacağını anlamak için neye bakmalısınız?</li>
+<li>Kağıda iki örnek yazın, sonra örnekler arasında değişen kısımları daire içine alarak işaretleyin. İşaretlerken bu değişen şeylerin neyi temsil ettiğini düşünün.</li>
+</ul>
+<p><tt class="docutils literal">examples:</tt> ve  <tt class="docutils literal">end</tt> satırlarını koymayı unutmayın! Örnekler kısmının şuna benzer görünmeli:</p>
+<pre class="literal-block">
+examples:
+    iki-kat-yarıçap(50, &quot;pink&quot;) is circle(50 * 2, &quot;outline&quot;, &quot;pink&quot;)
+    iki-kat-yarıçap(918, &quot;orange&quot;) is circle(918 * 2, &quot;outline&quot;, &quot;orange&quot;)
+end
+</pre>
+<p><strong>Adım 3: Fonksiyon tanımı</strong></p>
+<p>Örnekler arasında değişenin ne olduğunu belirledikten sonra değişmeyen herşeyi kopyalayın, değişenlerin yerine ise seçtiğiniz değişken isimlerini koyun. <tt class="docutils literal">fun</tt> ve <tt class="docutils literal">end</tt> anahtar kelimelerini koymayı unutmayın:</p>
+<pre class="literal-block">
+# iki-kat-yarıçap: Sayı, Metin -&gt; Resim
+# Verilenin iki katı yarıçapa sahip çember çizer
+fun iki-kat-yarıçap(radius, color):
+    circle(radius * 2, &quot;solid&quot;, color)
+end
+</pre>
+<p>Daha fazla pratik için işkitabınızın 9. sayfasında gidin ve <tt class="docutils literal"><span class="pre">iki-kat-genişlik</span></tt> fonksiyonu için tasarım reçetesini tamamlayın.</p>
+</div>
+<div class="section" id="veri-yapilarina-giris-sure-30-dakika">
+<h2><a name='sec2'></a>Veri Yapılarına Giriş <span class='time'>(Süre: 30 dakika)</span></h2>
+<p>Bilgisayarınızda <a class="reference external" href="https://code.pyret.org/editor#share=0B--4mkdvhyEyVFNUbUpBNzNJaWM&amp;v=80ba55b">Paraşüt Atlama</a> programını açın ve çalıştırın. Ne oluyor?</p>
+<p>Paraşüt atlayıcı uçaktan atlar ve düz aşağıya, suya düşer. Ancak karaya inmek çok daha güvenli. Koda bakarak neden soya düştüğünü anlamaya çalışalım.</p>
+<p><tt class="docutils literal"><span class="pre">sonraki-pozisyon</span></tt> ismiyle tanımlanan fonksiyona bir bakın.</p>
+<ul class="simple">
+<li>Fonksiyonun girdi ve çıktı alanı nedir?</li>
+<li><cite>sonraki-pozisyon</cite> fonksiyonu girdileriyle ne yapıyor?</li>
+</ul>
+<p>Bu fonksiyon atlayıcının x ve y koordinatlarını temsil eden iki sayı alır, ancak sadece y koordinatını 5 çıkartarak değiştirip geri döndürür. Ama sadece y koordinatı değişiyorsa atlayıcı her zaman düz aşağıya düşecek ve suya inecektir. Karaya ulaşması için diyagonal (çağraz) düşmesi lazım. Bunu nasıl yapabiliriz.</p>
+<p>Atlayıcı sağa doğru çapraz düşüyorsa x koordinatı nasıl değişmeli? Y koordinatı nasıl değişmeli?</p>
+<p>Fonksiyonlar sadece bir değer geri döndürebilir, ama bizim hem x hem de y koordinatını döndürmemiz lazım ki atlayıcıyı çapraz hareket ettirebilelim. Çok süşür ki birden fazla şeyi bir kabın içine koymamıza yarayan <em>Veri Yapısı</em> denilen bir yol var.</p>
+<p>Bu etkinlik için Coord isimli bir veri yapısı ile çalışacağız. Bu yapı x ve y koordinatlarını temsil eden iki sayı içerebiliyor. Bu yapıları <tt class="docutils literal">coord</tt> isimli bir fonksiyon kullanarak yaratacaksınız:</p>
+<pre class="literal-block">
+# coord : Number Number -&gt; Coord
+</pre>
+<p>Şİmdi paraşütçüyü kurtarmak bizim ellerimizde.</p>
+<p>İşkitabınızın 10. sayfasına gidin, problemi okuyun, <tt class="docutils literal"><span class="pre">next-position</span></tt> isimli fonksiyon için sözleşme ve amaç tanımını yapın.</p>
+<blockquote>
+# next-position : Number Number -&gt; Coord
+# Given 2 numbers, make a Coord by adding 5 to x and subtracting 5 from y</blockquote>
+<p>Şimdi iki örnek bulmaya sıra geliyor.  <tt class="docutils literal"><span class="pre">next-position</span></tt> fonksiyonunu kullanmak kolay, ama bu sayılara ne olacak? İki sayıyı aynı anda döndürmek için veri yapısı kullanmalıyız. Bunun için oluşturucu fonksiyonu çağıracağız.</p>
+<ul>
+<li><p class="first"><tt class="docutils literal">Coord</tt> tanımına göre hangi fonksiyon bir Coord oluşturur?</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">coord(...)</span></tt></p>
+</li>
+<li><p class="first">Coord'un parçası olan iki şey nedir? İlk örneğimiz için bunlar ne olmalı?</p>
+</li>
+<li><p class="first">Coord'umuzun verilen sayıların aynısını içermesini istemeyiz, sayıları nasıl değiştirmeliyiz?</p>
+</li>
+<li><p class="first">İlk örneğiniz şuna benzer olmalı:</p>
+<pre class="literal-block">
+examples:
+   next-position(30, 250) is coord(30 + 5, 250 - 5)
+end
+</pre>
+</li>
+<li><p class="first">İlk örnekten sonra farklı x ve y girdi değerleriyle bir tane daha örnek yapın.</p>
+</li>
+</ul>
+<p>Artık iki örneğimiz olduğuna göre fonksiyonu tanımlama zamanı geldi. Nasıl yapılacağını biliyporsunuz: iki örnek arasında değişen şeyleri çember içine alıp birer etiket koyun, değişmeyen şeyleri ise aynen kopyalayın ve değişen şeylerin olduğu yere seçtiğiniz değişken isimlerini koyun.</p>
+<p>Şimdi bitirdiniz, fonksiyon tanımı şuna benzer görünmeli:</p>
+<pre class="literal-block">
+fun next-position(x, y):
+   coord(x + 5, y - 5)
+end
+</pre>
+<p>Şimdi sadece bir koordinatı (y koordinatı) değiştirip döndürmek yerine paraşütçünün hem x hem de y koordinatlarını bir veri yapısının içinde geri döndürebiliriz.</p>
+<p>Şimdi <a class="reference external" href="https://code.pyret.org/editor#share=0B--4mkdvhyEyVFNUbUpBNzNJaWM&amp;v=80ba55b">Paraşüt Atlama</a> programına tekrar gidin ve orijinal 'next-position' fonksiyonu yerine işkitabınızda yaptığınız paraşütçüyü güvenle indirecek olanı koyun.</p>
+<p>Önyükleme 1'de bir fonksiyondan sadece bir şey geri döndürebiliyordunuz: bir sayı, metin, resim, veya mantıksal. Önyükleme 2'de fonksiyonlarımız hala bir şey geri döndürüyor, ama o şey içinde istediğiniz sayıda nesne barındıran bir <em>Veri Yapısı</em> olabiliyor. Böylece paraşütçünün hem x hem de y koordinatını bir Coord kullanarak döndürebiliyor, veya başka veri yapıları tanımlayıp paraşütçü hakkında sağlığı, konumu, teçhizatı gibi bilgileri de döndürebiliriz.</p>
+</div>
+<div class="section" id="pastalar-sure-30-dakika">
+<h2><a name='sec3'></a>Pastalar  <span class='time'>(Süre: 30 dakika)</span></h2>
+<p>Farzedelim ki ünlü bir pasta fırınının sahibisiniz. Kurabiye, pasta, turta gibi şeyle pişiriyorsunuz, ama özellikle kekleriniz ünlü. Kek nasıl bir şeydir? Metin? Sayı? Mantıksal? Bunların hiçbiri tek başına bir keki tarif etmeye yetmiyor. Ancak diyebiliriz ki bir kek hakkında önemli belirli özellikler vardır, ve bu özelliklerin herbiri bildiğimiz veri tiplerinden biriyle ifade edilebilir.</p>
+<p>Aşağıdaki kek özelliklerinden herbiri için onu nasıl bir veritipiyle temsil edebileceğinizi düşünün:</p>
+<ul class="simple">
+<li>Kekin tat çeşidi. Mesela &quot;çikolata&quot;, &quot;çilek&quot;, &quot;kırmızı kadife&quot;, veya başka birşey.</li>
+<li>Kekin rengi.</li>
+<li>Üstündeki yazı.</li>
+<li>Katların sayısı</li>
+<li>Dondurmalı olup olmadığı.</li>
+</ul>
+<p>Peki tüm keki temsil etmek için nasıl bir veri tipi kullanabiliriz?</p>
+<p>Şimdi kekin özelliklerinin herbiri ile ilgili veri tiplerini bildiğimize göre kekin kendisini temsil etmek için bir veri yapısı kullanabiliriz. Bunun nasıl olduğuna bir bakalım.</p>
+<img alt="images/unite2_pict_2.png" class="align-right" src="images/unite2_pict_2.png" />
+<p>İşkitabınızın 11. sayfasını açın.</p>
+<p>Sayfanın en üstünde kekin özelliklerinin neler olduğunu belirten bir yorum metni göreceksiniz. Altında ise <cite>Cake:</cite> diye başlayan bir satır. Bu satır <cite>Cake' isimli yeni bir veri yapısının tanımının başlangıcıdır. Bir sonraki satırda bir Cake üreten bir fonksiyon (`cake</cite>), ve sonra bir Cake'in nasıl yapılacağının kesin tarifini, yani Cake ver yapısındaki her şeye karşılık bir satır ve o şeyin veri tipini görüyoruz.</p>
+<p>Cake veri yapısının ilk kısmı nedir? Onu temsil etmek için hangi veri tipini kullanabiliriz?</p>
+<p>Veri yapılarının tanımlanması biraz yeni sözdizimi içeriyor. Sayfa 11'in ilk satırında <cite>flavor :: String</cite> yazmak istiyoruz, ki bu Pyret'a her Kek'in ilk elemanının onun çeşidi olduğunu ve bir metin ile temsil edildiğini ifade ediyor.</p>
+<p>Kek'in diğer alanlarını (mesaj, katmanlar, dondurmalı) da listeleyin ve onları hangi veri tiplerinin temsil edeceğini not edin. Alanları virgülle ayırmayı unutmayın.</p>
+<p>Kağıdınızda şuna benzer bir kod olmalı:</p>
+<pre class="literal-block">
+# a Cake is a flavor, color, message, number of layers, and whether or not it is an ice cream cake.
+data Cake:
+  | cake(flavor :: String,
+          color :: String,
+        message :: String,
+         layers :: Number,
+    is-iceCream :: Boolean)
+end
+</pre>
+<p>Bu Cake veri yapısını tanımlayan koddur. Bilgisayara bir kek'in ne olduğunu ve içinde nelerin yeraldığını söylüyor. Aynı zamanda onn için bir de <cite>cake</cite> isimli oluşturucu fonksiyon tanımlıyor. Bir Cake yapmak için oluşturucu fonksiyonu çağırmanız ve beş değer vermniz gerekiyor:  <cite>çeşit/flavor</cite>, bir Metin, <cite>renk/color</cite>, bir Metin, <cite>mesaj/message</cite>, başka bir Metin, <cite>katmanlar/layers</cite>, bir Sayı, ve <cite>dondurmalı-mı/is-iceCream</cite>, bir Mantıksal. Unutmayın ki sıralamanın önemi var! Şimdilik, bunlar bir kekle ilgili takip edeceğimiz şeyler, ama haya edebilirsiniz ki başka bilgiler de eklenebilir.</p>
+<p>_Fırıncı dosyasını açın ve 3-10 satırlar arasını inceleyin. Kayıtta yazdığınız ile örtüşüyor mu?</p>
+<p>Şimdi biraz daha alt kısmını inceleyin, satır 12: : <cite>cake2 = cake(&quot;Chocolate&quot;, &quot;brown&quot;, &quot;Happy birthday!&quot;, 8, false)</cite></p>
+<ul class="simple">
+<li>Bu değişkenin ismi ne?</li>
+<li><cite>cake2</cite>'nin çeşidi ne?</li>
+<li>Rengi ne?</li>
+<li>Mesajı ne?</li>
+<li>Kaç katmanı var?</li>
+<li>Dondurmalı mı?</li>
+</ul>
+<p><cite>cake5</cite> isimli yeni bir kek tanımlayın. Başlangıç olarak:</p>
+<ul class="simple">
+<li>Bu değişkeni nasıl tanımlarsınız?</li>
+<li>Bir Cake yapmak için hangi fonksiyon kullanılır?</li>
+<li>Bir Cake yapısındaki ilk gelen şey nedir?</li>
+</ul>
+<p>Şimdi etkileşim alanına <cite>cake5</cite> yazdığınızda ne olmasını beklersiniz? Çaşıştır'a basın ve deneyin:</p>
+<pre class="literal-block">
+cake5 = cake(&quot;Peanut Butter&quot;, &quot;brown&quot;, &quot;Congratulations!&quot;, 2, true)
+</pre>
+<p>Siz de iki tane en sevdiğiniz bazı keklere karşılık değişken tanımlayın. Onlara <cite>cake6</cite> ve <cite>cake7</cite> diyebilirsiniz, veya istediğiniz ismi takın. İstediğiniz çeşit kek yapabilirsiniz, yeter ki veri yapısı parçaları için gereken şeylere uygun veri tipleri ile beslensin.</p>
+<p>Şu ana kadar iki farklı veri tipi ile çalıştınız: Coords ve Cakes, ve bunların farklı örneklerini oluşturdunuz.Bu ders boyunca tanımladığınız veri yapılarından çok daha fazla sayıda onların örneklerini oluşturacaksınız.  Şimdilik önemli olan nokta bir veri yapısı tanımlama ile (<cite>data ...</cite> diye yazılan kod kısmı) o yapının örneklerini oluşturma (mesela <cite>cake1</cite> veya <cite>coord(44, 75)</cite>).</p>
+<p>Cakes yapısının yarattığınız örneklerini düşünürseniz:</p>
+<ul class="simple">
+<li>Bir Cake oluşturan fonksiyonun adı nedir?</li>
+<li>Bu fonksiyonun girdi alanı nedir?</li>
+<li>Bu alanda kaç girdi değişkeni var.</li>
+</ul>
+<p><cite>cake</cite> fonksiyonunun girdi alanındaki beş şey, esasen sayfa 11'de zaten listelediğimiz şeyler. Veri yapıları sözkonusu olduğunda şeylerin sırası önemlidir: <cite>¢ake</cite>'e verilen ilk şeyin Kek'in çeşidi, ilk sayının da onun katman sayısı olması gerekiyor.</p>
+<p>Run butonuna bastıktan sonra, etkileşimler penceresine <cite>cake1</cite> yazın ve enter'a basın. Geriye ne döndürüyor?</p>
+<p>Bu anlamlı mı? Etkileşimler alanına sadece bir sayı girerseniz ne oluyor? Aynı sayıyı geri döndürüyor. Peki metin, res,m, veya mantıksal girince? Ever girdiye hiçbirşey yapmıyorsak, veya üzerinde bir fonksiyon çalıştırmıyorsak, ne verdiysek onu geri alıyoruz. Burada bir Cake verdiniz, ve aynı Cake'i geri aldınız!</p>
+<p>Cake'lerinizin nasıl göründüğüne dosyanın alt kısmında verilen fonksiyonu kullanarak bakabilirsiniz. Bu fonksiyonun adı <cite>draw-cake</cite>, ve girdi olarak bir Cake alıyor, çıktı olarak onun görünüşünü veriyor.</p>
+<p>Etkileşimler peneresinde <cite>draw-cake(cake1)</cite> yazın ve ne olduğuna bakın. Bu fonksiyonu tanımladığınız Cake'ler için kullanın.</p>
+<img alt="images/unite2_pict_3.png" class="align-right" src="images/unite2_pict_3.png" />
+</div>
+<div class="section" id="nokta-erisimi-sure-10-dakika">
+<h2><a name='sec4'></a>Nokta-Erişimi <span class='time'>(Süre: 10 dakika)</span></h2>
+<p>Diyelim ki cake4'ün çeşit bilgisini ALMAK istedik. Mesaj, renk, veya diğer özellikleri umursamıyor, sadece çeşit bilgisini istiyoruz. Pyret'in bunu yapmak için bir sözdizimi var, bu da <cite>.flavor</cite> şeklinde.</p>
+<p>Eğer etkileşimler penceresine <cite>cake4.flavor</cite> girerseniz bu ifade neye değerlenecektir? Deneyin.</p>
+<ul class="simple">
+<li>Ne tür birşey geri döndürdü: Sayı, Metin, Resim, Mantıksal, veya veri yapısı?</li>
+<li><cite>.flavor</cite> kullanarak tanımladığınız bütün cake'lerin çeşit bilgisini almayı deneyin.</li>
+</ul>
+<p>Elbette bir Cake'in tüm bilgisine erişmenin yolu var, sadec e`.flavor` değil. Etkileşim alanına <cite>cake4.color</cite> girerseniz ne döneceğini umuyorsunuz?</p>
+<p>Tanımladığınız Cake'ler üzerinde <cite>.color</cite>, <cite>.message</cite>, <cite>.layers</cite>, ve <cite>.is-iceCream</cite> nokta-erişimlerini kullanmayı deneyin. Beklediğiniz gibi çalışıyor mu?</p>
+<p>Bu sözdizimine Nokta-Erişimi diyoruz. Bu erişimler size ber yapının tam olarak hangi parçasını istediğinizi ifade etme imkanı verir.  Eğer bir Cake'in belirli bir kapıdan sığıp sığmayacağını bilmek istiyorsak muhtemelen sadece kaç katlı olduğunu bilmemiz yeterli olur. Benzer şekilde eğer oyunumuzdaki bir karakterin ölüp ölmediğini bilmek istiyorsak sadece karakterin <cite>sağlık</cite> 'ının 0'dan küüçük olup olmadığına bakmamız yeter, nerede olduğuna veya rengine bakmamız gerekmez. Programcılar karmaşık bir veri yapısının sadece belirli bir parçasını bilmek istediklerinde nokta-erişimi kullanırlar.</p>
+<p>Bizim Cake yapımız Cake <cite>data`sı ve `cake(...)</cite> satırından oluşuyor. Bunlar da bilgisayara yapıyı nelerin oluşturduğunu ve herbir bileşenin sıra ve tipini belirtiyor. Buna karşılık olarak kullanabileceğimiz yeni fonksiyonlar elde ediyoruz. Bu iki satırı yazana kadar elimizde bir Cake yapacak <cite>cake(...)</cite> fonksiyonu, Cake'in çeşidini öğrenecek <cite>.flavor</cite> nokta erişimcisi, vb. yok. çünkü henüz Cake'i tanımlamamış olacağız.</p>
+<p>Bunu kendiniz de denemek isterseniz <cite>cake(...)</cite> diye başlayan satırın başına bir # koyun. Bu o satırı yoruma dönüştürür böylece bilgisayar o satırı görmezden gelir. Run'a basın ve ne olduğunu görün.</p>
+</div>
+<div class="section" id="kapanis-sure-5-dakika">
+<h2><a name='sec5'></a>Kapanış <span class='time'>(Süre: 5 dakika)</span></h2>
+<p>Veri Yapıları bir bilgisayar programında karmaşık verileri ifade etmek için çok güçlü bir  imkandır. Pong gibi basit bilgisayar oyunları sadece birkaç sayının takibini yaparak çalışabilir. Ama bir oyunda birden fazla karakter, tehlike, vb. ve bunların herbirinin kendi pozisyonu ve sağlığı takip ediliyorsa oyun son derece komplike olabilir. Bu durumda veri yapıları bu karmaşıklığı yönetmenin ve veriyi anlamlandırmanın önemli bir yoludur. Programcılar veri yapılarıyla çok şey yapabilirler, ve siz de gelecek derslerde kendi oyununuz için kendi veri yapılarınızı tanımlayacaksınız.</p>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[href^='http']").attr('target','_blank');
+});
+</script>
+
+<div class="license">
+
+<p>Bu eğitim müfredatı Emmanuel Schanzer tarafından hazırlanmış "Bootstrap" projesinden uyarlanmıştır: 
+<a href="http://www.BootstrapWorld.org" target="_blank">www.BootstrapWorld.org</a>. 
+Burada paylaşılan her türlü malzeme <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons 3.0 Unported License</a> 
+lisansı koşulları dahilinde temin edilmektedir.</p>
+</div> 
+</body>
+</html>

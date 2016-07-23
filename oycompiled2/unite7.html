@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mehmet Gencer" >
+    <title>Önyükleme1 : Ünite 7: Çarpışma Tespiti</title>
+    <link href="css/oy.css" rel="stylesheet">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="unite1.html">Ünite-1</a></li>
+        <li><a href="unite2.html">Ünite-2</a></li> 
+        <li><a href="unite3.html">Ünite-3</a></li> 
+        <li><a href="unite4.html">Ünite-4</a></li> 
+        <li><a href="unite5.html">Ünite-5</a></li> 
+        <li><a href="unite6.html">Ünite-6</a></li>
+        <li><a href="unite7.html">Ünite-7</a></li> 
+        <li><a href="unite8.html">Ünite-8</a></li> 
+        <li><a href="unite9.html">Ünite-9</a></li> 
+        <li><a href="unite10.html">Ünite-10</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul> 
+    </div>
+  </div>
+</nav>
+
+<img class="oyicon" src="images/pict.png" alt=""></img>
+<div class="document">
+<div class="section" id="unite-7-carpisma-tespiti">
+<h1>Ünite 7: Çarpışma Tespiti</h1>
+<table class='toctable'><tr><td>TOPLAM SÜRE:</td><td>80 dakika</td></tr><tr><td><a href='#sec1'>Giriş </a></td><td>5 dakika</td></tr><tr><td><a href='#sec2'>Tek Boyutta Uzaklık </a></td><td>0 dakika</td></tr><tr><td><a href='#sec3'>Uzaklık Formülü </a></td><td>20 dakika</td></tr><tr><td><a href='#sec4'>Çarpışma </a></td><td>10 dakika</td></tr><tr><td><a href='#sec5'>next-world </a></td><td>30 dakika</td></tr><tr><td><a href='#sec6'>Oyun için beyin fırtınası </a></td><td>15 dakika</td></tr></table>
+<p>Öğrenciler Pisagor teoremi ve Önyükleme 1'de kullandıkları uzaklık formülüne geri dönerler, bu kez veri yapıları ve tam bir sonraki-dünya fonksiyonu kullanırlar.</p>
+<div class="section" id="giris-sure-5-dakika">
+<h2><a name='sec1'></a>Giriş <span class='time'>(Süre: 5 dakika)</span></h2>
+<p>Şu an için Ninja Kedi oyununda oyuncu başka bir karakter ile çarpışınca hiçbirşey olmuyor. Bunu değiştirmek için bir fonksiyon yazmamız gerekiyor. Bu iş biraz matematik gerektirecek, ama şanslıyız ki bu aynı Önyükleme 1'deki gibi oluyor.</p>
+<img alt="images/unite7_pict_2.png" class="align-right" src="images/unite7_pict_2.png" />
+<ul class="simple">
+<li>Görselde kedi ve köpek arasındaki uzaklık ne kadar?</li>
+<li>Eğer kedi bir birim sağa hareket etse uzaklıkları ne olur?</li>
+<li>Peki ya köpek ve kedi yer değiştirse durum nedir?</li>
+</ul>
+<p>Bir sayı ekseni gib tek boyutta uzaklığı bulmak oldukça kolaydır. Eğer karakterler aynı çizgi üzerindeyse sadece birinin bir koordinatını diğerininkinden çıkaratarak uzaklıklarını bulursunuz. Ancak tüm yaptığımız ikinci sayıyı birinciden çıkartmak olsaydı fonksiyonumuz sadece olası durumların yarısında çalışırdı!</p>
+<p>Kedi ve köpek yer değiştirirse köpeğin pozisyonunu mu kedininkinden çıkartırsınız yoksa kedininkini mi köpeğinkinden? Neden?</p>
+</div>
+<div class="section" id="tek-boyutta-uzaklik-sure-10-dakika">
+<h2><a name='sec2'></a>Tek Boyutta Uzaklık <span class='time'>(Süre:10 dakika)</span></h2>
+<p>Uzaklıklar negatif olamaz, o yüzden her zaman küçük olan sayıyı büyük olandan çıkarttığımızdan emin olmamız gerekir. Bunun anlamı iki durumdan biri olduğudur: (1) birinci sayı büyüktür, veya (2) ikinci sayı büyüktür.</p>
+<ul class="simple">
+<li>Birden fazla koşul durumu varsa nasıl bir fonksiyona ihtiyacımız var?</li>
+<li>Sayfa 27ye gidin.</li>
+<li>Bu fonksiyonun adı ne? Girdileri neler? Çıktısı ne?</li>
+<li>line-length için iki örnek yazın, öyle ki küçük sayıyı büyük olandan çıkartsın. 23 ve 5 sayılarıyla bir örnek yapın, sonra ikinci örneği 5 ve 23 sayılarıyla <em>verilen sırada</em> yapın.</li>
+</ul>
+<pre class="literal-block">
+examples:
+    line-length(23, 5) is 23 - 5
+    line-length(5, 23) is 23 - 5
+end
+</pre>
+<p>Şimdi ask komutun sonuçlarının neler olacağımıza dair bir fikrimiz var, ama ask komutu için aynı zamanda birinci sayının ikinciden büyük olup olmadığını test etmeye de ihtiyacımız var.</p>
+<ul class="simple">
+<li>Bu testi Pyret kodu ile nasıl yaparsınız?</li>
+<li>Bu testin sonucu ne olacak? Eğer a b'den büyükse hangi sayıyı hangisinden çıkartacağız.</li>
+<li>İki sayının eşit olma durumuna dair testi <em>üçüncü bir ask dallanması eklemeden</em> nasıl yaparsınız?</li>
+<li>line-length'in tanımını yazın.</li>
+</ul>
+<pre class="literal-block">
+fun line-length(a, b):
+    ask:
+      | a &gt; b then: a - b
+      | b &gt;= a then: b - a
+    end
+end
+</pre>
+</div>
+<div class="section" id="uzaklik-formulu-sure-20-dakika">
+<h2><a name='sec3'></a>Uzaklık Formülü <span class='time'>(Süre: 20 dakika)</span></h2>
+<p>Ne yazık ki iki boyutta uzaklığı hesaplayacak bir kodunuz yok. Elinizde olan x veya y boyutunda uzaklığı söyleyebilecek bir fonksiyon.</p>
+<img alt="images/unite7_pict_3.png" class="align-right" src="images/unite7_pict_3.png" />
+<ul class="simple">
+<li>Bu görüntüde iki nokta arasındaki uzaklığı nasıl bulursunuz?</li>
+<li><strong>Hipotenüs</strong> te denilen C doğru parçasının uzunluğunu nasıl bulursunuz?</li>
+</ul>
+<p>Önce şimdiye kadar bildiklerimizle başlayalım: Eğer C'nin x ve y eksenleriyle kesişimlerini A ve B doğru parçaları olarak alırsak bir dik üçgen elde ediyoruz.</p>
+<ul class="simple">
+<li>A doğru parçasının uzunluğu nedir? Eğer üçgen aşağıda olsa ve (0,-4) noktasını kesse A'nın uzunluğu farklı mı olurdu?</li>
+</ul>
+<p>Hayatınızı biraz kolaylaştırmak için daha önce yazdığınız fonksiyonu kullanın: line-length. Bu örnekte line-length(A) 4 eder ve line-length(B) ise 3 eder. Ama hala C'ninkini bilmiyoruz.</p>
+<p>Eski uygarlıklar da benze bir problemle karşılaştılar: onlar da iki boyutta iki nokta arasındaki uzunluğu bulmaya ihtiyaç duydular. Şimdi bu problem üzerinde bir düşünce yolunu çalışacağız: dik bir üçgenin hipotenüs uzunluğu hangi ifade ile bulunur.</p>
+<img alt="images/unite7_pict_4.png" class="align-right" src="images/unite7_pict_4.png" />
+<p>Herhangi bir dik üçgen için hipotenüsün bir karenin her dört kenarını oluşturduğu bir şekil çizilebilir. Bura gösterilen çizimde beyaz kare dört tane birbirine eş kenarları A ve B olan gri dik üçgenlerle çevrelenmiştir. Karenin kendisi dört tane uzunluğu C olan kenara sahip, ki bunlar üçgenlerin hipotenüsünü oluşturuyor. Eğer karenin alanı kenar*kenar olarak ifade edilirse şekildeki beyaz alan <span class="math">\(C^2\)</span> olarak ifade edilebilir.</p>
+<img alt="images/Pythag_anim.gif" class="align-right" src="images/Pythag_anim.gif" />
+<p>Gri üçgenleri kaydırarak orijinal karenin içine sığan iki tane dikdörtgen elde edebiliyoruz. Üçgenlerin kapladığı alan kaydırılırken büyümüyor veya küçülmüyor. Aynı şekilde beyaz alan da daha küçük karelere bölünüyor, ama toplamda aynı büyüklükte kalıyor. A ve B kenar uzunluklarını kullanarak iki karenin alanlarını hesaplayabiliriz.</p>
+<p>Küçük karenin alanı nedir? Büyüğünkü nedir?</p>
+<img alt="images/unite7_pict_5.png" class="align-right" src="images/unite7_pict_5.png" />
+<p>Küçük karenin alanı <span class="math">\(A^2\)</span> ve  büyük karenin alanı da <span class="math">\(B^2\)</span> olarak bulunabilir. Bu kareler orijinal karenin ikiye parçalanmış halinden ibaret olduğundan alanlarının toplamının da orijinal karenin alanına eşit olacağını biliyoruz.</p>
+<div class="math">
+\begin{equation*}
+A^2+B^2=C^2
+\end{equation*}
+</div>
+<p>Bu ifade A ve B'nin her değeri için geçerli mi?</p>
+<p>Eğer yalnızca C'yi elde etmek istiyorsak toplamın karekökünü almamız gerekiyor:</p>
+<div class="math">
+\begin{equation*}
+\sqrt{A^2+B^2}=C
+\end{equation*}
+</div>
+<p>Pisagor bir hipotenüsün karesinin iki kenarın karelerini toplayarak bulunabileceğini ispatlamıştı. Siz de oyunlarınızda iki karakter arasındaki yatay ve düşey uzaklıkları üçgenin iki kenarı olarak kullanarak üçüncü kenarı bulmak için Pisagor teoremini kullanacaksınız.</p>
+<ul>
+<li><p class="first">İşkitabınızda sayfa 28e gidin, yazılı formülü kullanacaksınız.</p>
+</li>
+<li><p class="first">Değerlendirme çemberini çizin, farkettiğiniz en basit ifadeden başlayın.</p>
+</li>
+<li><p class="first">Değerlendirme çemberini bitirince onu Pyret koduna tercüme edin, başlangıcı şöyle olsun:</p>
+<pre class="literal-block">
+check:
+    distance(4, 2, 0, 5) is...
+end
+</pre>
+</li>
+</ul>
+<p>Şimdi elinizde (4,2) ve (0.5) noktaları arasındaki uzaklığı bulan kod var. Ama bunun herhangi iki nokta için çalışmasını istiyoruz. x ve y'leri girdi olacak ve bu hesabı bizim için yapacak bir fonksiyonumuz olsa harika olurdu.</p>
+<ul class="simple">
+<li>Sayfa 29a gidin, problemi ve fonksiyon başlangıcını dikkatle okuyun.</li>
+<li>distance fonksiyonunu yazmak için tasarım reçetesini kullanın. Önceki sayfadaki örneği de kullanabilirsiniz, ve yanına yeni bir örnek ekleyebilirsiniz.</li>
+<li>Bitirince line-length ve distance fonksiyonlarınızı oyununuza geçirin, ve neler olduğunu görün.</li>
+<li>Şeyler çarpışında birşey oluyor mu?</li>
+</ul>
+<p>Hala birşeylerin çarpışmasını kontrol edecek bir fonksiyona ihtiyacınız var.</p>
+</div>
+<div class="section" id="carpisma-sure-10-dakika">
+<h2><a name='sec4'></a>Çarpışma <span class='time'>(Süre: 10 dakika)</span></h2>
+<p>Peki bu uzaklıkla ne yapacağız?</p>
+<p>Çarpıştılar diyebilmemiz için oyuncu ve tehlikenin birbirine ne kadar yakın olması gerekli?</p>
+<p>Sayfa 30'un başında is-collision (çarpışma-mı) fonksiyonu için bir problem  tanımı göreceksiniz.</p>
+<ul class="simple">
+<li>Sözleşme ve iki örneği doldurun, sonra da fonksitonu tanımlayın. Unutmayın: daha önce yazdığınız distance fonksiyonunu kullanacaksınız.</li>
+<li>Bitirince kodunuzu Ninja Kedi oyununun içine, distance fonksiyonunun altına ekleyin.</li>
+</ul>
+</div>
+<div class="section" id="next-world-sure-30-dakika">
+<h2><a name='sec5'></a>next-world <span class='time'>(Süre: 30 dakika)</span></h2>
+<p>Şimdi iki şeyin çarpışmasını tespit eden bir fonksiyonunuz olduğuna göre bunu Ninja Dünyasında kullanabilirsiniz.</p>
+<p>Oyundaki dört ana fonksiyon içerisinde (next-world, draw-world, keypress, ve big-bang) sizce hangisi çarpışmaları ele almalı?</p>
+<p>next-world içerisindeki ask dallanmalarına yenilerini eklememiz gerekiyor. Eğer kedi köpekle çarpışırsa köpeği ekran dışına almalıyız ki tekrar saldırmak için geri dönebilsin.</p>
+<ul class="simple">
+<li>Şu test ile başlayın: kedi ve köpeğin çarpışmasını nasıl tespit edersiniz? Bunu yapacak bir fonksiyon yazdınız mı?</li>
+<li>Girdiler ne olmalı?</li>
+<li>Dünya veri yapısından catY'yi nasıl çekersiniz? Peki catX?</li>
+<li>Dünya veri yapısından dogY'yi nasıl çekersiniz? Peki dogX?</li>
+</ul>
+<pre class="literal-block">
+| is-collision(
+    current-world.catX,
+    current-world.catY,
+    current-world.dogX,
+    current-world.dogY)
+  then: ...result...
+</pre>
+<p>Unutmayın ki next-world bir dünya üretiyor, öyleyse sonucunuzda hangi fonksiyon ilk olmalı?:</p>
+<pre class="literal-block">
+| is-collision(
+    current-world.catX,
+    current-world.catY,
+    current-world.dogX,
+    current-world.dogY)
+  then:
+  world(
+    ...dogX...,
+    ...dogY...,
+    ...coinX...,
+    ...catX...,
+    ...catY...)
+</pre>
+<p>Peki kedi ve köpek çarpışınca ne olmalı? Köpeği ekranın solundan dışına çıkartacak bir sayı düşünebiliyor musunuz? Ya köpeğin y koordinatı? Bir sayı belirleyip onu her seferinde aynı y koordinatına koyabiliriz, ama onu rastgele bir y koordinatına koyabilecek bir fonksiyon biliyoruz.:</p>
+<pre class="literal-block">
+| is-collision(
+    current-world.catX,
+    current-world.catY,
+    current-world.dogX,
+    current-world.dogY)
+  then:
+  world(
+    -100,
+    num-random(480),
+    ...coinX...,
+    ...catX...,
+    ...catY...)
+</pre>
+<p>Kedi ve köpek çarpıştığında coinXd değişiyor mu?Peki ya catY. Bunların her birini dünya veri yapısından nasıl alırsınız?::?</p>
+<blockquote>
+<div class="line-block">
+<div class="line">is-collision(
+  current-world.catX,
+  current-world.catY,
+  current-world.dogX,
+  400)
+then:
+world(
+  -100,
+  num-random(480),
+  current-world.coinX,
+  current-world.catX,
+  current-world.catY)</div>
+</div>
+</blockquote>
+<p>Bir dakika arkanıza yaslanın ve yaptığınız işi takdir edin. Pyret kullanarak Ninja Kedi'nin kendi versiyonunuzu, veri yapılarınızı, ve karmaşık fonksiyonlarınızı yarattınız. Bu oyun şu an için bile Önyükleme 1'dekinden daha gelişkin ve onu sıfırdan oluşturdunuz! Artık bir oyun Pyret ile nasıl yaratılır bilgisine sahip olduğunuza göre kendi oyununuzu düşünmenin zamanı geldi.</p>
+</div>
+<div class="section" id="oyun-icin-beyin-firtinasi-sure-15-dakika">
+<h2><a name='sec6'></a>Oyun için beyin fırtınası <span class='time'>(Süre: 15 dakika)</span></h2>
+<p>Artık NinjaKedi için gereken işleri gördüğünüze göre karmaşık bir oyun yaratmak için neler lazım biliyorsunuzç Bir sonraki egzersiz için kendi oyununuzun en basit halini düşünmeye çalışın. Bunu yaptıktan sonra daha ileri özellikleri eklersiniz. Kaç tane karakteriniz olacak ve dünyanızda neler yer alacak? Skoru veya karakterin koordinatlarını takip etmek için sayıları kullanabilirsiniz. Dünyanınzda bir resim olabilir, böylece karakterinizin görünümü değişebilir ya da skor belirli bir düzeye gelince arkaplanı değiştirebilirsiniz. Bir kez basit bir oyun ortaya çıkartınca daha fazla özellik eklemek kolaydır.</p>
+<ul class="simple">
+<li>işkitabınızda sayfa 31e gidin.</li>
+<li>Oyununuzun başlayınca nasıl görüneceğini çizin, sonra da kullanıcı bir eylem yapmaksızın bir saniye sonra nasıl görüneceğini çizin. Neler kendi kendine hareket ediyor?</li>
+<li>Tabloya oyununuz için gerekli resimleri listeleyin.</li>
+<li>Sayfanın altında bir andan ötekine değişen şeyleri listeleyin. Dünya veri yapınızda neleri takip etmeniz gerekecek? Bir şey hareket ediyorsa onun x, y, veya her iki koordinatını birden takip etmek gerekir. Değişen bir skor da olacak mı?</li>
+</ul>
+<p>Değişen şeylerin bir listesini yaptıktan sonra onları bir World veri yapısına dönüştürme zamanı.</p>
+<ul class="simple">
+<li>İşkitabınızda sayfa 32ye gidin, ve ikinci tabloya değişebilen şeyler olarak yazdıklarınızı kullanarak World veri yapınzı oluşturun.</li>
+<li>Dünya veri yapınızın altında worldA ve worldB diye iki örnek oluşturun.</li>
+<li>Son olarak worldA'nın alanlarına ulaşmak için gerekli nokta-erişimlerini yazın.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[href^='http']").attr('target','_blank');
+});
+</script>
+
+<div class="license">
+
+<p>Bu eğitim müfredatı Emmanuel Schanzer tarafından hazırlanmış "Bootstrap" projesinden uyarlanmıştır: 
+<a href="http://www.BootstrapWorld.org" target="_blank">www.BootstrapWorld.org</a>. 
+Burada paylaşılan her türlü malzeme <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons 3.0 Unported License</a> 
+lisansı koşulları dahilinde temin edilmektedir.</p>
+</div> 
+</body>
+</html>

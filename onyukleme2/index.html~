@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Önyükleme 2</title>
+  <link rel="stylesheet" type="text/css" href="scribble.css" title="default">
+  <link rel="stylesheet" type="text/css" href="pretty-printing.css" title="default">
+  <link rel="stylesheet" type="text/css" href="codemirror.css" title="default">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" title="default">
+  <link rel="stylesheet" type="text/css" href="textbook.css" title="default">
+  <link rel="stylesheet" type="text/css" href="styles.css" title="default">
+  <script type="text/javascript" src="scribble-common.js">
+</script>
+  <script type="text/javascript" src="codemirror.js">
+</script>
+  <script type="text/javascript" src="runmode.js">
+</script>
+  <script type="text/javascript" src="scheme2.js">
+</script>
+  <script type="text/javascript" src="bootstraplesson.js">
+</script>
+  <script type="text/javascript" src=
+  "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2Chttp%3A%2F%2Fwww.cs.wpi.edu%2F%7Ekfisler%2Fmathjaxlocal.js">
+</script><!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body id="scribble-racket-lang-org">
+  <div id="top">
+    <a href="/index.html"><img src="new-logo.png" id="logo" name="logo"></a> 
+    <a href="mailto:"><span class="email-icon">email</span></a> 
+    <a href=""><span class=
+    "google-icon">google-plus</span></a> 
+    <a href=""><span class=
+    "twitter-icon">twitter</span></a> 
+    <a href=""><span class="facebook-icon">facebook</span></a>
+  </div>
+
+  <div id="sidebar">
+    <ul>
+      <li><a href="/impact/">Impact</a></li>
+
+      <li><a href="/workshops/">Workshops</a></li>
+
+      <li><a href="/materials/">Materials</a></li>
+
+      <li><a href="/press/">News</a></li>
+
+      <li><a href="http://www.cafepress.com/bootstrapworld">Store</a></li>
+
+      <li><a href="/community/">Community</a></li>
+
+      <li><a href="/contribute/">Contribute</a></li>
+    </ul>
+  </div>
+
+  <div class="tocset">
+    <div class="tocview">
+      <div class="tocviewlist tocviewlisttopspace">
+        <div class="tocviewtitle">
+          <table cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="width: 1em;">•</td>
+
+              <td></td>
+
+              <td><a href="" class="tocviewselflink" data-pltdoc="x"></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="tocsub">
+      <table class="tocsublist" cellspacing="0">
+        <tr>
+          <td><a href="#%28part._%29" class="tocsubseclink" data-pltdoc="x"></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="maincolumn">
+    <div class="main">
+      <h2><a name="(part._)"></a></h2>
+
+      <p><script type="text/javascript" src=
+      "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+</script><script type="text/javascript" src="easyXDM.min.js">
+</script><script type="text/javascript" src="json2.min.js">
+</script><script type="text/javascript" src="bootstrap-helpers.js">
+</script></p>
+
+      <div class="" id="body">
+        <div class="item">
+          <p><span class="BSCourseName">Önyükleme:2</span></p>
+
+          <div class="SIntrapara">
+            <ul>
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle"><a href=
+                "units/unit1/index.html">Ünite 1</a></span>
+                Öğrenciler bir yandan yeni bir programlama dili öğrenirken bir yandan da
+                Önyükleme 1 dersindeki kavram ve konuları hatırlarlar. Bunlar arasında
+                Sözleşmeler, sayı, görsel, ve metin içeren ifadeler, değişken tanımları,
+                fonksiyon tanımları, ve tasarım reçetesi bulunmaktadır.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle"><a href=
+                "units/unit2/index.html">Ünite 2</a></span>Öğrenciler veri yapılarına duyulan ihtiyacı 
+                keşfederler ve nasıl tanımlanacakları konusunda pratik yaparlar.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle"><a href=
+                "units/unit3/index.html">Ünite 3</a></span>
+                Geçen derste hazır yapılmış veri yapıları (Kekler) ile çalışan öğrenciler bu kez
+                kendi veri yapılarınıtanımlayarak, alanlarına erişerek, ve onları ğreten fonksiyonlar
+                tanımlayarak anlayışlarını genelleştiriler.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle"><a href=
+                "units/unit4/index.html">Ünit 5</a></span>
+                Öğrenciler big-bang kullanarak program yazmak, 'sonraki-dünya' ve 'dünya-çiz' fonksiyonları
+                içerisinde kod-yürüyüşü yaparak olay-tabanlı programlama konusunda deneyim kazanırlar.
+                Daha sonra bu fonksiyonları geliştirip sonuçları ile denemeler yaparak 
+                veri yapılarına neden ihtiyaç duyulduğuna ilişkin bir kavrayış geliştirirler.
+                </p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle"><a href=
+                "units/unit5/index.html">Ünite 5</a></span>
+                Öğrenciler parçalı fonksiyon kavramına geri dönerler. Bu kez
+                anahtar-olay tanımı yaparak belirli tuşlara basıldığında oyun dünyasını değiştiren
+                fonksiyonları oluştururlar.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle"><a href=
+                "units/unit6/index.html">Ünite 6</a></span>
+                Öğrenciler Soru-Sor ve Veri Yapısı kullanımlarını birleştirerek, 
+                bu kez Dünya yapısının herhangi bir kullanıcı girişi olmadan nasıl
+                değişeceğini belirlerler.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle"><a href=
+                "units/unit7/index.html">Ünite 7</a></span>
+                Öğrenciler Pisagor teoremi ve Önyükleme 1'de kullandıkları uzaklık
+                formülüne geri dönerler, bu kez veri yapıları ve tam bir sonraki-dünya fonksiyonu kullanırlar.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle"><a href=
+                "units/unit8/index.html">Ünite 8</a></span>
+                Öğrenciler kendi oyunları hakkında düşündükten sonra onu
+                inşa etme, çizme, ve anime etme konusunda pratik yaparlar.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle"><a href=
+                "units/unit9/index.html">Ünite 9</a></span>
+                Öğrenciler Ninja Kedi oyunundaki aynı teknikleri kullanarak kendi oyunlarının
+                tuşa basma girişlerine tepki vermesini sağlayacak parçalı fonksiyonlar yazarlar,
+                ve kendi oyun yapılarının kullanıcı girişi olmadan nasıl değişeceğini belirlerler.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle"><a href=
+                "units/unit10/index.html">Ünite 10</a></span>
+                Kendi Ninja Kedi oyunları için yazdıkları 'uzaklık' ve 'çarpışma-mı' fonksiyonlarını
+                kullanan öğrenciler kendi oyunlarındaki çarpışma tespitini tamamlarlar,
+                ve bir önceki üniteden devamla kendi video oyunlarını tamamlamak için oyun
+                dünyasına sorulması gereken sorular listesine dönerler.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle"><a href=
+                "units/Supplemental/index.html">Ek Dersler</a></span>
+					 Bu ek dersler puanlama, oyun seviyeleri, ve daha karmaşık oyunlar yaratmak
+					 için içiçe veri yapıları kullanımı gibi sıkça konuşulan özellik ve fikirleri
+					 içermektedir. Bu dersler öğrenciler Önyükleme 2'yi tamamladıktan sonra 
+					 yapılabilir.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class="BSUnitTitle">Öğrenci İşkitabı</span>
+                [<a href="resources/workbook/OgrenciIskitabi.pdf">PDF</a>] - 
+                Bu ders planları müfredatla birlikte kullanılması gereken Öğrenci İşkitabı
+                ile entegredir. 
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contextindicator">
+    &nbsp;
+  </div>
+</body>
+</html>

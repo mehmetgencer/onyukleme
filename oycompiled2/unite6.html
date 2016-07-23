@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mehmet Gencer" >
+    <title>Önyükleme1 : Ünite 6: Dünyaya sorma</title>
+    <link href="css/oy.css" rel="stylesheet">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="unite1.html">Ünite-1</a></li>
+        <li><a href="unite2.html">Ünite-2</a></li> 
+        <li><a href="unite3.html">Ünite-3</a></li> 
+        <li><a href="unite4.html">Ünite-4</a></li> 
+        <li><a href="unite5.html">Ünite-5</a></li> 
+        <li><a href="unite6.html">Ünite-6</a></li>
+        <li><a href="unite7.html">Ünite-7</a></li> 
+        <li><a href="unite8.html">Ünite-8</a></li> 
+        <li><a href="unite9.html">Ünite-9</a></li> 
+        <li><a href="unite10.html">Ünite-10</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul> 
+    </div>
+  </div>
+</nav>
+
+<img class="oyicon" src="images/pict.png" alt=""></img>
+<div class="document">
+<div class="section" id="unite-6-dunyaya-sorma">
+<h1>Ünite 6: Dünyaya sorma</h1>
+<table class='toctable'><tr><td>TOPLAM SÜRE:</td><td>70 dakika</td></tr><tr><td><a href='#sec1'>Gözden Geçirme </a></td><td>10 dakika</td></tr><tr><td><a href='#sec2'>Sınırları Korumak </a></td><td>40 dakika</td></tr><tr><td><a href='#sec3'>Ninja Dünyasına Rastgelelik Ekleme </a></td><td>15 dakika</td></tr><tr><td><a href='#sec4'>Kapanış </a></td><td>5 dakika</td></tr></table>
+<p>Öğrenciler Soru-Sor ve Veri Yapısı kullanımlarını birleştirerek, bu kez Dünya yapısının herhangi bir kullanıcı girişi olmadan nasıl değişeceğini belirlerler.</p>
+<div class="section" id="gozden-gecirme-sure-10-dakika">
+<h2><a name='sec1'></a>Gözden Geçirme <span class='time'>(Süre: 10 dakika)</span></h2>
+<p>Geçen derste Önyükleme 2'de <strong>parçalı fonksiyonların</strong> nasıl işlediğini, ve ask/sorma blokları ile onları yazmak için gerekli Pyret sözdizimini öğrendiniz. Bunları gözden geçirmek için parçalı fonksiyonları yazmak için kullanılan tasarım reçetesinin üzerinden geçelim.</p>
+<ul class="simple">
+<li>İşkitabınızdan sayfa 22ye gidin.</li>
+<li>Partnerinizle beraber <cite>red-shape</cite> için tasarım reçetesini doldurun.</li>
+</ul>
+<p><strong>Tercihli:</strong> Erken bitirirseniz sayfa 23e gidin ve <cite>stron-password</cite> için tasarım reçetesini doldurun.</p>
+</div>
+<div class="section" id="sinirlari-korumak-sure-40-dakika">
+<h2><a name='sec2'></a>Sınırları Korumak <span class='time'>(Süre: 40 dakika)</span></h2>
+<ul class="simple">
+<li>En son dersten <a class="reference external" href="https://code.pyret.org/editor#share=0B--4mkdvhyEycXZuSUwzTDN1cDg&amp;v=80ba55b">Ninja Kedi</a> dosyasını açın.</li>
+<li>Dünya/World yapısında ne var?</li>
+<li>next-world fonksiyonu ne yapıyor?</li>
+<li>köpek ekranın ortasında olduğunda dogX değeri nedir? Koda göre sonraki dogX değeri ne olacak?</li>
+<li>köpek ekranın sağ kenarında olduğunda dogX değeri nedir? Koda göre sonraki dogX değeri ne olacak? ve sonra? ve sonra?</li>
+<li>Köpek ekranın sonuna ulaştığında ne olur? Ne olmalı?</li>
+</ul>
+<p>Şu an için köpek ekranın kenarından sonra kayboluyor ve hiç geri gelmiyor. Bunu düzeltmenin zamanı geldi.</p>
+<p>Aynı Önükleme 1'deki gibi tehlike ve  köpeğin ekranın dışına çıkıp çıkmadığını kontrol eden bir fonksiyona ihtiyacımız var. Birkaç şeyi gözden geçirelim:</p>
+<ul class="simple">
+<li>true ve false hangi veri tipinde değerlerdir?</li>
+<li>Hangi fonksiyon iki sayı alır ve ilkinin ikinciden büyük oldup olmadığını kontrol eder?</li>
+<li>Hangi fonksiyon bir sayının diğerinden küçük olduğunu kontrol eder?</li>
+<li>Hangi fonksiyon iki sayı eşit mi diye kontrol eder?</li>
+</ul>
+<p>Büyüktü fonksiyonunun sözleşmesi şu şekildedir:</p>
+<pre class="literal-block">
+# &gt; : Number Number -&gt; Boolean
+# İlk sayı ikinciden büyük mü kontrol eder
+</pre>
+<p>Bunu sözleşmeler sayfanıza kopyalayın ve ayrıca &lt; ve = için sözleşmeleri yazın.</p>
+<p>Kod yazmayı ve test etmeyi kolaylaştırmak için programcılar oyundaki farklı olası durumları test etmek için ayrıca fonksiyonlar yazarlar. Ninja Dünyası oyunumuzda biz de is-off-right (sağdan dışarıda mı) isimli bir fonksiyon yazarak köpeğin ekranın sağından çıkıp çıkmadığını kontrol edeceğiz.</p>
+<ul>
+<li><p class="first">İşkitabınızda sayfa 24e gidin.</p>
+</li>
+<li><p class="first">Sayfadaki ilk fonksiyonun ismi ne?</p>
+</li>
+<li><p class="first">is-off-right fonksiyonu köpek ekranın sağından dışarıdaysa true döndürecek. Karakter ekrandan çıkmadan önce x koordinatı en fazla kaç olabilir? (Hatırlarsanız karakterin koordinatları resmin merkezinden ölçülüyor, o yüzden en iyisi bir tampon uzaklık belirleyip karakterin tamamının ekrandan çıkmasına izin vermek.</p>
+</li>
+<li><p class="first">Bu fonksiyon için sözleşmeyi yazın.</p>
+<blockquote>
+<p># is-off-right : Number -&gt; Boolean
+# Verilen sayı 690'dan büyükse true döndürür</p>
+</blockquote>
+</li>
+</ul>
+<p>Şimdi birkaç örnek koordinat belirleyerek testlerimizi kuralım.</p>
+<ul class="simple">
+<li>Hangi x koordinatı karakterin ekranın ortasında olması demektir?</li>
+<li>Sağdan dışarı çıktığını nasıl anlarsınız?</li>
+<li>640tan büyük her x koordinatı sağdan çıkmak demektir, ama biraz daha büyük bir sınır düşüneceğiz ki karakterimizin tüm genişliğiyle ekranın dışına çıkmasına izin verelim. Peki o zaman verilen örnek sayının 690'dan büyük mü olduğunu nasıl test edersiniz?</li>
+</ul>
+<pre class="literal-block">
+examples:
+    is-off-right(320) is 320 &gt; 690
+end
+</pre>
+<p>Sağdan dışarıda olan başka bir koordinat yazın, değişenin ne olduğunu daire içine alın, ve fonksiyon tanımınızı yazın.</p>
+<p>Şimdi bir nesnenin ekranın sağından çıktığını anlayacak bir fonksiyonunuz var. Ama Ninja Dünyasını düşünün: eğer para sola hareket ediyorsa sağdan çıkıp çıkmadığı önemli olur mu?</p>
+<ul class="simple">
+<li>Sayfa 24teki is-off-left (soldan-dışarıda-mı) fonksiyonu için tasarım reçetesini tamalayın. Bir sayının 640tan büyük olup olmadığını kontrol etmek yerine neyi kontrol etmelisiniz?</li>
+<li>Bitirdiğinizde fonksiyonlarınızı <a class="reference external" href="https://code.pyret.org/editor#share=0B--4mkdvhyEydlJkaU1fWWN2LTg&amp;v=80ba55b">Ninja Dünyası</a> dosyasına geçirin, keypress fonksiyonunun altına koyun.</li>
+</ul>
+<p>Artık birşeyin ekranın solundan VEYA sağından çıktığını anlayacak fonksiyonlarımız var, ama o durumda ne olacağını hala oyuna söylemedik. Ninja Dünaysında köpek sağdan dışarı çıkınca soldan tekrar ortaya çıkmalı.</p>
+<p>Bu durumda dogX 690'dan sonra hangi değeri almalı?</p>
+<p>next-world'ü öyle değiştirmeliyiz ki dogX 690'dan büyük olursa sıfıra eşitlenmeli. Neyse ki next-world zaten parçalı bir fonksiyon, yani sadece biraz daha koşul ekleyeceğiz!</p>
+<p>İlk koşuşlu düşünün. Bir sayının 690'dan büyük olduğunu söyleyen test nedir?</p>
+<p>Büyüktür fonksiyonunu (&gt;) kullanarak aynı kedinin zeminde olup olmadığını belirlerken olduğu gibi iki sayıyı karşılaştırabilirsiniz.Ama zaten bir sayı alan ve onun 690'dan bbüyük olup olmadığını test eden bir fonksiyon yazdınız. <cite>is-off-right</cite> bu işi yapıyor. Peki ama köpeğin sağdan çıkıp çıkmadığını nasıl anlayacağız. Köpeğin x koordinatını dünya'dan çekip almanız gerek.</p>
+<ul>
+<li><p class="first">Bunun için hangi erişimi kullanacağız?</p>
+</li>
+<li><p class="first">Bu durumda is-off-right'ın girdisi ne olacak?</p>
+</li>
+<li><p class="first">Bunu next-world fonksiyonunuza ekleyin:</p>
+<pre class="literal-block">
+fun next-world(current-world):
+  ask:
+    | is-off-right(current-world.dogX) then:
+        ...result...
+    | current-world.catY &gt; 75 then:
+      world(current-world.dogX + 10, current-world.coinX - 5, current-world.catX, current-world.catY - 5)
+    | otherwise:
+      world(current-world.dogX + 10, current-world.coinX - 5, current-world.catX, current-world.catY)
+  end
+end
+</pre>
+</li>
+</ul>
+<p>İlk soru köpeğin x koordinatının ekranın sağından dışarıda olup olmadığını testediyor. Eğer doğruysa sonuç ne olmalı? Bir World döndürmemiz gerektiğini biliyoruz, çünkü next-world'ün çıktısı World. Bu durumda hemen world(...) yazabiliriz:</p>
+<pre class="literal-block">
+fun next-world(current-world):
+  ask:
+    | is-off-right(current-world.dogX) then:
+      world(...dogX..., ...coinX..., ...current-world.catX..., ...catY...)
+    | current-world.catY &gt; 75 then:
+      world(current-world.dogX + 10, current-world.coinX - 5, current-world.catX, current-world.catY - 5)
+    | otherwise:
+      world(current-world.dogX + 10, current-world.coinX - 5, current-world.catX, current-world.catY)
+  end
+end
+</pre>
+<p>Bu durumda doxX nasıl değişmeli? Demiştik ki köpeğin ekranın solundan tekrar ortaya çıkmasını istiyoruz.</p>
+<ul class="simple">
+<li>Eğer ekranın soluna giderse dogX'in yeni değeri ne olacak?</li>
+<li>Köpek ekrandan çıkarsa coinX değişir mi? Peki catX? catY?</li>
+</ul>
+<pre class="literal-block">
+fun next-world(current-world):
+  ask:
+    | is-off-right(current-world.dogX) then:
+      world(0, current-world.coinX, current-world.catX, current-world.catY)
+    | current-world.catY &gt; 75 then:
+      world(current-world.dogX + 10, current-world.coinX - 5, current-world.catX, current-world.catY - 5)
+    | otherwise:
+      world(current-world.dogX + 10, current-world.coinX - 5, current-world.catX, current-world.catY)
+  end
+end
+</pre>
+<p>Şimdi de para için durum nasıl sıra onu düşünmeye geldi...</p>
+<ul class="simple">
+<li>coinX'in ekranın <strong>sağ</strong> tarafından çıkması yerine neyi kontrole etmemiz gerekir?</li>
+<li>Bir sayının sıfırdan küçük olduğunu test eden hangi fonksiyonu zaten yazmıştınız?</li>
+<li>next-world'ü nasıl değiştirmek gerekir? İkinci ask dalı nasıl görünecek?</li>
+<li>next-world kodunu tamamlayın ki paranın ekranın solunda çıkmasını da test etsin.</li>
+</ul>
+<pre class="literal-block">
+fun next-world(current-world):
+  ask:
+    | is-off-right(current-world.dogX) then:
+      world(0, current-world.coinX, current-world.catX, current-world.catY)
+    | is-off-left(current-world.coinX) then:
+      world(current-world.dogX, 640, current-world.catX, current-world.catY)
+    | current-world.catY &gt; 75 then:
+      world(current-world.dogX + 10, current-world.coinX - 5, current-world.catX, current-world.catY - 5)
+    | otherwise:
+      world(current-world.dogX + 10, current-world.coinX - 5, current-world.catX, current-world.catY)
+  end
+end
+</pre>
+<p><strong>Tercihli</strong>: Soyutlama beceriniz geliştiğine göre is-in-air diye yeni bir fonksiyon yazın ve bu fonksiyon bir sayının 75'den büyük olduğunu test etsin. Daha sonra next-world'deki üçüncü koşulu yeniden yazın ve kedinin zeminden havada oluşunu test etmek için bu yeni fonksiyonu kullanın. Bu kodunuzun daha okunaklı olmasını sağlayacak, ve kedi resmi yerine daha büyük veya küçük resim kullanırsanız kodunuzu daha kolay düzeltebileceksiniz.</p>
+</div>
+<div class="section" id="ninja-dunyasina-rastgelelik-ekleme-sure-15-dakika">
+<h2><a name='sec3'></a>Ninja Dünyasına Rastgelelik Ekleme <span class='time'>(Süre: 15 dakika)</span></h2>
+<blockquote>
+Şimdilik köpek ve para ekranın hep aynı yerinden ortaya çıkyorlar, bu da oyunu kolaylaştırıyor.</blockquote>
+<p>Köpeğin y koordinatı hep ne oluyor? Peki ya paranınki?</p>
+<p>Eğer köpek ekrandan çıktıktan sonra ekranın hep üstünden ortaya çıkmak yerine rastgele bir y koordinatında ortaya çıksaydı nasıl olurdu? Pyret zaten size bir karakteri ny koordinatı olarak kullanabileceğiniz rastgele bir sayı üretebilecek bir fonksiyona sahip: <cite>num-random</cite>. <cite>num-random</cite> girdi olarak bir sayı alıyor, ve sıfır ile o sayı arasında rastgele bir sayı döndürüyor. Böylece oyun num-random(480) diye bir kod içerirse 1 ile 480 arasında bir sayı geri döndürecek.</p>
+<p>num-random için olan sözleşmeyi sözleşmeler sayfanıza geçirin. num-random: Number -&gt; Number</p>
+<p>Eğer köpeğin y koordinatının değişmesini istiyorsanız bunu World veri yapısına eklemeniz gerekiyor.</p>
+<p>World veri yapısının tanımlandığı sayfanın başına gidin ve oraya <cite>dogY</cite> ekleyin. worldA ve worldB örneklerini yeniden tanımlayarak Wolrd yapısına yeni bir parça eklemeyi unutmayın:</p>
+<pre class="literal-block">
+data World:
+  # The World is the x and y positions of the dog, x position of the coin, and the x and y position of the cat
+  | world(dogX :: Number, dogY :: Number, coinX :: Number, catX :: Number, catY :: Number)
+end
+</pre>
+<p>Şimdlik draw-world fonksiyonu köpeği x koordinatında ama önceden belirlenmiş bir y koordinatında çiziyor.</p>
+<ul class="simple">
+<li>Köpek şu an için hangi y koordinatında çiziliyor?</li>
+<li>Artık World yapısına dogY eklendiğine göre world'den dogY'yi nasıl dışarı alırsınız?</li>
+<li>draw-world fonksiyonunu öyle değiştirin ki köpeği 4000 yerine kendi y koordinatında çizsin.</li>
+</ul>
+<p>Köpeğin y koordinatı ekrandan çıktığında değişmeli.</p>
+<ul>
+<li><p class="first">Hangi fonksiyon oyununun koşullarına göre oyunun durumunu değiştiriyor?</p>
+</li>
+<li><p class="first">next-world fonksiyonundaki ilk ask dalı neyi test ediyor?</p>
+</li>
+<li><p class="first">Bu test doğru çıkarsa ne olur?</p>
+</li>
+<li><p class="first">next-world'deki ilk dalı öyle değiştirin ki eğer köpek ekranın sağından dışarı çıkarsa y koordinatı da 0 ile 480 arasında rastgele bir sayı olsun.</p>
+<blockquote>
+<div class="line-block">
+<div class="line">is-off-right(current-world.dogX) then:
+world(0, num-random(480), current-world.coinX, current-world.catX, current-world.catY)</div>
+</div>
+</blockquote>
+</li>
+</ul>
+<p>Kodunuzu iyice kontrol edin. Artık World veri yapınıza dogY eklediğinize göre <cite>world</cite> oluşturucu fonksiyonunu her kullandığınızda o girdiyi de vererek ve köpeğin y koordinatını girmelisiniz. Bir kere köpeğin ekrandan çıkınca rastgele bir yerden ortaya çıkmasını sağladıktan sonra aynı şeyleri para'nın da rastegele ortaya çıkması için yapmalısınız.</p>
+</div>
+<div class="section" id="kapanis-sure-5-dakika">
+<h2><a name='sec4'></a>Kapanış <span class='time'>(Süre: 5 dakika)</span></h2>
+<p>Arkanıza yaslanın ve başardıklarınızı takdir edin: Bu ders sırasında oyununuza oldukça fazla emek ve zaman harcadınız, ve kompleks veri yapıları vegelişmiş hareketler ortaya çıkmaya başladı. Şimdiden Bootstrap 1 oyununuzdan daha karöaşık.  Sıfırdan bir Ninja Kedi oyunu yaratarak kendi oyununuzu yaratırken kullanabileceğiniz bir deneyim kazandınız. Ama hala oyunda eksikler var: Kedi köpekle çarpışınca veya parayı yakalayınca hiçbirşey olmuyor. Bir sonraki ünitede çarpışmaları ele alacaksınız.</p>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[href^='http']").attr('target','_blank');
+});
+</script>
+
+<div class="license">
+
+<p>Bu eğitim müfredatı Emmanuel Schanzer tarafından hazırlanmış "Bootstrap" projesinden uyarlanmıştır: 
+<a href="http://www.BootstrapWorld.org" target="_blank">www.BootstrapWorld.org</a>. 
+Burada paylaşılan her türlü malzeme <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons 3.0 Unported License</a> 
+lisansı koşulları dahilinde temin edilmektedir.</p>
+</div> 
+</body>
+</html>

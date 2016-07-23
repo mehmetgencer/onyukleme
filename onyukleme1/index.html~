@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="generator" content="Bluefish 2.2.4" >
+  <meta http-equiv="content-type" content=
+  "text/html; charset=utf-8">
+
+  <title>Önyükleme 1</title>
+  <link rel="stylesheet" type="text/css" href="scribble.css" title=
+  "default">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css"
+  title="default">
+  <link rel="stylesheet" type="text/css" href="pretty-printing.css"
+  title="default">
+  <link rel="stylesheet" type="text/css" href="bootstrap.css"
+  title="default">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="scribble-common.js">
+</script>
+  <script type="text/javascript" src="codemirror.js">
+</script>
+  <script type="text/javascript" src="runmode.js">
+</script>
+  <script type="text/javascript" src="scheme2.js">
+</script>
+  <script type="text/javascript" src="bootstraplesson.js">
+</script>
+  <script type="text/javascript" src=
+  "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!--[if IE 6]><style type="text/css">.SIEHidden { overflow: hidden; }</style><![endif]-->
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body id="scribble-racket-lang-org">
+  <div id="top"><img src="images/icon.gif" id="icon"> <img src=
+  "images/logo.png" id="logo"></div>
+
+  <div id="sidebar">
+    <ul>
+      <li><a href="/">Hakkında</a></li>
+
+      <!-- <li><a href="/workshops/">Atölyeler</a></li> -->
+
+      <li><a href="/">Malzemeler</a></li>
+
+      <li><a href="/">Ekip</a></li>
+
+      <li><a href="/">Katkıda bulunanlar</a></li>
+
+      <li><a href="/">Destekçiler</a></li>
+
+      <!-- <li><a href=
+      "http://www.cafepress.com/bootstrapworld">Dükkan</a></li> -->
+    </ul>
+  </div>
+
+  <div id="socialMedia" style="position: fixed; bottom: 0px;">
+    <!-- Google Plus Button -->
+    <a href="https://plus.google.com/115036800423679915320" rel=
+    "publisher">Google+</a> <!-- FB like button -->
+
+    <div id="fb-root"></div><script type="text/javascript">
+(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1&appId=131568450218691";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="fb-like" data-href=
+    "https://www.facebook.com/BootstrapWorld" data-width="100"
+    data-height="100" data-colorscheme="light" data-layout=
+    "box_count" data-action="like" data-show-faces="true"
+    data-send="false"></div><!-- Email icon -->
+    <a href="mailto:mehmetgencer_at_yahoo.com"><img src=
+    "/images/email_icon.png" style=
+    "width: 48px; height: 24px; border: 0px;"></a>
+  </div><!-- Analytics -->
+  <script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46088504-1', 'bootstrapworld.org');
+  ga('send', 'pageview');
+
+  </script>
+
+  <div class="tocview">
+    <div class="tocviewlist" style="margin-bottom: 1em;">
+      <div class="tocviewtitle">
+        <table cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="width: 1em;">•</td>
+
+            <td></td>
+
+            <td><a href="" class="tocviewselflink" data-pltdoc=
+            "x"></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="maincolumn">
+    <div class="main">
+      <h2><a name="(part._)"></a></h2>
+
+      <p><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+</script><script type="text/javascript" src="easyXDM.min.js">
+</script><script type="text/javascript" src="json2.min.js">
+</script><script type="text/javascript" src="wescheme-embedded.js">
+</script><script type="text/javascript" src="bootstrap-helpers.js">
+</script></p>
+
+      <div class="SubFlow" id="body">
+        <div class="item">
+          <p><span class="BSCourseName">Önyükleme 1: Oyun tasarımıyla bilgisayar programlamaya giriş</span></p>
+
+          <!-- <div style="float: right">
+            <a href=
+            "http://www.lulu.com/commerce/index.php?fBuyContent=14790241">
+            <img src=
+            "http://static.lulu.com/images/services/buy_now_buttons/en/book.gif?20140805085029"
+            border="0" alt=
+            "Support independent publishing: Buy this book on Lulu."></a>
+          </div> -->
+
+          <p>Öğrenciler bu derslerde bilgisayar programlamanın temellerini öğrenirler. 
+          Derste bilgisayar oyunlarındaki nesne ve karakterlerin hareket ve etkileşimi temel matematik/geometri 
+          ve fizik bilgisi ile analiz edilir. Daha sonra aşama aşama öğrenilen bilgisayar programlama becerileri 
+          ile bu hareket ve etkileşimler programla ifade edilir. Ders uygulaması Scheme isimli eğitim amaçlı programlama 
+          dili kullanılarak yapılır ve çalışmalar için sadece bir web tarayıcısı yeterlidir.</p>
+
+          <div class="SIntrapara">
+            Buradaki bütün malzemeler, ders planları, ve öğrenci iş-defterleri kullanmak
+            isteyen herkese <span style=
+            "font-style: italic">ücretsizdir</span>.
+          </div>
+
+          <div class="SIntrapara">
+            <ul>
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle">Öğrenci İşdefteri</span> [<a href=
+                "IsDefteri.pdf">PDF</a>] dersler sırasında öğrenciler tarafından kullanılacaktır.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle"><a href=
+                "unite1/the-unit.html">Ünite 1</a></span>:
+                Öğrenciler favori bilgisayar oyunlarının bileşenlerini tartışırlar, 
+                ve bunların bir dizi koordinata dönüştürülebileceğini keşfederler.
+                Daha sonra Kartezyen uzayındaki koordinatları incelerler, ve
+                oyunun değişik anlarında oyun karakterlerinin koordinatlarını tespit ederler.
+                Bir kez koordinatlarla rahat çalışır hale geldikten sonra, kendi oyunlarını tasarlamak için beyin fırtınası yaparlar
+                ve kendi oyunlarındaki karakterlerin zaman içerisinde değişen koordinatlarını ortaya koyarlar.
+                <!-- Students discuss the components of their favorite
+                videogames, and discover that they can be reduced
+                to a series of coordinates. They then explore
+                coordinates in Cartesian space, and identify the
+                coordinates for the characters in a game at various
+                points in time. Once they are comfortable with
+                coordinates, they brainstorm their own games and
+                create sample coordinate lists for different points
+                in time in their own game. --></p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle"><a href=
+                "unite2/the-unit.html">Ünite 2</a></span>:
+                Öğrencilere fonksiyonların bir set eşleştirme olduğu, ve fonksiyonun
+                bir değer alanındaki noktaları bir değer kümesine tercüme ettiği anlatılır.
+                Değerlendirme Çemberleri'ni anlamış olmalarıyla birleşerek, öğrenciler 
+                fonksiyonların metin ve görüntü gibi sayılardan farklı veri tiplerini de
+                içerebileceğine dair bir genelleştirme anlayışı edinirler.
+                <!-- Students are introduced to a set-mapping
+                representation for functions, in which the function
+                object exists as a means of translating points from
+                a Domain into a Range. Coupled with their
+                understanding of Circles of Evaluation, students
+                generalize their understanding of functions to
+                include other datatypes, including Strings and
+                Images. --></p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle"><a href=
+                "unite3/the-unit.html">Ünite 3</a></span>:
+                Öğrenciler Tanımlar penceresiyle tanışırlar, ve farklı tipte değerleri tanımlamak için gerekli sözdizimini öğrenirler.
+                Ayrıca fonksiyonları tanımlama ve örnekler yaratma için gerekli sözdizimini öğrenirler. 
+                <!-- Students are introduced to the Definitions window,
+                and learn the syntax for defining values of various
+                types. They are also introduced to the syntax of
+                defining functions and creating examples. --></p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle"><a href=
+                "unite4/the-unit.html">Ünite 4</a></span>:
+                Öğrenciler Tasarım Reçete'sini basit problemlere uygulayarak öğrenmeye devam ederler.
+                <!-- Students continue to practice the Design Recipe by
+                applying it to simple problems. --></p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle"><a href=
+                "unite5/the-unit.html">Unit 5</a></span>:
+                Students define functions that map attributes of
+                their game from one frame to the next, allowing
+                them to move their dangers, targets, and
+                projectiles.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle"><a href=
+                "unite6/the-unit.html">Ünite 6</a></span>:
+                Öğrenciler mantıksal değerleri öğrenir, onları değerleri kontrol edebilen programlar yazmak için kullanırlar, ve bu programları
+                kullanarak bazı senaryoları modellerler. 
+                <!-- Students discover Boolean types, and use them to
+                create programs that test values, and then model
+                scenarios using these programs. --></p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle"><a href=
+                "unite7/the-unit.html">Ünite 7</a></span>:
+                Öğrenciler geometri ve koşullu dallanma kullanarak tuşlara basılınca oyun karakterlerini hareket ettirirler.
+                <!-- Students use geometry and conditional branching to
+                move their player characters in response to
+                key-presses. --></p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle"><a href=
+                "unite8/the-unit.html">Ünite 8</a></span>:
+                Öğrenciler Pisagor teoremini üretirler, tartışırlar, ispat ederler, ve 
+                bu teoremi —<wbr>mantıksal değerlerle birlikte—<wbr> kullanarak
+                oyundaki nesnelerin yollarının kesişmesi durumunu tespit ederler. 
+                <!-- Students derive, discuss, and prove the Pythagorean
+                theorem, then use this theorem—<wbr>in conjunction
+                with Booleans—<wbr>to detect collisions in their
+                games. --></p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle"><a href=
+                "unite9/the-unit.html">Ünite 9</a></span>:
+                Öğrenciler oyun detaylarını girerler ve açılış partisine hazırlanırlar!
+                <!-- Students will edit game details and prepare for
+                their Launch Party! --></p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle"><a href=
+                "uniteEk/the-unit.html">Ek Dersler</a></span>:
+                İlave çalışmalar düşünen öğretmenler için öğrencilerin bazı konularda derinleşmesine yardım edecek malzemeler derlenmiştir.
+                Öğrencilerin birleştirme ve koordinatları kullanarak kendilerinin veya başka bir ülkenin bayrağını yapmalarını sağlayabilirsiniz.
+                Rastgelelik ve trigonometrik fonksiyonlar kullanarak oyun karakterlerine daha sofistike hareketler yaptırmalarını,
+                veya veri yapıları ile tanışarak daha karmaşık oyunlar yapmalarını sağlayabilirsiniz!
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="SIntrapara">
+          
+            Of course, there’s more to a curriculum than software
+            and lesson plans! We also provide a number of resources
+            to educators, including standards alignment, an answer
+            key for the programming exercises and forums where they
+            can ask questions and share ideas.
+          </div>
+
+          <div class="SIntrapara">
+            <ul>
+              <li>
+                <p><a href="resources/teachers/">Teacher-Only
+                Resources</a> - We also offer several teachers-only
+                materials, including an answer key to the student
+                workbook, a quick-start guide to making the final
+                project, and pre- and post-tests for teachers who
+                are paticipating in our research study. For access
+                to these materials, please fill out the <a href=
+                "https://docs.google.com/a/bootstrapworld.org/spreadsheet/viewform?formkey=dHpQc0VHV2dBU2tSN1ptMktBUmtoZWc6MQ#gid=0">
+                password request form</a>. We’ll get back to you
+                soon with the necessary login information.</p>
+              </li>
+
+              <li>
+                <p><a href="../../Standards.shtml">Standards
+                Alignment</a> - Find out how Bootstrap aligns with
+                Common Core Standards for Mathematics, as well as
+                the standards for Mathematical Practice.</p>
+              </li>
+
+              <li>
+                <p class="BSUnitSummary"><span class=
+                "BSUnitTitle">Support Forums</span> [<a href=
+                "https://groups.google.com/d/forum/bootstrap-announce">Announcements</a>
+                | <a href=
+                "https://groups.google.com/d/forum/bootstrap-discuss">
+                Discussion</a>] - Want to be kept up-to-date about
+                Bootstrap events, workshops, and curricular
+                changes? Want to ask a question or pose a lesson
+                idea for other Bootstrap teachers? These forums are
+                the place to do it.</p>
+              </li>
+            </ul>
+          </div> -->
+
+          <p><a href=
+          "http://creativecommons.org/licenses/by-nc-nd/3.0/"><img src="pict.png"
+          alt="image" width="88" height="31"></a>Bootstrap by
+          <a href="http://www.bootstrapworld.org/">Emmanuel
+          Schanzer</a> is licensed under a <a href=
+          "http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative
+          Commons 3.0 Unported License</a>. Based on a work at
+          <a href=
+          "http://www.bootstrapworld.org/">www.BootstrapWorld.org</a>.
+          Permissions beyond the scope of this license may be
+          available at <a href=
+          "mailto:schanzer@BootstrapWorld.org">schanzer@BootstrapWorld.org</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contextindicator">
+    &nbsp;
+  </div>
+</body>
+</html>

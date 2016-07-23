@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mehmet Gencer" >
+    <title>Önyükleme1 : Tasarım Reçetesi</title>
+    <link href="css/oy.css" rel="stylesheet">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="unite1.html">Ünite-1</a></li>
+        <li><a href="unite2.html">Ünite-2</a></li> 
+        <li><a href="unite3.html">Ünite-3</a></li> 
+        <li><a href="unite4.html">Ünite-4</a></li> 
+        <li><a href="unite5.html">Ünite-5</a></li> 
+         <li><a href="unite6.html">Ünite-6</a></li>
+        <li><a href="unite7.html">Ünite-7</a></li> 
+        <li><a href="unite8.html">Ünite-8</a></li> 
+        <li><a href="unite9.html">Ünite-9</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul> 
+    </div>
+  </div>
+</nav>
+
+<img class="oyicon" src="images/icon.gif" alt=""></img>
+<div class="document">
+<div class="section" id="tasarim-recetesi">
+<h1>Tasarım Reçetesi</h1>
+<table class='toctable'><tr><td>TOPLAM SÜRE:</td><td>110 dakika</td></tr><tr><td><a href='#sec1'>Tasarım Reçetesi </a></td><td>25 dakika</td></tr><tr><td><a href='#sec2'>Tasarım Reçetesi Uygulaması </a></td><td>40 dakika</td></tr><tr><td><a href='#sec3'>Tasarım Reçetesi (Cebir) </a></td><td>40 dakika</td></tr><tr><td><a href='#sec4'>Kapanış </a></td><td>5 dakika</td></tr></table>
+<p>Öğrenciler Tasarım Reçetesi çalışmalarına, basit problemlere uygulayarak devam eder.</p>
+<div class="section" id="tasarim-recetesi-sure-25-dakika">
+<h2><a name='sec1'></a>Tasarım Reçetesi <span class='time'>(Süre: 25 Dakika)</span></h2>
+<p>Fonksiyonlar bilgisayar programlarındaki animasyonların anahtar bölümleridir. Bir fonksiyon bir kedinin statik (durağan) resmini çizebilir, örneğin, kedinin verilen ve zamanı belirten bir girdiye göre yer değiştirmesini sağlayabilir. Bu girdiler zamandan ya da kullanıcı etkileşiminden dolayı değişime uğradığında, kedi hareket etmeye başlayabilir. Bu durum gerçek çevirmeli defterlerde çizilen karakterlerin hareket etmesine benzer. Her sayfada durağan bir görüntü küçük farklılıklarla çizilidir. Sayfalar hızlıca çevrildiği zaman görüntü da değişiyor gibi görünür.</p>
+<img alt="images/unite4_rokethareket.png" src="images/unite4_rokethareket.png" />
+<p>Bu görüntüleri bir araya getirerek, roketin ekranda yukarıya doğru gittiği bir animasyona ulaşmış oluyoruz. Bu çeşit bir animasyonun bir örneğini görelim. Çalışma kitabınızdan 12. sayfayı açın ve problemi dikkatle okuyun</p>
+<img alt="images/unite4_roket.gif" class="align-right" src="images/unite4_roket.gif" />
+<p><strong>Roket kalkış yapar ve saniyede 7 metre hıza ulaşır. Adı ``roket-yüksekliği`` olan, girdi olarak roketin kalkmasından bu yana geçen zamanı saniye cinsinden bir sayı olarak alan ve roketin o kadar saniye sonunda ulaştığı yüksekliği döndüren bir fonksiyon yazın.</strong></p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">roket-yüksekliği</span></tt> fonksiyonunun içine ne girdi alır? Bu girdi ne tür bir veridir?</li>
+<li>Fonksiyon çıktı olarak ne veri üretiyor? Üretilen verinin türü nedir?</li>
+<li><strong>Sözleşme</strong>'nin üç bölümü nelerdir?</li>
+<li>Tanımlamanız istenen fonksiyonun <strong>Adı</strong> nedir?</li>
+<li>Fonksiyonun <strong>girdi alanı</strong> nedir?</li>
+<li>Fonksiyonun <strong>çıktı alanı</strong> nedir?</li>
+</ul>
+<p>Sözleşme, genel anlamda fonksiyonun nasıl çalışacağını düşünmeden, nasıl kullanılacağını bilmenin yoludur. Yukarıdakiler gibi basit sorulardan başlamak kalan adımları çok daha kolay atmanızı sağlar. Buna rağmen, Sözleşme her zaman yeterli bilgi vermez! Örneğin <tt class="docutils literal">star</tt> fonksiyonu için girdi alanı fonksiyonun ihtiyacı olanın bir Sayı ve iki Metin'dir, ama Metin'in <tt class="docutils literal">&quot;solid&quot;</tt> veya <tt class="docutils literal">&quot;outline&quot;&quot;</tt> değerlerinden birini alması gerektiğinden söz etmez. Bu bilgiyi eklemek için yazılımcılar <strong>amaç açıklamaları</strong> yazar, bunlar fonksiyonun ne yaptığını anlatan basit cümlelerdir.</p>
+<p>Sözleşmenin alt bölümüne <tt class="docutils literal"><span class="pre">roket-yüksekliği</span></tt> fonksiyonu için aşağıdaki basit Amaç Açıklamasını kopyalayın:</p>
+<pre class="literal-block">
+; roket-yüksekliği : Sayı -&gt; Sayı
+
+; Girdi olarak verilen ve saniye'yi belirten sayıyı 7 ile çarparak yüksekliği bulur
+</pre>
+<p>Sözleşme ve Amaç Açıklamaları ile donandıktan sonra, bir örnek yazmak çok daha kolay bir hal alıyor. Her örnek fonksiyonun adıyla ve örnek bir veri girdisiyle başlar. İkisi de hazırlanan Sözleşme'nin içinde yazıyor. Bu durumda, fonksiyonun adının roket-yüksekliği olduğunu biliyorsunuz ve bu fonksiyon içine yalnızca bir Sayı tipinde girdi bekliyor. Amaç Açıklaması biraz daha ileriye gidiyor ve size girdimizin 7 ile çarpıldığını söylüyor.</p>
+<p>Böylelikle farklı saniye sayılarını girdi olarak kullanıp, iki örnek yazabiliriz:</p>
+<pre class="literal-block">
+; roket-yüksekliği : Sayı -&gt; Sayı
+
+; Verilen saniye'yi belirten sayıyı 7 ile çarparak yüksekliği bulur
+
+(EXAMPLE (roket-yüksekliği 11)
+
+ (* 11 7))
+
+(EXAMPLE (roket-yüksekliği 72)
+
+ (* 72 7))
+</pre>
+<p>Not: Yukarıda gösterilen örnekler iki satıra bölünmüştür! Fonksiyonlar ve örnekler çok daha uzun ve karmaşık bir hal alacağı için hepsini tek satıra sıkıştırmak çok zor olacaktır. Çalışma kitaplarınızda, her örnek ve tanım bundan sonra satırlara bölünerek yazılacaktır.</p>
+<p>Çalışma kitaplarınızda, iki tane farklı saniye değerleri kullanarak <tt class="docutils literal"><span class="pre">roket-yüksekliği</span></tt> fonksiyonu yazınız. İki örnek de çok fazla ortak özelliğe sahip olacak (İkisi de <tt class="docutils literal"><span class="pre">roket-yüksekliği</span></tt> ismini kullacak, ikisi de girdilerini 7 ile çarpacak, vs.) Bitirdiğiniz zaman, örneklerin sadece değişebilir olan bölümlerini daireye alarak işaterleyin.</p>
+<p>İki farklı örneği kıyaslayarak neyin değişip neyin değişmediğini söyleyebilmek kolay. Amaç Açıklamaları hazırlığımızı göz önünde bulundurduğumuzda değişen şey roketin uçtuğu saniye sayılarıdır diyebiliriz.</p>
+<p>Sayfa üzerinde daire içine aldığınız maddeleri  “saniyeler” olarak etiketleyin.</p>
+<p>Değişebilir olan şeyleri etiketlemek, programcılara fonksiyon içerisindeki değişkenlere isim verebilme yetisi kazandırır. Değişkenler, farklı zamanlarda değişebilecek olan değerler için yer tutucu gibidir. Örneğin her ay cep telefonunun mesaj tarifesi için ne kadar ödediğinizi hesaplayan bir fonksiyon olsun. Bu fonksiyonun girdisi olarak içinde bulunduğunuz ay kaç tane mesaj gönderdiğiniz bilgisini tutan bir değişkeni olabilir. Gönderdiğiniz mesaj sayısı aydan aya değişebilir ama yine de her mesajın fiyatı 20 kuruş tutarındadır.</p>
+<p><tt class="docutils literal"><span class="pre">roket-yüksekliği</span></tt> fonksiyonunda kaç değişken vardır? Her değişkenin adı nedir? Örneklerinizden ve Sözleşme ve Amaç Açıklaması bölümündeki bilgilerden yararlanarak fonksiyonu tanımlayın:</p>
+<pre class="literal-block">
+; roket-yüksekliği : Sayı -&gt; Sayı
+
+; Verilen saniye'yi belirten sayıyı 7 ile çarparak yüksekliği bulur
+
+(EXAMPLE (roket-yüksekliği 11)
+
+ (* 11 7))
+
+(EXAMPLE (roket-yüksekliği 72)
+
+ (* 72 7))
+
+(define (roket-yüksekliği saniye)
+
+ (* saniye 7))
+</pre>
+<p>Tasarım Reçetesi programcıya bir adımda bir problem üzerine odaklanmasını ve önceki adımları kullanarak bir sonraki adımları tamamlamasını öğretir.</p>
+<ul class="simple">
+<li>Sözleşme programcıya fonksiyonla ilgili ne anlatır?</li>
+<li>Amaç Açıklamaları, programcıya fonksiyonla ilgili ne anlatır</li>
+<li>Sözleşme ve Amaç Açıklamaları, programcıya Örnekler yazması için nasıl yardımcı olur?</li>
+<li>Örnekler içerisinde değişebilen bölümleri etiketlemek ve daire içine almak neden yardımcıdır?</li>
+<li>Bütün bu adımlar programcıya bir fonksiyon tanımlama sırasında nasıl yardımcı olur?</li>
+</ul>
+<p>Fark etmiş olabileceğiniz gibi Örnekler içinde bulunan <tt class="docutils literal"><span class="pre">roket-yüksekliği</span></tt> fonksiyonundaki çarpma işlemi direkt (77) sonucu olarak yazılmak yerine <tt class="docutils literal">(* 11 7)</tt> şeklinde yazılmıştır. Neden çarpmanın hesaplanma yolunu göstermeye zahmet edilmiş olsun? Bunu yaparak, örnekler hangi adımın gerçekleştirileceği konusunda ipuçları sunar. Gösterilen programda (<a class="reference external" href="http://www.wescheme.org/openEditor?publicId=eu0Wbko0L3">online roket animasyon programı</a>), örnekler yazarken uygulanan işlemlerin gösterilmesinin neden önemli olduğunu göreceksiniz.</p>
+<p>“Run” a tıklayın, ve pencerenin en altında bir roket belirene kadar ve en yukarıda “zaman” ve “yükseklik” sayıları görüntülenene kadar bekleyin. Bu animasyon roketi, her boşluk tuşuna basıldığında yenilemek üzere ve zamanı geçiyor gibi göstermek üzere ayarlanmıştır. Boşluk tuşuna birkaç kere basın ve pencerenin üstünde beliren zamanın artışını gözlemleyin. Roket hareket etti mi? Zaman akıyor, ancak roketin yüksekliği değişmiyor! Roket penceresini kapatın, böylece kodu görebilirsiniz.</p>
+<p>Bu fonksiyon için Sözleşme doğru: Fonksiyonun Adı, Etkinlik Alanı, Aralığı burada doğru olarak yazılmıştır. Buna rağmen bir sonraki adım kesinlikle bazı problemlere sahip:</p>
+<ul class="simple">
+<li>Sadece bir Örnek var. Bu durum neyin değiştiğini anlamamız konusunda zorluk yaratabilir, böylece değişkenleri anlamaya çalışırken hatalara yol açabilir.</li>
+<li>Örnek yüksekliğin nasıl hesaplandığını göstermiyor, yapılan işi göstermek yerine sadece “cevabı” yazıyor.</li>
+</ul>
+<p>Örnek içindeki bu adımları atlayarak, Fonksiyonu tanımlarken hata yapmak kolaylaşabilir.</p>
+<p>Programcının yaptığı hataları görebiliyor musunuz?</p>
+<p>Birden fazla Örnek görmeden, bu programcı roketin yüksekliğinin her veri için ayrıca hesaplanacağını fark etmek konusunda sıkıntıya düşmüştür. Bunun yerine, her girdide aynı sayıyı üretmiştir (verilen kodda bu sayı sıfırdır). Sonuç olarak, kaç saniye geçmiş olursa olsun, roket her zaman sıfır yüksekliğindedir.</p>
+<ul class="simple">
+<li>Bu programcının yazdığı Örnekteki hatayı düzeltin.</li>
+<li>İlkinin altına ikinci bir Örnek yazın.</li>
+<li>Fonksiyon tanımını tamir edin, böylece fonksiyon saniye sayısını 7 ile çarpar hale gelsin.</li>
+<li>“Run” a tıklayıp arkasından boşluk tuşunu kullanın ve roket uçsun!</li>
+</ul>
+</div>
+<div class="section" id="tasarim-recetesi-uygulamasi-sure-40-dakika">
+<h2><a name='sec2'></a>Tasarım Reçetesi Uygulaması <span class='time'>(Süre: 40 Dakika)</span></h2>
+<p>Tasarım Reçetesi , programcıların yazdıkları kodların doğruluğundan emin olmak için kullandıkları , fonksiyonları tanımlamak için bir yol haritası niteliğindedir. Her adım bir öncekinin üzerine oluşturulur böylece karşılaşılabilecek hatalar erkenden önlemiş olur. Bu yol haritası bir dizi adıma sahiptir:</p>
+<ul class="simple">
+<li>Bir kelime hatasından Sözleşme'ye hareket etmek</li>
+<li>Sözleşmeı göz önünde bulundurarak örnekler yazmak</li>
+<li>Örneklerle uyuşan bir fonksiyon tanımlamak</li>
+</ul>
+<p>Bu adımları bir bir uygulayarak başlayın.</p>
+<p>Aşağıdaki her problem için Sözleşme'yi yazınız:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">mor-yıldız</span></tt> adında bir fonksiyon tanımlayın. Fonksiyon içine yıldızın boyutunu alsın ve verilen boyutta çizgisel bir yıldız üretsin.</li>
+<li><tt class="docutils literal">nokta</tt> adında bir fonksiyon tanımlayın. Fonksiyon içine renk alsın ve yarıçapı 50 olan, verilen renkte, içi dolu bir daire üretsin.</li>
+<li>İki sayının ortalamasının hesaplanması için iki sayı toplanır ve ikiye bölünür. <tt class="docutils literal">ortalama</tt> adında bir fonksiyon tanımlayın. Fonksiyon içine iki sayı alsın ve bu iki sayının ortalamasını hesaplasın.</li>
+</ul>
+<p>Her fonksiyon için iyi bir İsim bulduğunuzdan emin olun. Girdi Alanı ve Çıktı Alanı sadece Sayı, Görüntü, Metin vb. değerler içerebilir.</p>
+<p>Sözleşme bir fonksiyon için temeldir, ve programcıya onu kullanması için yeterli bilgiyi verir: Fonksiyonun adı, fonksiyonun içine aldığı ve çıktı olarak verdiği değerlerin veri tipi.</p>
+<p>Şimdi, yukarıdaki üç problem için de Sözleşmeleri tamamlamış bulunuyorsunuz. Her biri için ikişer tane Örnek üretmeye çalışın.</p>
+<p>İki ya da daha fazla Örneğe sahip olduğunuzda, aralarında neyin değiştiğine karar verebilmek kolay olacaktır. Aslında, değişen şeylerin sayısı, fonksiyonun girdi alanının içinde olanların sayısıyla eşit olmalıdır. Eğer Girdi Alanı içinde bir Sayı, bir de Metin varsa, bu iki değer sizin örnekleriniz arasında değişen değerler olmalıdır.</p>
+<p>Örnekler arasında değişim gösteren şeyleri tanımlayın ve bu bilgiyi kalan diğer fonksiyonları tanımlamak için kullanın.</p>
+<p>Çalışma kitaplarınızdan Sayfa 13'ü açın, ve problemi dikkatle okuyun.</p>
+<ul class="simple">
+<li>Fonksiyonun ismini daire içine alın ve içine aldığı değerle ürettiği değerin altını çizin.</li>
+<li>Bu fonksiyon için Sözleşme yazın, altını çizdiğiniz değerler size Girdi Alanı ve Çüktü değerlerini bulmanız için yardımcı olacaktır.</li>
+<li>Sözleşmeın altında, Amaç Açıklamalarını, bu fonksiyonun ne yapıyor olduğunu özetleyerek bir cümleyle yazın.</li>
+</ul>
+<p>Sözleşme ve Amaç Açıklamaları, programcı nasıl başlayacağından emin olmasa bile, Örnek yazma aşamasına geçmesi için kullanılabilir.</p>
+<p>Sadece Sözleşme ve Amaç Açıklamalarını kullanarak aşağıdaki sorulara cevap verebiliyor musunuz görün:</p>
+<ul class="simple">
+<li>Her Örnek fonksiyonun adıyla başlar. Fonksiyonun adını nerede bulabilirsiniz?</li>
+<li>Her Örnek, örnek veri içermek zorundadır. Fonksiyonun kaç tane veri girdisine ihtiyaç duyduğunu nereden bulabilirsiniz?</li>
+<li>Her Örnek, veri girdisi verildiği zaman, içinde ne yapıldığını gösteren bir ifade içermeli. Bu fonksiyonun ne yaptığını anlayabilmek için nereye bakmalısınız?</li>
+<li>Kağıdınıza iki Örnek yazın, ardından aralarında değişen değerlerin altını çizin ve etiketleyin.</li>
+</ul>
+<p>Fonksiyon tanımı yazarken, yazdıklarınızın hepsinin üç bölümde olduğuna emin olun: Sözleşme ve Amaç Açıklamaları, Örnekler ve Tanım. “Run” a basıldığında, bilgisayar tanımı okuyacak, Örneklerinizi doğru yazılıp yazılmadığını görmek için test edecek ve yaptığınız tanımı bilgisayarın diline ekleyecektir. Bir kere eklendikten sonra fonksiyonu sanki bilgisayarda daha önceden varolan fonksiyonlar gibi kullanabilirsiniz.</p>
+<p><a class="reference external" href="http://www.wescheme.org/openEditor?definitionsText=;%20kırmızı-kare%20:%20Number%20-%3E%20Image%0A;%20draw%20a%20solid,%20red%20square%20using%20the%20given%20size%0A(EXAMPLE%20(kırmızı-kare%2042)%20(square%2042%20%22solid%22%20%22red%22))%0A(EXAMPLE%20(kırmızı-kare%2073)%20(square%2073%20%22solid%22%20%22red%22))%0A(define%20(kırmızı-kare%20boy)%20(square%20boy%20%22solid%22%20%22red%22))">Bu örnek fonksiyonu</a> farklı girdi değerleri kullanarak test edin.</p>
+<p>Bazı fonksiyonlar birden fazla girdi alırlar. <tt class="docutils literal"><span class="pre">kırmızı-kare</span></tt> fonksiyonu, sadece büyüklüğü değişken değer olarak alarak, her zaman kırmızı bir kare üretecektir. Düşünün, buna rağmen istiyoruz ki bu fonksiyon kırmızı ama istersek içi dolu istersek çizgisel bir kare üretsin. Bu demek oluyor ki hem boyut hem de stil değişebilir, böylece kullanıcı hem <tt class="docutils literal"><span class="pre">(kırmızı-kare</span> 50 “solid”)</tt> girebilir hem de <tt class="docutils literal"><span class="pre">(kırmızı-kare</span> 50 “outline”)</tt> girebilir.</p>
+<ul class="simple">
+<li>Bu durum fonksiyonun Etkinlik Alanında nasıl değişiklik gösterir?</li>
+<li>Örnekler ne şekilde değişmek zorunda kalır?</li>
+<li>Tanım ne şekilde değişir?</li>
+</ul>
+<p>Yazdığınız kodun, <tt class="docutils literal"><span class="pre">kırmızı-kare</span></tt> fonksiyonunun içine hem “solid” (katı) hem de “outlined” (çizgisel) verilerini, ikinci değer olarak almasına izin vermesi için, her parçasını değiştirin.</p>
+<p>Tasarım Reçetesi, fonksiyonun istenilen sayıda girdi alması için kullanılabilir. Basit bir örnek olarak aşağıdaki problemi ele alalım.</p>
+<p>Çalışma kitaplarınızdan sayfa 14'ü açın, ve  problemi dikkatle okuyun.</p>
+<ul class="simple">
+<li>Fonksiyonun ismini daire içine alın ve içine aldığı değerle üretilmesini istediklerinin altını çizin.</li>
+<li>Fonksiyon girdi olarak kaç veri alıyor? Bunlar Sayı mı? Metin mi? Görüntü mü?</li>
+<li>Bu fonksiyon için Sözleşme yazın, altını çizdiğiniz değerler size Girdi Alanı ve Çıktı değerlerini bulmanız için yardımcı olacaktır.</li>
+<li>Sözleşme'nin altında, Amaç Açıklamalarını, bu fonksiyonun ne yapıyor olduğunu özetleyerek bir cümleyle yazın.</li>
+<li>Bu fonksiyon için iki Örnek yazın ve içlerinde değişen değerleri daire içine alıp etiketleyin.</li>
+<li>Bu fonksiyon için bir Tanım yazın.</li>
+</ul>
+</div>
+<div class="section" id="tasarim-recetesi-cebir-sure-40-dakika">
+<h2><a name='sec3'></a>Tasarım Reçetesi (Cebir) <span class='time'>(Süre: 40 Dakika)</span></h2>
+<p>Bir programcının esas gücü bir dili ne kadar iyi bildiği değildir. Esas güç, bildiklerinizi problem çözmek üzerinde ne kadar iyi kullandığınızdır! Buraya kadar problemleri kağıt üzerinde yazıp arkasından bilgisayar üzerinde fonksiyona çevirebilmenize yardım edecek çok kuvvetli bir araç öğrendiniz: Tasarım Reçetesi! Görünen o ki Tasarım Reçetesi size problemleri matematiksel olarak da çözebilmeniz için yardımcı oluyor!</p>
+<p>Alışma kitaplarınızın sonlarında EK B'yi açın, problem 1'i dikkatlice okuyun, ve fonksiyon için bir Sözleşme yazın. &quot;Bir roket Dünya’dan Mars’a saniyede 80 kilometre hız ile uçuyor. Roketin aldığı mesafeyi (m), sürenin (s) fonksiyonu ile açıklayan bir fonksiyon yazınız.&quot;</p>
+<p>Roketin yolculuk ettiği uzaklık kilometre cinsinden sayılarla ölçüldü ve süre da saniye cinsinden sayılarla ölçüldü. Bu bize Sözleşme'yi verir:</p>
+<pre class="literal-block">
+; uzaklık:Sayı -&gt; Sayı
+</pre>
+<p>Daha az önce, Sözleşme bize Örnekleri nasıl yazacağımız hakkında çok güçlü ipuçları verdi. İşte program kodu olarak yazılmış bir örnek:</p>
+<pre class="literal-block">
+(EXAMPLE (uzaklık 5) (* 5 80))
+</pre>
+<p>Burada da aynı Örneğin matematiksel yazılışı: <span class="math">\(uzakl\imath k(5)=5\times 80\)</span></p>
+<p>Bu fonksiyon için iki tane daha ek Örnek yazın, matematiksel gösterimi kullanın.</p>
+<p>Az önceki gibi, bir fonksiyonun değişkenleri iki Örnek yazarak ve aralarında neyin değişken olduğu gözlemlenerek tanımlanabilir.</p>
+<p>Yazdığınız örnekleri kullanarak, Fonksiyon için değişkeni/değişkenleri tanıyın. Ardından fonksiyonu Matematiksel yazım kullanarak tanımlayın.</p>
+<p>Tasarım Reçetesi yazılı bir tanımın, usule uygun bir fonksiyona dönüştürülmesine yardım eder.</p>
+<ul class="simple">
+<li><span class="math">\(uzakl\imath k(4)=4\times 80\)</span></li>
+<li><span class="math">\(uzakl\imath k(7)=7\times 80\)</span></li>
+<li><span class="math">\(uzakl\imath k(t)=t\times 80\)</span></li>
+</ul>
+<p>Çalışma kitaplarınızdan problem 2'yi dikkatle okuyun ve fonksiyonun Sözleşme'sini yazın: “Bir roket Dünya’dan Mars’a saniyede 80 kilometre hız ile uçuyor. Roketin seyahat ettiği süreyi (s) katettiği mesafenin (m) fonksiyonu ile açıklayan bir fonksiyon yazınız.”</p>
+<p>Sözleşme olduktan sonra, Örnekleri yazmak kolay:</p>
+<pre class="literal-block">
+; süre: Sayı -&gt; Sayı
+</pre>
+<p>Sözleşme'yi kullanarak bu fonksiyon için iki tane Örnek yazın, ardından fonksiyon için gereken değişken/değişkenleri tanıyın.</p>
+<ul class="simple">
+<li>Bu fonksiyonda kaç tane değişken var?</li>
+<li>Değişkenlere isim verin.</li>
+<li>Fonksiyonu matematiksel ifadeler kullanarak tanımlayın.</li>
+</ul>
+<p>Fonksiyonunuz hazırlandığı anda, değerleri içine yerleştirip sonuçları almak çok basit. Bütün problemlerde en zor bölüm fonksiyonu ilk aşamada hazırlamaktı. Şanslıyız ki, Tasarım Reçetesi , fonksiyonu kurmayı çok daha kolay kılıyor. Tasarım Reçetesini sadece iki ayrı fonksiyonu kurmak için kullandık, bunlar fonksiyonun cevaplarını uzaklık ve zaman cinsinden vermesi için de kullanıldı. Fonksiyonları birer araç olarak kullanarak basit problemleri çözebilir için ya da daha zor olanları çözmek için fonksiyonları bir araya getirebilirsiniz.</p>
+<p>Çalışma kitaplarınızdan Problem 3'ü açın, problemi dikkatlice okuyun: “Bir roket Dünya’dan Mars’a saniyede 80 kilometre hız ile hareket ediyor.. Aynı anda Mars'tan kopna bir götaşı da saniyede 70 kilometre hız ile Dünya'ya dolru gelmeye başlıyor. Dünya ile Mars arasındaki mesafe  50.000,000 kilometre ise Roket ve göktaşı ne kadar süre sonra çarpışır?”</p>
+<ul class="simple">
+<li>Problemin size verdiği gerçekler nelerdir?</li>
+<li>Problem sizden ne istiyor?</li>
+<li>Cevaplarınızı bir sonraki cümleyi tamamlamak için kullanın: “Verilen …………., üretilenin ………… olduğu bir fonksiyon yazınız.”</li>
+<li>Eğer böyle bir fonksiyon var olsaydı, ismi en iyi ne olabilirdi?</li>
+</ul>
+<p>Eğer çarpışma zamanını hesaplayabilen bir fonksiyonumuz olsaydı, bu soruyu cevaplamak sadece fonksiyona Dünya ve Mars arsındaki mesafeyi yerleştirmemiz sonucu kolayca bulunurdu. Onun yerine fonksiyonun kendisini yazabilmek için bir denklem düşünmeye ve Tasarım Reçetesinin adımlarını kullanmaya başlayabilirsiniz.</p>
+<p>Bu fonksiyon için Sözleşmeı yazın, ardından farklı uzaklıklar kullanarak iki Örnek yazın.</p>
+<p>Şu ana kadar, bu fonksiyonun Sözleşmı ve Amaç Açıklaması elinizde:</p>
+<ul class="simple">
+<li><tt class="docutils literal">çarpışma: Sayı <span class="pre">-&gt;</span> Sayı</tt></li>
+<li><span class="math">\(çarp\imath şma(0)=...\)</span></li>
+</ul>
+<p>Şimdi, eşittir işretinden sonra gelmesi gereken işlemi bulmalıyız. Şanslıyız ki, elimizde bir ipucu var: ne olacaksa olsun biliyoruz ki, sonuç sıfır olmalı. Bu bilgiyle diyebiliriz ki, çarpıştıkları zaman aralarındaki uzaklık sıfır olacaktır.</p>
+<p>Roket saniyede 80 km hızla gidiyorsa ve gök taşı saniyede 70 km hızla gidiyorsa birbirlerine ne kadar hızlı yaklaşıyorlar demektir?
+80+70=150, böylece biliyoruz ki birbirlerine git gide yaklaşma hızı saniyede 150 km oluyor. Bu bizim “zaman” fonksiyonumuzdan çok da farklı değil: elimizde bir hız bilgisi var ve verilen mesafeyi gitmenin ne kadar zaman alacağını bilmek istiyoruz. Bu durumda Örneğimiz için ne yazmalıyız?</p>
+<blockquote>
+<span class="math">\(çarp\imath şma(0)=0/150\)</span></blockquote>
+<p>İki farklı mesafe kullanarak iki tane Örnek yazın ardından her farklı uzaklık için işe yarayacak bir fonksiyon tanımlayın.</p>
+<p>Şu ana kadar, büyük resmi çoktan görmüş olabilirsiniz: problem içinde verilen uzaklık, denkleme herhangi bir fonksiyon tanımlamaya gerek duyulmadan yerleştirilebiliyor. Bazen tasarım reçetesi sizi cevaba hemen ulaştırabiliyor ve hatta bitirmek zorunda olmayabiliyorsunuz bile! Diğer zamanlarda, buna rağmen büyük resmi göremeyebilirsiniz. Bu durumda problemi çözmeye çok daha küçük parçalardan başlamalı ve her küçük parça için kendi fonksiyonunuzu yazmalısınız.</p>
+</div>
+<div class="section" id="kapanis-sure-5-dakika">
+<h2><a name='sec4'></a>Kapanış <span class='time'>(Süre: 5 Dakika)</span></h2>
+<p>Bu ünitede, fonksiyonların bir animasyon yazmada ne kadar kullanışlı olduğunu öğrenmeye başladınız: fonksiyonlar size bir oyunun sahnesini yaratabilmeniz için gereken bilginin üretilmesini sağlar (örneğin, roketin yüksekliği). Fonksiyon yazma konusunda fazladan örnekler yapıp Tasarım Reçetesini kullanarak, artık kendi karakterlerinizi hareket ettirebileceğiniz kendi oyunlarınızı yazmaya hazırsınız.</p>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[href^='http']").attr('target','_blank');
+});
+</script>
+
+<div class="license">
+
+<p>Bu eğitim müfredatı Emmanuel Schanzer tarafından hazırlanmış "Bootstrap" projesinden uyarlanmıştır: 
+<a href="http://www.BootstrapWorld.org" target="_blank">www.BootstrapWorld.org</a>. 
+Burada paylaşılan her türlü malzeme <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons 3.0 Unported License</a> 
+lisansı koşulları dahilinde temin edilmektedir.</p>
+</div> 
+</body>
+</html>

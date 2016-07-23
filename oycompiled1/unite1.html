@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mehmet Gencer" >
+    <title>Önyükleme1 : Ünite 1 Bilgisayar oyunları ve Koordinat düzlemleri</title>
+    <link href="css/oy.css" rel="stylesheet">
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="unite1.html">Ünite-1</a></li>
+        <li><a href="unite2.html">Ünite-2</a></li> 
+        <li><a href="unite3.html">Ünite-3</a></li> 
+        <li><a href="unite4.html">Ünite-4</a></li> 
+        <li><a href="unite5.html">Ünite-5</a></li> 
+         <li><a href="unite6.html">Ünite-6</a></li>
+        <li><a href="unite7.html">Ünite-7</a></li> 
+        <li><a href="unite8.html">Ünite-8</a></li> 
+        <li><a href="unite9.html">Ünite-9</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+      </ul> 
+    </div>
+  </div>
+</nav>
+
+<img class="oyicon" src="images/icon.gif" alt=""></img>
+<div class="document">
+<div class="section" id="unite-1-bilgisayar-oyunlari-ve-koordinat-duzlemleri">
+<h1>Ünite 1 Bilgisayar oyunları ve Koordinat düzlemleri</h1>
+<table class='toctable'><tr><td>TOPLAM SÜRE:</td><td>70 dakika</td></tr><tr><td><a href='#sec1'>Giriş </a></td><td>5 dakika</td></tr><tr><td><a href='#sec2'>Demoyu ayrıştıma </a></td><td>10 dakika</td></tr><tr><td><a href='#sec3'>Koordinat Düzlemleri </a></td><td>15 dakika</td></tr><tr><td><a href='#sec4'>Beyin fırtınası </a></td><td>15 dakika</td></tr><tr><td><a href='#sec5'>İşlemlerin Sırası </a></td><td>20 dakika</td></tr><tr><td><a href='#sec6'>Kapanış </a></td><td>5 dakika</td></tr></table>
+<p>Öğrenciler en sevdikleri bilgisayar oyunlarının bileşenlerini tartışırlar, ve bunların bir dizi koordinata indirgenebileceğini keşfederler. Daha sonra Kartezyen uzayındaki koordinatları incelerler, ve bilgisayar oyunundaki karakterlerin zamanın değişik anlarındaki koordinatlarını belirlerler. Koordinatlarla rahat çalışır hale geldikten sonra, kendi bilgisayar oyunları hakkında beyin fırtınası yaparlar ve kendi oyunları için zamanın değişik anlarına karşılık gelen örnek koordinat listeleri yaparlar.</p>
+<div class="section" id="giris-sure-5-dakika">
+<h2><a name='sec1'></a>Giriş <span class='time'>(Süre: 5 dakika)</span></h2>
+<p>Önyükleme'ye hoşgeldiniz! Bu derste yeni bir programlama dili, yani bilgisayarlara onlardan ne yapmasını istediğinizi tam olarak söylemenin bir yolunu öğreneceksiniz. Aynı Türkçe veya İngilizce gibi, bir programlama dilinin de öğrenmeniz gereken bir sözcük dağarcığı ve grameri vardır. Neyse ki burada öğreneceğiniz dilin zaten bildiğiniz basit matematikle birçok ortak noktası bulunuyor!</p>
+</div>
+<div class="section" id="demoyu-ayristima-sure-10-dakika">
+<h2><a name='sec2'></a>Demoyu ayrıştıma <span class='time'>(Süre: 10 dakika)</span></h2>
+<p>Basit bir video oyununu keşfederek başlayalım ve sonrasında da nasıl çalıştığını anlayalım. Oyunu oynamak için <a class="reference external" href="http://www.wescheme.org/view?publicId=LyMwExWayT">bu linki</a> tıklayın, ve bir iki dakika boyunca oyunu keşfedin. Kediyi sola sağa hareket ettirmek, sıçrayıp yakutu yakalamak, ve köpekten kaçınmak için ok tuşlarını kullanın!</p>
+<p>Bu oyun karakterlerden oluşuyor, ve herbirinin kendine özgü bir davranışı var. Yakut sağdan sola hareket ediyor, köpek te öyle. NinjaKedi sadece siz tuşlara basınca hareket ediyor, ve sola sağa yukarı ve aşağı gidebiliyor. Oyunun nasıl anladığını önce karakterlerin nasıl çalıştıklarını anlayarak çözebiliriz.</p>
+<img alt="images/unite1_tablo1.png" class="imgright align-right" src="images/unite1_tablo1.png" />
+<p>İş defterinizin 2. sayfasına gidin. Orada NinjaKedi oyununu tersine mühendislik yaparak nasıl çalıştığını anlamak için kullanacağımız bir tablo bulacaksınız. O tablonun ilk sütununu oyunda geçen şeylerin bir listesi ile doldurun.</p>
+<p class="teacher-note">Bu bir takım çalışması da olabilir. Öğrencilerden birkaçını yaptıklarını seçip paylaşın ki herkes bu alıştırmada neyin listelendiğini anlasın: &quot;kedi&quot; gibi isimler listelenecek ama &quot;atlama&quot; gibi eylemler listelenmeyecek.</p>
+<p class="clearpar">Bütün hareketli karakterleri listelediniz mi? Oyunda başka ne var? Arkaplan oyunun bir parçası mı? Peki ya puan göstergesi?</p>
+<img alt="images/unite1_tablo2.png" class="align-right" src="images/unite1_tablo2.png" />
+<p>Burada ayrıca oyunu ornarken nelerin değiştiğini düşünmemiz lazım. Örneğin yakut? Büyüyor mu? Rengi değişiyor mu? Dönüyor mu? Yakut'un değişen tek şeyi pozisyonu! Diğer herşeyi aynı kalıyor. Peki ya köpek? Kedi? Bu soruları düşünerek ikinci sütunu doldurun, her karakter hakkında değişen her unsuru listeleyin.</p>
+<p>Köpek, Yakut, Bulut, ve Kedi'nin sadece yer değiştirdiğini, ve başka hiçbir şeyin değişmediğini farkettiniz mi? Peki ya arkaplan - o hiç değişmiyor, o yüzden tabloda onunla ilgili satırı boş bırakabiliriz! Puan değişimi göstergesine dikkat ettiniz mi? Onu da tablonuza eklemelisiniz!</p>
+</div>
+<div class="section" id="koordinat-duzlemleri-sure-15-dakika">
+<h2><a name='sec3'></a>Koordinat Düzlemleri <span class='time'>(Süre: 15 dakika)</span></h2>
+<img alt="images/unite1_kd1.png" class="align-right" src="images/unite1_kd1.png" />
+<p>Bilgisayarlar bir oyun karakterinin ekrandaki yerini temsil etmek için sayıları kullanır, üzerinde sayılar olan bir cetvel gibi olan ölçek çizgileri ekranın sol-alt köşesine olan uzaklığı ölçmek için kullanılırlar. Biz kendi video oyunumuzda ölçek çizgilerini ekranın solda 0 pozisyonundan sağda 640 pozisyonuna kadar olacak şekilde yerleştireceğiz. Köpek resmini alıp ölçek çizgisinde herhangi bir yere yerleştirebiliriz, ve ölçek çizgisinin sol kenarından olan uzaklığını ölçeriz. Bu ölçümü bilen birisi, sadece bu sayıyı kullanarak köpeği aynı şekilde aynı yere yerleştirebilecektir. Ekranın sağındaki köpeğin koordinatı nedir? Peki ya merkezdekinin? Koordinat ne olursa köpek ekranın sol sınırından dışarı çıkar?</p>
+<p class="teacher-note">Burada öğrenciler için anahtar nokta kesinlik ve nesnelliktir. Birden fazla doğru cevap var, ama öğrenciler herhangi bir çözümün niye kesin ve net olması gerektiğini anlamalılar. Bu da öğrencilerin ortak bir &quot;sıfır&quot; noktasını (ölçek çizgisinin başlangıç çizgisi) ve yönü (sağ sol gibi, karakterin posizyonunun ölçüldüğü kenar) paylaşan çözümler üretmesini gerektirir.</p>
+<img alt="images/unite1_kd2.png" class="align-right" src="images/unite1_kd2.png" />
+<p>İkinci bir ölçek çizgisi ekleyerek bir oyun karakterini iki boyutlu ekranın her iki boyutunda istediğimiz bir yere yerleştirebiliriz. Birinci çizgiye x-eskeni deriz ve soldan sağa uzanır. Aşağıdan yukarıya uzanan ikinci ölçek çizgisine ise y-ekseni denir. 2-boyutlu bir koordinat hem x- hem de y-ekseni üzerindeki yerlerden oluşur. Mesela NinjaKedi'in ekrandaki pozisyonunu belirlemeye çalışalım. x-koordinatını bulmak için NinjaKedi'ten aşağıya bir çizgi çeker ve bu çizginin x-eksenini kestiği yerdeki sayıyı okuruz. y-koordinatı da y-eksenine yatay bir çizgi çekerek bulunur.</p>
+<p class="teacher-note">Bir koordinat tek bir noktayı temsil eder, ama bir resim (tanımı gereği) birçok noktadan oluşur. Bazı öğrenciler bir oyun karakterinin koordinatının onun resminin merkezine mi yoksa köşelerinden birine mi denk geldiğini soracaklardır. Bu elimizdeki programda koordinat resmin merkezine denk düşmektedir - ama başka programlarda farklı olabilir. Öğrencilerle bu konuyu tartışırken önemli olan burada bir esneklik olduğunun ve bu esneklik dahilinde tutarlı olunduğu sürece sorun olmadığınınanlatılmasıdır.</p>
+<p>Bu koordinatları yazarken her zaman x koordinatını y'den önce yazarız (aynı bu harflerin alfabedeki sıraları gibi). Çoğu zaman (200,50) şeklinde yazılmış koordinatlar görürsünüz, bunun anlamı x-koordinatının 200 ve y-koordinatının da 50 olduğudur.</p>
+<p>Bir oyun karakterinin nasıl hareket ettiğine bağlı olarak posizyonu sadece x ekseninde, sadece y ekseninde, veya ikisinde birden değişebilir. İş kitabınızda doldurduğunuz tabloya bakın (Sayfa 2). NinjaKedi yukarı ve aşağı hareket ediyor mu? Eğer öyleyse değişen nedir: x koordinatı mı, y koordinatı mı, yoksa ikisi birden mi? Peki bulutlar nasıl hareket ediyor? Yukarı aşağı mı? Sola veya sağa mı? İkisi birden mi?</p>
+<img alt="images/unite1_tablo3.png" class="align-right" src="images/unite1_tablo3.png" />
+<p>Tablonun kalanını da doldurun, ve her oyun karakteri için değişenin ne olduğunu belirleyin.</p>
+<p>Oyun planlama iş kitabının 3. sayfasına dönün, ve NinjaKedi oyununun resminin bulunduğu proje sayfasına bakın. Ekranın sol-alt köşesinin koordinatları nedir? Sağ-üst koşeninki nedir? Merkezinki? Pratik yapmak için her kenarın orta noktasını koordinatlarını yazarak etiketleyin, sonra da her karakterin yanına koordinatlarını yazın.</p>
+</div>
+<div class="section" id="beyin-firtinasi-sure-15-dakika">
+<h2><a name='sec4'></a>Beyin fırtınası <span class='time'>(Süre: 15 dakika)</span></h2>
+<p>Sayfa 4'te, kendi oyununuzu yapmak için bir planlama şablonu bulacaksınız. Aynı NinjaKedi oyununda herşeyin listesini yaptığımız gibi, burada da oyunda olacak herşeyin bir listesi ile başlayacağız.</p>
+<p>Oyununuzla işe başlamak için oyunda dört şey olmalı:</p>
+<ul class="simple">
+<li>Bir arkaplan resmi, mesela bir orman, bir şehir, uzay, vs.</li>
+<li>Kullanıcı tuşlara bastığı zaman hareket edecek bir oyuncu karakteri.</li>
+<li>Sağdan sola doğru hareket eden ve oyuncu onu yakaladığı zaman puan toplayacağı bir hedef nesnesi.</li>
+<li>Sağdan sola doğru hareket eden ve oyuncunun kaçınması gereken bir tehlike nesnesi.</li>
+</ul>
+<p>Şimdi yaratıcı olma zamanı! İş kitabında Sayfa 4'ü kendi oyununuz için doldurun, kendi oyuncu, hedef ve tehlike seçiminizi kullanın</p>
+</div>
+<div class="section" id="islemlerin-sirasi-sure-20-dakika">
+<h2><a name='sec5'></a>İşlemlerin Sırası <span class='time'>(Süre: 20 dakika)</span></h2>
+<p>Matematik aynı Türkçe, İngilizce, veya diğerleri gibi bir dildir. Fiziksel nesneleri tarif etmek için &quot;ekmek&quot;, &quot;domates&quot;, &quot;ketçap&quot;, &quot;peynir&quot; gibi isimler kullanırız. Matematik ise 1, 2 or 3 sayıları gibi değerler kullanır. İnsanlar ayrıca nesnelerle ilgili yapılan işleri anlatmak için &quot;dilimlemek&quot;, &quot;doğramak&quot;, &quot;dökmek&quot;, &quot;eritmek&quot; gibi yüklemler kullanır. Matematikte ise toplama, çıkartma gibi sayılara uygulanan fonksiyonlar vardır. Aynı &quot;bir ekmeği dilimlemek&quot; gibi &quot;dört ile beşi topla&quot; deriz.</p>
+<p class="teacher-note">Öğrenciler matematiğe bir dil gözüyle bakmalıdırlar. Onlara bu konuda yardımcı olmak için matematiğin sözdizimini ve gramerin, tartışabilirsiniz, ve eğer işlemlerin sırası belli olmazsa nasıl belirsizlikle ilgili sıkıntılar ortaya çıkabileceğine işaret edebilirsiniz. Öğrencilere matematiğin insanların hesaplamaları biribirlerine anlatmaları için bir dil olduğunu görmeleri için yardım etmelisiniz.</p>
+<p>Bir matematiksel ifade bir cümle gibidir: bir işlem yapmak için yönergeler verir. 4+5 ifadesi bize 4 ile 5'i toplamamızı söyler. Bir ifadeyi <strong>değerlendirmek</strong> için ifadedeki yönergeleri takip ederiz. 4+5 ifadesi 9 değerine karşılık gelir, biz bu duruma &quot;4+5 ifadesi 9'a <strong>değerlenir</strong>&quot; diyeceğiz.</p>
+<blockquote>
+8∗4 kaça değerlenir?
+20−16 kaça değerlenir?
+16−20 kaça değerlenir?</blockquote>
+<p>Bazen bir görevi tamamlamak için birden fazla ifade gerekir. Bir sandviç yapmak için gerekli yönergeleri yazsaydınız hangisinin önce geldiği çok önemli olurdu: peyniri doğramak, ekmeği dilimlemek, ketçabı dökmek, vs. Matematikte de fonksiyonların sırası önemlidir. Eğer birisi &quot;dört artı iki eksi bir&quot; derse bu birden fazla anlama gelebilir:</p>
+<ul class="simple">
+<li>Dört ile ikiyi ekle, sonra bir çıkart: <span class="math">\((4+2)-1\)</span></li>
+<li>İkiden bir çıkart, sonuca dört ekle: <span class="math">\(4+(2-1)\)</span></li>
+</ul>
+<p>Siz de böyle birden fazla anlama gelebilecek bir ifade yazın.</p>
+<p>Bir ifadeyi nasıl okuduğunuza bağlı olarak çok farklı sonuçları olabilir. Bu bir sorundur çünkü sık sık matematik kullanarak hesaplamaları birbirimize anlatırız. Örneğin cep telefonu şirketinizle ilk baştan aramalara ve mesajlara hangi tarifeden para ödeyeceğiniz konusunda anlaşmanız gerekir. Arama ve mesaj tarifesi için söylediğiniz sayılar yer değiştirirse faturanız yanlış olacaktır. Bu tür sorunlardan kaçınmak için bir ifadedeki işlemlerin hangi sırada yapılacağı üzerine fikir birliği içerisinde olmamız gerekir. Bu iki şekilde yapılabilir:</p>
+<ol class="arabic simple">
+<li>Sıralama üzerine oturup anlaşabiliriz</li>
+<li>İfadelerimize işlem sıralamasını da belirten detaylar ekleyebiliriz</li>
+</ol>
+<p>İşlemlerin neden bir sırası olması gerektiğine dair bir sebep söyleyiniz.</p>
+<img alt="images/unite1_pyramid.png" class="align-right" src="images/unite1_pyramid.png" />
+<p>Matematikçiler her zaman işlemlerin sırasına dair fikir birliğinde değildiler, ama artık ifadelerin nasıl değerlendirileceğine dair bir dizi kuralımız var. Sağdaki piramit bu sıralamayı özetliyor. Bir ifadeyi değerlendirirken önce piramidin üst kısmındaki işlemleri yaparız (çarpma ve bölme). Ancak onları tamamladıktan sonra piramitte bir alttaki seviyeye geçeriz. Eğer her iki işlem de varsa:(örneğin <span class="math">\(4+2-1\)</span>), o zaman ifadeyi soldan başlayarak sağa doğru okuruz, ve bu sıralamayla ortaya çıkan işlemleri uygularız.</p>
+<p>Örnek olarak: <span class="math">\(19\div 2\ast 11-7+8\)</span>  ifadesinde fonksiyonları hangi sırada uygulamak gerekir?</p>
+<ol class="arabic simple">
+<li><span class="math">\(+\div \ast -\)</span></li>
+<li><span class="math">\(\div \ast -+\)</span></li>
+<li><span class="math">\(\div \ast +-\)</span></li>
+<li><span class="math">\(\ast \div +-\)</span></li>
+</ol>
+<img alt="images/unite1_dc1.png" class="align-right" src="images/unite1_dc1.png" />
+<p>Bir ifadedeki işlemlerin sırasını belirtmenin bir yolu da ifadeyi diyagram olarak çizmektir. Bu diyagrama <strong>Değerlendirme Çemberi</strong> denilir. Burada Değerlendirme Çemberi'nin 4−5 ifadesine karşılık gelen bir örneğini görebilirsiniz Değerlendirme Çemberleri bir ifadenin içindeki işlemlerin yapısını anlatır. Tüm Değerlendirme Çemberleri'nin iki kuralı vardır:</p>
+<p><strong>Çember Kuralı 1: Her çemberde bir fonksiyon olmalıdır, ve bu fonksiyon çemberin üst kısmına yazılır.</strong></p>
+<p><strong>Çember Kuralı 2: Sayılar aşağıya yazılır, ve soldan sağa dizilir.</strong></p>
+<img alt="images/unite1_dc2.png" class="clearpar align-right" src="images/unite1_dc2.png" />
+<p>Sağda verilen değerlendirme çemberi hangi kuralı ihlal ediyor?</p>
+<p class="clearpar">Aşağıdaki ifadelerin herbiri için bir Değerlendirme Çemberi çizin:</p>
+<ol class="arabic simple">
+<li><span class="math">\(6\ast 4\)</span></li>
+<li><span class="math">\(7-10\)</span></li>
+<li><span class="math">\(5+8\)</span></li>
+<li><span class="math">\(\frac{351}{-1}\)</span></li>
+</ol>
+<img alt="images/unite1_dc3.png" class="align-right" src="images/unite1_dc3.png" />
+<p>Her Değerlendirme Çemberi karşılığı olan aritmetik ifadenin sonucuna <strong>değerlenir</strong>. Örneğin sağdaki çember −1 değerine karşılık gelir, çünkü çember çıkartma işlemini (en tepede) verilen sayılara dizildikleri sırada uygulamamızı söylüyor: <span class="math">\((4-5)\)</span>.</p>
+<img alt="images/unite1_dc4.png" class="clearpar align-right" src="images/unite1_dc4.png" />
+<p>Bir ifadede birden fazla fonksiyon kullanmak için Değerlendirme Çemberlerini birleştirebiliriz. Şu ifade için yazdığınız Değerlendirme Çemberine bakın: <span class="math">\(\frac{351}{-1}\)</span>. Zaten gördük ki <span class="math">\(4-5\)</span> ifadesi için olan çember -1 değerine karşılık gelir, bu yüzden -1 sayısının yerine <span class="math">\(4-5\)</span> koyabiliriz. Bu ifadenin hangi değere sahip olduğunu değiştirir mi?</p>
+<p class="clearpar">Verilen Değerlendirme Çemberini tamamlayın ki şu ifadeye karşılık gelsin:</p>
+<img alt="images/unite1_dc5.png" class="clearpar align-right" src="images/unite1_dc5.png" />
+<p>(23+7)∗(13−5)</p>
+<p class="teacher-note">Bu noktadan itibaren Değerlendirme Çemberleri sizin İşlemlerin Sırası için değerlendirme aracınız olacaktır. Öğrencilere aritmetik ifadeyi hesaplamaları sorulduğunda birçok şey yanlış gidebilir, bazı öğrenciler işlem sıranı doğru ama aritmetik işlemleri yanlış yapabilirler. Bu yöntem ayrıca birleşmeye de duyarlıdır, çünkü öğrenci: 1∗2+2 ifadesini işlem sırasını yanlış ta anlasa doğru bulur. Değerlendirme Çemberleri bu sorunlarla karşılaşmaz, çünkü vurguyu olması gereken yere yaparlar: öğrencileri aritmetiği içindeki yapıyı görmeleri.</p>
+<p class="clearpar">Sağda verilen Değerlendirme Çemberi hangi sayıya değerlenir?</p>
+<img alt="images/unite1_dc6.png" class="align-right" src="images/unite1_dc6.png" />
+<p>Bu çemberi değerlendirme işlemini gözden geçirelim:</p>
+<ul class="simple">
+<li>Çarpma işlemi yapacağımızı biliyoruz çünkü Çember'in en tepesindeki işlem o.</li>
+<li>6 sayısı çarpmadaki ilk sayı çünkü sol tarafıta yeralıyor.</li>
+<li>Çarpma işlemindeki ikinci sayı say tarafta. Sağ tarafta ayrı bir çember var, bu yüzden önce o çemberi karşılık gelen sayıya değerlendirmeliyiz. Böylece çarpım işlemindeki ikinci sayı 4 ve 5'i toplamanın sonucu olan sayı olacaktır.</li>
+<li>4+5 (iç çember) 9a değerlenir, ve 6∗9 (dış çember) 54e değerlenir. Böylece bu çember 54e değerlenmiş olur.</li>
+</ul>
+<img alt="images/unite1_dc7.png" class="align-right" src="images/unite1_dc7.png" />
+<p>Sağda verilen Değerlendirme çemberi'ni bir aritmetik ifadeye dönüştürün.</p>
+<p class="teacher-note">Öğrencilerle birkaç örnek üzerinden çalışın, ve onlara önce bir aritmetik ifade üretmelerini sonra da onu çemberlere dönüştürmelerini söyleyin. Veya onlara çemberler verin ve aritmetik ifadeye dönüştürtün. Çemberler hakkında konuştuğunuzda tepesinde yazılı olan için tutarlı olarak function terimini kullanın, &quot;operasyon&quot;, &quot;sembol&quot;, &quot;isim&quot;, &quot;işlem&quot; gibi terimlerden kaçının. Eğer terminolojiyi dikkatli kulanırsanız Değerlendirme Çemberleri öğrencilere aritmetik fonksiyonlar ile (örneğin +) cebirsel fonksiyonlar (örneğin f) arasındaki benzerliği görme imkanı verir.</p>
+<p class="clearpar">Aşağıdaki Değerlendirme Çemberlerini karşılığı olan aritmetik ifadeler ile eşleştirin:</p>
+<table border="1" class="exercise-table docutils">
+<colgroup>
+<col width="29%" />
+<col width="71%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">İfade</th>
+<th class="head">Çember</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>9∗(4−3)</td>
+<td><span class='dc'><span class='dcop'>/</span><span class='dc'><span class='dcop'>+</span><span class='dcval'>2</span><span class='dcval'>4</span></span><span class='dc'><span class='dcop'>-</span><span class='dcval'>6</span><span class='dcval'>3</span></span></span></td>
+</tr>
+<tr><td>(9∗4)−3</td>
+<td><span class='dc'><span class='dcop'>-</span><span class='dc'><span class='dcop'>*</span><span class='dcval'>9</span><span class='dcval'>4</span></span><span class='dcval'>3</span></span></td>
+</tr>
+<tr><td>(9−3)∗4</td>
+<td><span class='dc'><span class='dcop'>*</span><span class='dcval'>-5</span><span class='dcval'>2</span></span></td>
+</tr>
+<tr><td>(2+4)/(6−3)</td>
+<td><span class='dc'><span class='dcop'>*</span><span class='dcval'>9</span><span class='dc'><span class='dcop'>-</span><span class='dcval'>4</span><span class='dcval'>3</span></span></td>
+</tr>
+<tr><td>−5∗2</td>
+<td><span class='dc'><span class='dcop'>*</span><span class='dc'><span class='dcop'>-</span><span class='dcval'>9</span><span class='dcval'>3</span></span><span class='dcval'>4</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="programlamaya-giris-sure-15-dakika">
+<h2>Programlamaya Giriş (Süre 15 dakika)</h2>
+<p>Online programlama aracını açmak için aracı kullanıyorsanız <a class="reference external" href="http://www.wescheme.org/">burayı tıklayıp</a> çıkan ekranda kullanıcı adı ve şifrenizi girin (eğer bir eğitmenle çalışıyorsanız bunu eğitmenleriniz sizin için yapmış olabilir, size bilgi vereceklerdir), sonra da &quot;Start a New Program&quot;ı tıklayın.</p>
+<img alt="images/unite1_editor.png" class="align-right" src="images/unite1_editor.png" />
+<p>Bu ekrana <strong>editor</strong> denir, ve sağda gördüğünüz diyagrama benzer. Üstte birkaç düğme bulunur, ama ekranın çoğu iki büyük kutu tarafından kaplanır: tepede Tanımlar penceresi ve altta Etkileşimler penceresi.</p>
+<p class="teacher-note">Tanımlar penceresi programcının programındaki değerleri ve fonksiyonları tanımladığı yerdir. Etkileşimler penceresi ise programcıya o tanımları kullanma imkanı verir. Bu tahtaya birsürü fonksiyon tanımı yapıp sonra da öğrencilerin o tanımı içeren ifadeleri hesaplamalarını istemeye benzer. Öğrenciler henüz kendi değerlerini tanımlamadıklarından, öğrencilerin bu ayrımı şu anda anlamaları önemli değildir. Şimdilik sadece Etkileşim penceresi ile çalışıyoruz.</p>
+<p>Bir program değerlendirildiği zaman bir değer üreten <strong>geçerli bir ifade</strong> dir. Toplama işlemini öğrendiğinizden beri program yazıyorsunuz! Aynı Türkçe gibi, burada da bir ifade cümlesinin anlamlı olup olmadığını belirleyen kurallar vardır. Programların da kuralları var. Bir program çok karmaşık ta olabilir, ama olmak zorunda değildir. En basit programlar sadece bir sayıdan ibarettir.</p>
+<p><strong>Kod Kuralı 1: Her değer geçerli bir ifadedir.</strong></p>
+<p>4 ifadesi neye değerlenir? <a class="reference external" href="http://www.wescheme.org/openEditor?interactionsText=4&amp;">Buraya basarak deneyin</a>.</p>
+<ul class="simple">
+<li>Etkileşimler penceresine 4 yazıp &quot;Enter&quot;e basın. Etkileşimler penceresinin bir sonraki satırında 4 değerinin ekrana çıktığını göreceksiniz.</li>
+<li>Etkileşimler penceresine 10 yazıp &quot;Enter&quot;e basın. Şimdi Etkileşimler penceresinde 10 değeri çıkar.</li>
+<li>10345017 veya -2 gibi sayıları değerlendirmeyi deneyin. Sayının ne kadar büyük olabileceğine dair bir sınır var mı? 1.5 gibi ondalık bir sayı yazarsanız ne oluyor? 3/4 gibi kesirli bir sayı ile ne oluyor?</li>
+</ul>
+<p class="teacher-note">Editleme ortamı tüm kesirli ifadeleri değerlendirir ve ondalık sayıya dönüştürür. Bu öğrencilere ilk bakışta şaşırtıcı gelebilir ve açıklamanız gerekebilir. Onlara bu ondalıkların üzerine tıklayarak tekrar kesirliye dönüştürülebileceğini gösterin. Bu ortam son olmayan ondalık ifadeleri tekrarlamak için standart belirtimler kullanır ve <span class="math">\(\sqrt{-1}\)</span> türü ifadeleri başarıyla halleder. Eğer sınıfınızla bu türden iifadeler kullanacaksanız örnekler göstererek alışmalarını sağlayın.</p>
+<p>Bilgisayar elbette sayılardan anlıyor, ama ya bilmediği bir ifade girerseniz ne olur. Şikayet mi eder? Çöker mi? Ne dersiniz? Bilgisayardan Etkileşimler penceresinde <tt class="docutils literal">köpek</tt> ifadesini değerlendirmesini isteyin .</p>
+<p>Bunu denediğinizde göreceğinin hata mesajı gibi mesajlar programcılar için çok kullanışlıdır. &quot;Bu program çalışmıyor&quot; demek yerine size neyin yanlış gittiğini ve nsaıl düzeltebileceğinizi en iyi şekilde anlatmaya çalışır. Bu mesajları her zaman dikkatlice okumaya çalışın!</p>
+<p class="teacher-note">Bu hata mesajı &quot;değişken&quot; terimini kullanıyor. Öğrencileriniz henüz bu terimi bilmiyorsa endişelenmeyin; yakında öğrenecekler. Şimdilik öğrenciler sadece hata mesajlarına ve programlarda yakaladıkları şeylere alışmalılar.</p>
+<p>Değerlendirme Çemberleri de bilgisayar programına çok kolay dönüştürülebilirler. Bir Değerlendirme Çemberini programa dönüştürmek için önce bir parantez açmakla başlayın: <tt class="docutils literal">(</tt>, sonra da çemberin tepesindeki fonksiyonu yazın. Sonra girdileri soldan sağa doğru sırayla yazın, hepsi bittiğinde parantezi kapatın: <tt class="docutils literal">)</tt>. Bu yöntem bize ifadeler için ikinci kuralımızı verir:</p>
+<p><strong>Kod Kuralı 2: Her açık parantez bir fonksiyon, sonra bir veya daha fazla geçerli ifade ile devam eder, ve nihayet bir kapatma parantezi ile sonlanır.</strong></p>
+<img alt="images/unite1_dc8.png" class="align-right" src="images/unite1_dc8.png" />
+<p>Bu Değerlendirme Çemberinin karşılığı: <tt class="docutils literal">(- 4 5)</tt> tir</p>
+<p>Bu kodu Etkileşimler penceresine girdiğinizde <a class="reference external" href="http://www.wescheme.org/openEditor?interactionsText=(-%204%205)&amp;">ne olduğunu görün</a>. Programı değerlendirmek için &quot;Enter&quot; tuşuna basın. Sonuç olarak −1 cevabını görmelisiniz.</p>
+<p class="teacher-note">Öğrencilere Değerlendirme çemberlerini koda dönüştürerek pratik yaptırın. Öğrencilerin ne zaman parantez kullanmaları gerektiğini anlamasına yardım etmek istiyorsanız iki kullanışlı açıklama olabilir. Birincisi, parantezler çember gibi görünür, ve bu çember fonksiyon ismini ve onun girdilerini çevreler. İkincisi, ifadeyi yiyerek ilerleyen bir karıncaya benzetebilirsiniz. Karınca çemberi yemeye başlar (parantez aç), sonra tepedeki fonksiyona gider, sonra solda sağa argümanlara. Eğer karınca çemberi yerken başka bir çember görürse nyeni bir parantez açar, vs.</p>
+<img alt="images/unite1_dc9.png" class="align-right" src="images/unite1_dc9.png" />
+<p>Bir değerlendirme çemberinin içinde başka çemberler varsa, dönüştürülmesi yine aynı kuralları takip eder: her çember yeni bir çift parantez kullanmayı gerektirir: <tt class="docutils literal">(* 6 (+ 4 5))</tt></p>
+<ul class="simple">
+<li>Bu kodu Etkileşimler penceresine girmeyi deneyin. &quot;Enter&quot;e bastığınızda program kodunun hangi değere karşılık gelmesi gerekir?</li>
+<li>Çizdiğiniz başka Değerlendirme Çemberlerini de dönüştürmeyi deneyin.</li>
+</ul>
+<p><strong>Fonksiyon ismini takip eden ifadelere argüman denir. Aşağıdaki diyagram bir fonksiyon kullanan bir ifadenin şeklini özetler.</strong></p>
+<img alt="images/unite1_fonksiyon.png" src="images/unite1_fonksiyon.png" />
+<p>Pratik yapmak için iş kitabında Sayfa 5e geri dönün. Her matematiksel ifade için Değerlendirme Çemberini çizin, sonra da onu program koduna dönüştürün.</p>
+<p>Eğer ifadeler kod kurallarını takip etmezse bilgisayar size bir problem bulduğunu söyleyecektir. Bilgisayar ayrıca size problemi düzeltmenize yardım edecek bilgi de verir. Bu bilgilere <strong>hata mesajı</strong> denir. Daha sonra hata mesajlarından daha fazla söz edeceğiz. Şimdilik birkaç hata mesajı görmenizi ve böylece programlama sırasında karşılaştığınızda onların ne olduğunu bilmenizi istiyoruz.</p>
+<p>Aşağıdaki geçersiz ifadelerin herbirini Etkileşimler penceresine girin ve bilgisayarın davranışına veya size verdiği hata mesajına bakın</p>
+<ul class="simple">
+<li><tt class="docutils literal">(5 * 6)</tt> [Fonksiyonu başa değil ortaya koymuş]</li>
+<li><tt class="docutils literal">(*5 6)</tt> [Fonksiyondan sonra boşluk koymamış]</li>
+<li><tt class="docutils literal">* 5 6)</tt> [Parantezleri unutmuş]</li>
+<li><tt class="docutils literal">(* 5 6</tt> [kapatma parantezini unutmuş]</li>
+</ul>
+</div>
+<div class="section" id="kapanis-sure-5-dakika">
+<h2><a name='sec6'></a>Kapanış <span class='time'>(Süre: 5 dakika)</span></h2>
+<p>Bu ünitede çok şey yaptınız!</p>
+<ul class="simple">
+<li>Bir oyunu alıp parçalarına ayırdınız</li>
+<li>Bu ders sırasında gerçekleştireceğiniz oyunu tasarladınız</li>
+<li>Oyun karakterlerini ekrana yerleştirmek için koordinat sistemiyle egzersiz yaptınız</li>
+<li>İslemlerin sırası, Değerlendirme Çemberleri, çemberleri programa dönüştürme, bu programları çalıştırıp cevap alma konularını öğrendiniz.</li>
+</ul>
+<p>Bir sonraki ünitede aritmetikten daha ilginç şeyler için program yazmaya başlayacağız.</p>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[href^='http']").attr('target','_blank');
+});
+</script>
+
+<div class="license">
+
+<p>Bu eğitim müfredatı Emmanuel Schanzer tarafından hazırlanmış "Bootstrap" projesinden uyarlanmıştır: 
+<a href="http://www.BootstrapWorld.org" target="_blank">www.BootstrapWorld.org</a>. 
+Burada paylaşılan her türlü malzeme <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank">Creative Commons 3.0 Unported License</a> 
+lisansı koşulları dahilinde temin edilmektedir.</p>
+</div> 
+</body>
+</html>
