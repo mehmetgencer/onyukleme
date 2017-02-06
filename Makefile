@@ -28,3 +28,4 @@ publish1:
 
 publish2:
 	rsync -av  --delete --rsh=ssh oycompiled2/ mgencer@mgencer.com:/var/www/yakinokul.org/onyukleme2
+	rsync -av  --delete --rsh=ssh onyukleme2kodlar/ mgencer@mgencer.com:/var/www/yakinokul.org/onyukleme2/kodlar

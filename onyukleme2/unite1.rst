@@ -56,7 +56,7 @@ Racket ve Pyret arasındaki büyük farklardan biri aritmetik fonksiyonların ku
 
 Sözleşmeler (Süre: 10 dakika)
 -----------------------------------
-Fonksiyonların nasıl çalıştığının kaydını tutmak önemlidir, ve Önyükleme 1'de Sözleşme kavramını görmüştük. ``star`` fonksiyonunun sözleşmesi şöyleydi:
+Fonksiyonların nasıl çalıştığının kaydını tutmak önemlidir, ve Önyükleme 1'de Sözleşme kavramını görmüştük. ``star`` fonksiyonunun sözleşmesi şöyleydi::
 
     ;star Sayı Metin Metin -> Resim
     

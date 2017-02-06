@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Mehmet Gencer" >
-    <title>Önyükleme1 : </title>
+    <title>Önyükleme2 : Çarpışma Tespiti ve Oyunu Tamamlama</title>
     <link href="css/oy.css" rel="stylesheet">
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+      <a class="navbar-brand" href="index.html">Önyükleme 2 Anasayfa</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -39,7 +39,7 @@
         <li><a href="unite10.html">Ünite-10</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <li><a href="http://onyukleme.mgencer.com"><span class="glyphicon "></span> Tüm Önyükleme Dersleri</a></li>
         <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
       </ul> 
@@ -49,6 +49,38 @@
 
 <img class="oyicon" src="images/pict.png" alt=""></img>
 <div class="document">
+<div class="section" id="carpisma-tespiti-ve-oyunu-tamamlama">
+<h1>Çarpışma Tespiti ve Oyunu Tamamlama</h1>
+<table class='toctable'><tr><td>TOPLAM SÜRE:</td><td>90 dakika</td></tr><tr><td><a href='#sec1'>Giriş </a></td><td>5 dakika</td></tr><tr><td><a href='#sec2'>Oyununuzda Çarpışma Tespiti </a></td><td>35 dakika</td></tr><tr><td><a href='#sec3'>next-world Dallanmaları </a></td><td>45 dakika</td></tr><tr><td><a href='#sec4'>Kapanış </a></td><td>5 dakika</td></tr></table>
+<p>Kendi Ninja Kedi oyunları için yazdıkları 'uzaklık' ve 'çarpışma-mı' fonksiyonlarını  kullanan öğrenciler kendi oyunlarındaki çarpışma tespitini tamamlarlar,           ve bir önceki üniteden devamla kendi video oyunlarını tamamlamak için oyun    dünyasına sorulması gereken sorular listesine dönerler.</p>
+<div class="section" id="giris-sure-5-dakika">
+<h2><a name='sec1'></a>Giriş <span class='time'>(Süre: 5 dakika)</span></h2>
+<p>Son etaba hoş geldiniz. Bu derste yepyeni bir programlama dili, veri yapıları ve olay-tabanlı programlama gibi kavramlar dahil birçok şey öğrendiniz, hatta parçalı fonksiyonlarla ilgili bilgilerinizi de genişlettiniz. Son ünitede geçen ünitede listelediğiniz testleri tamamlayacak ve oyununuz için çarpışma tespiti yapacaksınız. Haydi başlayalım.</p>
+</div>
+<div class="section" id="oyununuzda-carpisma-tespiti-sure-35-dakika">
+<h2><a name='sec2'></a>Oyununuzda Çarpışma Tespiti <span class='time'>(Süre: 35 dakika)</span></h2>
+<p>Herkesin oyununda ihtiyaç duyacağı son bir ekleme çarpışma tespiti. Oyuncunun tehlike ile veya hedef ile çarpıştığında ne olmalı? Oyun skoru Dünya yapınızın bir parçası mı? Neyse ki oyununuzda ihtiyaç duyacağınız fonksiyonlar için Tasarım Reçetesi'ni tamamlamıştınız.</p>
+<p>İşkitabınızda sayfa 27'ye dönün. line-length ile başlayarak distance, ve is-collision fonksiyonlarını oyununuza ekleyin.</p>
+<p>Şimdi oyun karakterlerinin çarpışıp çarpışmadığını tespit edecek fonksiyonlarınız olduğuna göre next-world fonksiyonunuzu böyle birşey olduğunda dünyayı değiştirmesi için düzenleyebilirsiniz. Ninja Kedi için yazdığınızı hatırlayın: önce kedi ve köpeğin çarpışmasını tespit etmiştiniz. Belki burada da oyuncunuzun belirli bir koordinattaki hedefe ulaşmasını veya oyuncunuzla tehlikenin çarpışmasını kontrol etmelisiniz.</p>
+<ul class="simple">
+<li>Hangi fonksiyon iki şeyin çarpışmasını kontrol ediyor?</li>
+<li>Onların girdileri neler olmalı?</li>
+<li>Hangi nokta-erişimlerini kullanmanız gerekecek?</li>
+<li>Bu iki şey çarpıştığında ne olmalı? Dünya yapınız bu çarpışmadan sonra nasıl olacak?</li>
+<li>Yeni ask dallanmalarınızı next-world'e ekleyin ki karakterler çarpıştığında dünya da değişsin.</li>
+</ul>
+</div>
+<div class="section" id="next-world-dallanmalari-sure-45-dakika">
+<h2><a name='sec3'></a>next-world Dallanmaları <span class='time'>(Süre: 45 dakika)</span></h2>
+<p>Şimdi oyununuzu farklı karakterlerin çarpışmasına tepki verecek şekilde programladınız, ve oyununuz neredeyse bitti. Sisteme başka ne ekleyebilirsiniz bir düşünün. Daha fazla tehlike, hedef, veya oyuncu? Seviye? Unutmayın ki oyununuzda değişen herşey için dünya veri yapınıza yeni birşey eklemeniz gerekir, ve şu anda bunu yapmak için bir şansınız var.</p>
+<p>İşkitabınızda sayfa 41'e gidin ve listenizdeki şeyleri oyun dosyanıza ekleyin.</p>
+<p>Unutmayın ki oyununuzun görünüşü de değişecekse draw-world fonksiyonunu da bir parçalı-fonksiyon olarak değiştirmeniz gerek. Bu fonksiyon için gerekli test ve sonuçları sayfa 43'te doldurabilirsiniz.</p>
+</div>
+<div class="section" id="kapanis-sure-5-dakika">
+<h2><a name='sec4'></a>Kapanış <span class='time'>(Süre: 5 dakika)</span></h2>
+<p>Tebrikler! Sıfırdan başlayarak tam ve çalışan bir bilgisayar oyunu yaptınız. Bu oyun üzerinde kendi başınızayken de çalışmaya, hack'lemeye ve öğrenmeye devam edeceğinizi umuyoruz!</p>
+</div>
+</div>
 </div>
 
 <script type="text/javascript">

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Mehmet Gencer" >
-    <title>Önyükleme1 : Ünite 7: Çarpışma Tespiti</title>
+    <title>Önyükleme2 : Ünite 7: Çarpışma Tespiti</title>
     <link href="css/oy.css" rel="stylesheet">
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+      <a class="navbar-brand" href="index.html">Önyükleme 2 Anasayfa</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -39,7 +39,7 @@
         <li><a href="unite10.html">Ünite-10</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <li><a href="http://onyukleme.mgencer.com"><span class="glyphicon "></span> Tüm Önyükleme Dersleri</a></li>
         <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
       </ul> 
@@ -211,23 +211,21 @@ end
     ...catX...,
     ...catY...)
 </pre>
-<p>Kedi ve köpek çarpıştığında coinXd değişiyor mu?Peki ya catY. Bunların her birini dünya veri yapısından nasıl alırsınız?::?</p>
-<blockquote>
-<div class="line-block">
-<div class="line">is-collision(
-  current-world.catX,
-  current-world.catY,
-  current-world.dogX,
-  400)
-then:
-world(
-  -100,
-  num-random(480),
-  current-world.coinX,
-  current-world.catX,
-  current-world.catY)</div>
-</div>
-</blockquote>
+<p>Kedi ve köpek çarpıştığında coinXd değişiyor mu?Peki ya catY. Bunların her birini dünya veri yapısından nasıl alırsınız?:</p>
+<pre class="literal-block">
+| is-collision(
+    current-world.catX,
+    current-world.catY,
+    current-world.dogX,
+    400)
+  then:
+  world(
+    -100,
+    num-random(480),
+    current-world.coinX,
+    current-world.catX,
+    current-world.catY)
+</pre>
 <p>Bir dakika arkanıza yaslanın ve yaptığınız işi takdir edin. Pyret kullanarak Ninja Kedi'nin kendi versiyonunuzu, veri yapılarınızı, ve karmaşık fonksiyonlarınızı yarattınız. Bu oyun şu an için bile Önyükleme 1'dekinden daha gelişkin ve onu sıfırdan oluşturdunuz! Artık bir oyun Pyret ile nasıl yaratılır bilgisine sahip olduğunuza göre kendi oyununuzu düşünmenin zamanı geldi.</p>
 </div>
 <div class="section" id="oyun-icin-beyin-firtinasi-sure-15-dakika">

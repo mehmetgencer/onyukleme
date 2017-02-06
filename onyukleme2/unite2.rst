@@ -80,7 +80,7 @@ Bu etkinlik için Coord isimli bir veri yapısı ile çalışacağız. Bu yapı 
  
 Şİmdi paraşütçüyü kurtarmak bizim ellerimizde.
 
-İşkitabınızın 10. sayfasına gidin, problemi okuyun, ``next-position`` isimli fonksiyon için sözleşme ve amaç tanımını yapın.
+İşkitabınızın 10. sayfasına gidin, problemi okuyun, ``next-position`` isimli fonksiyon için sözleşme ve amaç tanımını yapın::
 
     # next-position : Number Number -> Coord
     # Given 2 numbers, make a Coord by adding 5 to x and subtracting 5 from y
@@ -156,7 +156,7 @@ Kağıdınızda şuna benzer bir kod olmalı::
 
 Bu Cake veri yapısını tanımlayan koddur. Bilgisayara bir kek'in ne olduğunu ve içinde nelerin yeraldığını söylüyor. Aynı zamanda onn için bir de `cake` isimli oluşturucu fonksiyon tanımlıyor. Bir Cake yapmak için oluşturucu fonksiyonu çağırmanız ve beş değer vermniz gerekiyor:  `çeşit/flavor`, bir Metin, `renk/color`, bir Metin, `mesaj/message`, başka bir Metin, `katmanlar/layers`, bir Sayı, ve `dondurmalı-mı/is-iceCream`, bir Mantıksal. Unutmayın ki sıralamanın önemi var! Şimdilik, bunlar bir kekle ilgili takip edeceğimiz şeyler, ama haya edebilirsiniz ki başka bilgiler de eklenebilir.
 
-_Fırıncı dosyasını açın ve 3-10 satırlar arasını inceleyin. Kayıtta yazdığınız ile örtüşüyor mu?
+`Fırıncı`_ dosyasını açın ve 3-10 satırlar arasını inceleyin. Kayıtta yazdığınız ile örtüşüyor mu?
 
 Şimdi biraz daha alt kısmını inceleyin, satır 12: : `cake2 = cake("Chocolate", "brown", "Happy birthday!", 8, false)`
 

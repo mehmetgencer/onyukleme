@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Mehmet Gencer" >
-    <title>Önyükleme1 : Ünite 6: Dünyaya sorma</title>
+    <title>Önyükleme2 : Ünite 6: Dünyaya sorma</title>
     <link href="css/oy.css" rel="stylesheet">
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+      <a class="navbar-brand" href="index.html">Önyükleme 2 Anasayfa</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -39,7 +39,7 @@
         <li><a href="unite10.html">Ünite-10</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <li><a href="http://onyukleme.mgencer.com"><span class="glyphicon "></span> Tüm Önyükleme Dersleri</a></li>
         <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
       </ul> 
@@ -87,20 +87,16 @@
 </pre>
 <p>Bunu sözleşmeler sayfanıza kopyalayın ve ayrıca &lt; ve = için sözleşmeleri yazın.</p>
 <p>Kod yazmayı ve test etmeyi kolaylaştırmak için programcılar oyundaki farklı olası durumları test etmek için ayrıca fonksiyonlar yazarlar. Ninja Dünyası oyunumuzda biz de is-off-right (sağdan dışarıda mı) isimli bir fonksiyon yazarak köpeğin ekranın sağından çıkıp çıkmadığını kontrol edeceğiz.</p>
-<ul>
-<li><p class="first">İşkitabınızda sayfa 24e gidin.</p>
-</li>
-<li><p class="first">Sayfadaki ilk fonksiyonun ismi ne?</p>
-</li>
-<li><p class="first">is-off-right fonksiyonu köpek ekranın sağından dışarıdaysa true döndürecek. Karakter ekrandan çıkmadan önce x koordinatı en fazla kaç olabilir? (Hatırlarsanız karakterin koordinatları resmin merkezinden ölçülüyor, o yüzden en iyisi bir tampon uzaklık belirleyip karakterin tamamının ekrandan çıkmasına izin vermek.</p>
-</li>
-<li><p class="first">Bu fonksiyon için sözleşmeyi yazın.</p>
-<blockquote>
-<p># is-off-right : Number -&gt; Boolean
-# Verilen sayı 690'dan büyükse true döndürür</p>
-</blockquote>
-</li>
+<ul class="simple">
+<li>İşkitabınızda sayfa 24e gidin.</li>
+<li>Sayfadaki ilk fonksiyonun ismi ne?</li>
+<li>is-off-right fonksiyonu köpek ekranın sağından dışarıdaysa true döndürecek. Karakter ekrandan çıkmadan önce x koordinatı en fazla kaç olabilir? (Hatırlarsanız karakterin koordinatları resmin merkezinden ölçülüyor, o yüzden en iyisi bir tampon uzaklık belirleyip karakterin tamamının ekrandan çıkmasına izin vermek.</li>
+<li>Bu fonksiyon için sözleşmeyi yazın.</li>
 </ul>
+<pre class="literal-block">
+# is-off-right : Number -&gt; Boolean
+# Verilen sayı 690'dan büyükse true döndürür
+</pre>
 <p>Şimdi birkaç örnek koordinat belirleyerek testlerimizi kuralım.</p>
 <ul class="simple">
 <li>Hangi x koordinatı karakterin ekranın ortasında olması demektir?</li>
@@ -198,8 +194,7 @@ end
 </div>
 <div class="section" id="ninja-dunyasina-rastgelelik-ekleme-sure-15-dakika">
 <h2><a name='sec3'></a>Ninja Dünyasına Rastgelelik Ekleme <span class='time'>(Süre: 15 dakika)</span></h2>
-<blockquote>
-Şimdilik köpek ve para ekranın hep aynı yerinden ortaya çıkyorlar, bu da oyunu kolaylaştırıyor.</blockquote>
+<p>Şimdilik köpek ve para ekranın hep aynı yerinden ortaya çıkyorlar, bu da oyunu kolaylaştırıyor.</p>
 <p>Köpeğin y koordinatı hep ne oluyor? Peki ya paranınki?</p>
 <p>Eğer köpek ekrandan çıktıktan sonra ekranın hep üstünden ortaya çıkmak yerine rastgele bir y koordinatında ortaya çıksaydı nasıl olurdu? Pyret zaten size bir karakteri ny koordinatı olarak kullanabileceğiniz rastgele bir sayı üretebilecek bir fonksiyona sahip: <cite>num-random</cite>. <cite>num-random</cite> girdi olarak bir sayı alıyor, ve sıfır ile o sayı arasında rastgele bir sayı döndürüyor. Böylece oyun num-random(480) diye bir kod içerirse 1 ile 480 arasında bir sayı geri döndürecek.</p>
 <p>num-random için olan sözleşmeyi sözleşmeler sayfanıza geçirin. num-random: Number -&gt; Number</p>
@@ -218,22 +213,16 @@ end
 <li>draw-world fonksiyonunu öyle değiştirin ki köpeği 4000 yerine kendi y koordinatında çizsin.</li>
 </ul>
 <p>Köpeğin y koordinatı ekrandan çıktığında değişmeli.</p>
-<ul>
-<li><p class="first">Hangi fonksiyon oyununun koşullarına göre oyunun durumunu değiştiriyor?</p>
-</li>
-<li><p class="first">next-world fonksiyonundaki ilk ask dalı neyi test ediyor?</p>
-</li>
-<li><p class="first">Bu test doğru çıkarsa ne olur?</p>
-</li>
-<li><p class="first">next-world'deki ilk dalı öyle değiştirin ki eğer köpek ekranın sağından dışarı çıkarsa y koordinatı da 0 ile 480 arasında rastgele bir sayı olsun.</p>
-<blockquote>
-<div class="line-block">
-<div class="line">is-off-right(current-world.dogX) then:
-world(0, num-random(480), current-world.coinX, current-world.catX, current-world.catY)</div>
-</div>
-</blockquote>
-</li>
+<ul class="simple">
+<li>Hangi fonksiyon oyununun koşullarına göre oyunun durumunu değiştiriyor?</li>
+<li>next-world fonksiyonundaki ilk ask dalı neyi test ediyor?</li>
+<li>Bu test doğru çıkarsa ne olur?</li>
+<li>next-world'deki ilk dalı öyle değiştirin ki eğer köpek ekranın sağından dışarı çıkarsa y koordinatı da 0 ile 480 arasında rastgele bir sayı olsun.</li>
 </ul>
+<pre class="literal-block">
+| is-off-right(current-world.dogX) then:
+   world(0, num-random(480), current-world.coinX, current-world.catX, current-world.catY)
+</pre>
 <p>Kodunuzu iyice kontrol edin. Artık World veri yapınıza dogY eklediğinize göre <cite>world</cite> oluşturucu fonksiyonunu her kullandığınızda o girdiyi de vererek ve köpeğin y koordinatını girmelisiniz. Bir kere köpeğin ekrandan çıkınca rastgele bir yerden ortaya çıkmasını sağladıktan sonra aynı şeyleri para'nın da rastegele ortaya çıkması için yapmalısınız.</p>
 </div>
 <div class="section" id="kapanis-sure-5-dakika">

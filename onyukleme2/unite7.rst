@@ -181,7 +181,7 @@ Peki kedi ve köpek çarpışınca ne olmalı? Köpeği ekranın solundan dış�
 	    ...catX...,
 	    ...catY...)
 
-Kedi ve köpek çarpıştığında coinXd değişiyor mu?Peki ya catY. Bunların her birini dünya veri yapısından nasıl alırsınız?::?
+Kedi ve köpek çarpıştığında coinXd değişiyor mu?Peki ya catY. Bunların her birini dünya veri yapısından nasıl alırsınız?::
 
 
 	| is-collision(

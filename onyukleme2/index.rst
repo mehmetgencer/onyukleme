@@ -20,6 +20,6 @@ daha ileri düzey programlar yazılır.
 İhtiyacınız olan linkler:
 
 * `işdefteri`_
-
+* `Önyükleme 2 Kodları`_
 
 

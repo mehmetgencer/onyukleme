@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Mehmet Gencer" >
-    <title>Önyükleme1 : </title>
+    <title>Önyükleme2 : Kendi Dünyanızı Kurma</title>
     <link href="css/oy.css" rel="stylesheet">
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+      <a class="navbar-brand" href="index.html">Önyükleme 2 Anasayfa</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -39,7 +39,7 @@
         <li><a href="unite10.html">Ünite-10</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <li><a href="http://onyukleme.mgencer.com"><span class="glyphicon "></span> Tüm Önyükleme Dersleri</a></li>
         <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
       </ul> 
@@ -49,6 +49,102 @@
 
 <img class="oyicon" src="images/pict.png" alt=""></img>
 <div class="document">
+<div class="section" id="kendi-dunyanizi-kurma">
+<h1>Kendi Dünyanızı Kurma</h1>
+<table class='toctable'><tr><td>TOPLAM SÜRE:</td><td>90 dakika</td></tr><tr><td><a href='#sec1'>Giriş </a></td><td>15 dakika</td></tr><tr><td><a href='#sec2'>Dünyayı Çizme </a></td><td>35 dakika</td></tr><tr><td><a href='#sec3'>Dünyayı Güncelleme </a></td><td>35 dakika</td></tr><tr><td><a href='#sec4'>Kapanış </a></td><td>5 dakika</td></tr></table>
+<p>Öğrenciler kendi oyunları hakkında düşündükten sonra onu  inşa etme, çizme, ve anime etme konusunda pratik yaparlar.</p>
+<div class="section" id="giris-sure-15-dakika">
+<h2><a name='sec1'></a>Giriş <span class='time'>(Süre: 15 dakika)</span></h2>
+<p>Kendi dünyanız için olan Dünya/World'e bakma zamanı</p>
+<ul class="simple">
+<li>İşkitabınızda sayfa 31e gidin. Dünyanızdaki şeyler nelerdir? Veri tipleri nedir?</li>
+<li><a class="reference external" href="https://code.pyret.org/editor#share=0B--4mkdvhyEyUU5wYXZQYUUwbTQ&amp;v=80ba55b">Boş Oyun Şablonunu</a> açın.</li>
+</ul>
+<p>Önyükleme 1'de oyunun kabuğu olan örnek resim ve fonksiyonlar tanımlı olarak başladınız. Bu derste is oyun şablonu sadece bir dizi yorumdan ibaret, ve sadece size fonksiyon ve değişkenlerinizi nasıl düzenlemeniz gerektiğiniz söylüyor. Gerçek kodun her satırını siz yazacaksınız. Haydi başlayalım:</p>
+<p>Dosyanın en üstünde &quot;# The World&quot; ile başlayan yerde kendi oyununuz için World veri yapısını tanımlayın. (hafızanızı tazelemek için sayfa 32ye bakın). Bir kez world veri yapısını tamamladınız mı kodun aşağısında # STARTING WORLD yazan yere gidin ve ilk örnek dünyanız olan  worldA'yı oluşturun.ç Sornaki satıra worldB'yi oluşturun.</p>
+<p>Şimdi kendi dünyanız olduğuna göre içinde ne olduğunu biliyorsunuz: ama o şeyler nasıl görünüyor? Bazi resimler eklemeniz gerek. Burada image-url fonksiyonunu kullanacağız. Herhangi bir online resmin URLini alıyor (metin olarak) ve o resmi döndürüyor:</p>
+<pre class="literal-block">
+# image-url : String -&gt; Image
+</pre>
+<ul class="simple">
+<li>İşkitabınızda sayfa 31e tekrar bakın.  Oyununuzda kaç tane şeyin kendi resmi olması gerekiyor?</li>
+<li>Google resim arama veya benzer bir araç kullanarak hem arkaplan için hem de oyununuzdaki karakterler için resimler bulun.</li>
+<li>Resimlerinizi yeni değişkenler olarak tanımlayın(örn. PLAYER-IMG, DANGER-IMG, gibi) ve yine image-url foksiyonunu kullanarak onları oyununuza ekleyin.</li>
+</ul>
+<p>Görüntü bulmakla ilgili bazı ipuçları: Resimleriniz PNG veya GIF formatında olmalı ve URL dosya tipini de içermeli (örn. sonu .png veya .gif olarak bitmeli). Arkaplan resimleri 640x480 ve karakter resimleri ise herhangi bir boyutu 200 pixelden büyül olmamalı. Karakter resimlerinin arkaplanının şeffaf olmasına dikkat edin. Tavsiye: Animated GIF kullanırsanız oyununuz hem daha iyi görünür hem de bu resimler çoklukla şeffaf arkaplana sahiptir.</p>
+</div>
+<div class="section" id="dunyayi-cizme-sure-35-dakika">
+<h2><a name='sec2'></a>Dünyayı Çizme <span class='time'>(Süre: 35 dakika)</span></h2>
+<p>Şimdi kendi dünya veri yapımız olduğuna göre onu çizmeyi bilmeliyiz.</p>
+<p>Hangi fonksiyon dünyayı çizmek için kullanılıyor?</p>
+<p>Ninja Dünyasındaki draw-world fonksiyonu gibi draw-world bir veri yapısı alır ve bir resim üretir.</p>
+<ul class="simple">
+<li>İşkitabınızda sayfa 34e gidin.</li>
+<li>Fonksiyonun girdisi nedir? Çıktısı?</li>
+<li>Sayfa 34ün başında sözleşmeyi ve fonksiyonun başını yazın.</li>
+</ul>
+<p>Fonksiyon başlığının altında put-image'ı ekleyerek sizin için bir başlangıç yaptık, aynı Ninja Dünyasındaki gibi. put-image için sözleşmeyi hatırlıyr musunuz? Bir resim, onu yerleştireceği koordinatlar, ve ilk resmi üzerine yerleştireceği bir başka resmi girdi olarak alıyor:</p>
+<pre class="literal-block">
+# put-image(Image, Number, Number, Image) -&gt; Image
+# Places the first image at the given x and y-coordinates on top of the second image
+</pre>
+<ul class="simple">
+<li>Sayfanın en altında resimlerinizden birini ARKAPLAN'a koyarak başlayın.</li>
+<li>Eğer resmin ekranın ortasında olmasını istiyorsanız x ve y koordinatı olarak ne kullanmalısınız? (İpucu: arkaplan resminizin büyüklüğü nedir?)</li>
+<li>Ama muhtemelen resmin arkaplanın tam ortasında olmasını istemezsiniz. Sayfa 31de yaptığınız çizimlere tekrar bakın. Resmin arkaplanın üstünde hangi koordinatlarda olmasını istediğinizi not etmiştiniz.</li>
+</ul>
+<p>Şuna benzeyen bir kodla başlayın, ama KENDİ resim ve koordinatlarınızı (veya nokta-erişimlerinizi) koyun:</p>
+<pre class="literal-block">
+fun draw-world(current-world):
+   ...
+   ...
+   ...
+   put-image(IMAGE, 320, 240, BACKGROUND)
+end
+</pre>
+<p>Hatırlayın ki eğer bu resimlerin pozisyonu değişecekse (Ninja Dünyasında köpek ve paranın ekranda hareket etmesi gibi), o zaman hep aynı koordinata yerleştirilmeyecekler. put-image'da belirli sayılar kullanmak yerine <strong>nokta-erişimi</strong> yardımı ile karakterlerin koordinatlarını kullanmalısınız. Sizin kendi oyun yapınıza göre hangi nokta-erişimlerini kullanacağınıza karar vermelisiniz.</p>
+<p>WorldA'yı kullanarak draw-world ile Ninja Dünyasını oluşturmanın bir örneği şöyle olurdu:</p>
+<pre class="literal-block">
+draw-world(worldA) is put-image(NINJA-IMG, worldA.catX, worldA.catY,
+                         put-image(COIN-IMG, worldA.coinX, 300,
+                             put-image(DOG-IMG, worldA.dogX, worldA.dogY,
+                                 put-image(CLOUD-IMG, 500, 400, BACKGROUND-IMG))))
+</pre>
+<ul class="simple">
+<li>Resimlerinizden birini daha ilk put-image ifadesiyle oluşan resmin üstüne yerleştirin. (Unutmayın: put-image'ın çıktısı bir resim, o yğzden o ifadeyi bir sonraki karakter resmini üzerine yerleştireceğiniz resim olarak kullanabilirsiniz)</li>
+<li>Üzerine eklemeye devam edin, ta ki oyununuzdaki bütün resimler yığılana kadar.</li>
+<li>Bitirdiğinizde fonksiyonunuzu draw-world(worldA) komutunu etkileşim penceresine girerek test edin ve oyununuzun başlangıçtaki ekran görüntüsünü görün.</li>
+</ul>
+</div>
+<div class="section" id="dunyayi-guncelleme-sure-35-dakika">
+<h2><a name='sec3'></a>Dünyayı Güncelleme <span class='time'>(Süre: 35 dakika)</span></h2>
+<p>#UPDATING FUNCTIONS kısmını görene kadar aşağı inin. Bu kısım dünyayı otomatik olarak değiştirmekten sorumlu olacak.</p>
+<p>Buraya hangi fonksiyon gelmeli? Girdisi nedir? Çıktısı?</p>
+<p>Bildiğiniz gibi next-world bir dünya alır ve güncellenmiş bir dünya döndürür:</p>
+<pre class="literal-block">
+next-world : World -&gt; World
+</pre>
+<ul class="simple">
+<li>World yapınıza geri dönün. Ne değişiyor? Hanfi alanları kullanıcı birşey yapınca (mesela bir tuşa basınca)  değil de <em>kendi kendine</em> değişiyor?</li>
+<li>Sayfa 35te next-world'ün amaç ifadesinde nelerin değiştiğinin ve nasıl değiştiğinin bir listesini yapın.</li>
+<li>next-world için tanımlamış olduğunuz worldA'yı kullanarak bşr örnek yazın. Dünyanın nasıl değiştiğini göstermek için nokta-erişimlerini kullanın.</li>
+<li>Yeni bir dünya yaratan başka bir next-world örneği yazın. Güncellenmiş dünya nasıl gözükecek?</li>
+</ul>
+<p>Aşağıda next-world için Ninja Dünyasının basit bir versiyonundan örnekler var:</p>
+<pre class="literal-block">
+examples:
+      next-world(worldA) is world(worldA.dogX + 10, orldA.coinX - 5)
+      next-world(worldB) is world(worldB.dogX + 10, worldB.coinX - 5)
+end
+</pre>
+<p>İlk örnekte yeni bir World yaratıyoruz (oluşturucu fonksiyonu olan <cite>world</cite> kullanarak): bunu worldA'nın dogX'ine 10 ekleyerek ve coinX'inden 5 çıkartarak yapıyoruz. İkinci örnekte aynı şeyi worldB kullanarak yapıyoruz.</p>
+<p>Yazdığınız iki örnek arasında değişen nedir? Değişenleri çember içine alıp etiketleyin, ve sonra next-world fonksiyonunun tanımını yazın. Sözleşmesine bakın: size fonksiyonun ne döndürmesi gerektiğini söylüyor? Bir World!</p>
+</div>
+<div class="section" id="kapanis-sure-5-dakika">
+<h2><a name='sec4'></a>Kapanış <span class='time'>(Süre: 5 dakika)</span></h2>
+<p>Şimdi bilgisayara oyununuzun basit bir versiyonunu elde ettiniz: karakteriniz arkaplanın üstüne yerleşti ve hareket ediyor. Ama kullanıcıdan giriş almak için henüz bir fonksiyon yazmadık. Eğer oyuncunun hareket etmesini istiyorsanız keypress fonksiyonunu yazmanız gerekece, ve oyuncular çarpışınca da birşey yapmalısınız. Bunun için distance ve is-collision fonksiyonlarını yazmalısınız. Sonraki birkaç ünite tamamen kendi oyununuz üzerinde çalışmakla ilgili, ve Ninja Kedi'den öğrendiğiniz herşeyi uygulayacaksınız.</p>
+</div>
+</div>
 </div>
 
 <script type="text/javascript">

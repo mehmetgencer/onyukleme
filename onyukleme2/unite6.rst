@@ -45,6 +45,7 @@ Kod yazmayı ve test etmeyi kolaylaştırmak için programcılar oyundaki farkl�
 * is-off-right fonksiyonu köpek ekranın sağından dışarıdaysa true döndürecek. Karakter ekrandan çıkmadan önce x koordinatı en fazla kaç olabilir? (Hatırlarsanız karakterin koordinatları resmin merkezinden ölçülüyor, o yüzden en iyisi bir tampon uzaklık belirleyip karakterin tamamının ekrandan çıkmasına izin vermek.
 * Bu fonksiyon için sözleşmeyi yazın.
 
+::
 
 	# is-off-right : Number -> Boolean
 	# Verilen sayı 690'dan büyükse true döndürür
@@ -151,7 +152,7 @@ Bu durumda doxX nasıl değişmeli? Demiştik ki köpeğin ekranın solundan tek
 
 Ninja Dünyasına Rastgelelik Ekleme (Süre: 15 dakika)
 --------------------------------------------------------
- Şimdilik köpek ve para ekranın hep aynı yerinden ortaya çıkyorlar, bu da oyunu kolaylaştırıyor.
+Şimdilik köpek ve para ekranın hep aynı yerinden ortaya çıkyorlar, bu da oyunu kolaylaştırıyor.
 
 Köpeğin y koordinatı hep ne oluyor? Peki ya paranınki?
 
@@ -181,6 +182,8 @@ Köpeğin y koordinatı ekrandan çıktığında değişmeli.
 * next-world fonksiyonundaki ilk ask dalı neyi test ediyor?
 * Bu test doğru çıkarsa ne olur?
 * next-world'deki ilk dalı öyle değiştirin ki eğer köpek ekranın sağından dışarı çıkarsa y koordinatı da 0 ile 480 arasında rastgele bir sayı olsun.
+
+::
 
 	| is-off-right(current-world.dogX) then:
 	   world(0, num-random(480), current-world.coinX, current-world.catX, current-world.catY)

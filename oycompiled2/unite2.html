@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Mehmet Gencer" >
-    <title>Önyükleme1 : Ünite 2: Veri yapılarına giriş</title>
+    <title>Önyükleme2 : Ünite 2: Veri yapılarına giriş</title>
     <link href="css/oy.css" rel="stylesheet">
      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -23,7 +23,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="index.html">Önyükleme Anasayfa</a>
+      <a class="navbar-brand" href="index.html">Önyükleme 2 Anasayfa</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -39,7 +39,7 @@
         <li><a href="unite10.html">Ünite-10</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://yakinokul.org"><span class="glyphicon "></span> YakınOkul</a></li>
+        <li><a href="http://onyukleme.mgencer.com"><span class="glyphicon "></span> Tüm Önyükleme Dersleri</a></li>
         <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
       </ul> 
@@ -119,10 +119,11 @@ end
 # coord : Number Number -&gt; Coord
 </pre>
 <p>Şİmdi paraşütçüyü kurtarmak bizim ellerimizde.</p>
-<p>İşkitabınızın 10. sayfasına gidin, problemi okuyun, <tt class="docutils literal"><span class="pre">next-position</span></tt> isimli fonksiyon için sözleşme ve amaç tanımını yapın.</p>
-<blockquote>
+<p>İşkitabınızın 10. sayfasına gidin, problemi okuyun, <tt class="docutils literal"><span class="pre">next-position</span></tt> isimli fonksiyon için sözleşme ve amaç tanımını yapın:</p>
+<pre class="literal-block">
 # next-position : Number Number -&gt; Coord
-# Given 2 numbers, make a Coord by adding 5 to x and subtracting 5 from y</blockquote>
+# Given 2 numbers, make a Coord by adding 5 to x and subtracting 5 from y
+</pre>
 <p>Şimdi iki örnek bulmaya sıra geliyor.  <tt class="docutils literal"><span class="pre">next-position</span></tt> fonksiyonunu kullanmak kolay, ama bu sayılara ne olacak? İki sayıyı aynı anda döndürmek için veri yapısı kullanmalıyız. Bunun için oluşturucu fonksiyonu çağıracağız.</p>
 <ul>
 <li><p class="first"><tt class="docutils literal">Coord</tt> tanımına göre hangi fonksiyon bir Coord oluşturur?</p>
@@ -185,7 +186,7 @@ data Cake:
 end
 </pre>
 <p>Bu Cake veri yapısını tanımlayan koddur. Bilgisayara bir kek'in ne olduğunu ve içinde nelerin yeraldığını söylüyor. Aynı zamanda onn için bir de <cite>cake</cite> isimli oluşturucu fonksiyon tanımlıyor. Bir Cake yapmak için oluşturucu fonksiyonu çağırmanız ve beş değer vermniz gerekiyor:  <cite>çeşit/flavor</cite>, bir Metin, <cite>renk/color</cite>, bir Metin, <cite>mesaj/message</cite>, başka bir Metin, <cite>katmanlar/layers</cite>, bir Sayı, ve <cite>dondurmalı-mı/is-iceCream</cite>, bir Mantıksal. Unutmayın ki sıralamanın önemi var! Şimdilik, bunlar bir kekle ilgili takip edeceğimiz şeyler, ama haya edebilirsiniz ki başka bilgiler de eklenebilir.</p>
-<p>_Fırıncı dosyasını açın ve 3-10 satırlar arasını inceleyin. Kayıtta yazdığınız ile örtüşüyor mu?</p>
+<p><a class="reference external" href="https://code.pyret.org/editor#share=0B--4mkdvhyEyLVpsUGRFdzMyOWs&amp;v=80ba55b">Fırıncı</a> dosyasını açın ve 3-10 satırlar arasını inceleyin. Kayıtta yazdığınız ile örtüşüyor mu?</p>
 <p>Şimdi biraz daha alt kısmını inceleyin, satır 12: : <cite>cake2 = cake(&quot;Chocolate&quot;, &quot;brown&quot;, &quot;Happy birthday!&quot;, 8, false)</cite></p>
 <ul class="simple">
 <li>Bu değişkenin ismi ne?</li>
