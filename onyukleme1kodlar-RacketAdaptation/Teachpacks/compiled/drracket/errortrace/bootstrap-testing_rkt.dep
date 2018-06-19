@@ -1,0 +1,1 @@
+("6.10" ("df7422f4fff401a2ede3a28be5a3c0739f0b124e" . "caf1b0ce9018097d402e0edb6ee65756ea557bcd") (collects #"errortrace" #"errortrace-key.rkt") (collects #"htdp" #"testing.rkt") (collects #"scheme" #"main.rkt") (collects #"scheme" #"runtime-config.rkt") (collects #"syntax" #"kerncase.rkt") (collects #"syntax" #"stx.rkt") (collects #"syntax" #"to-string.rkt"))
