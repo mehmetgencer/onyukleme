@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-beginner-reader.ss" "lang")((modname CompletedGame) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ())))
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname CompletedGame) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require "Teachpacks/bootstrap-teachpack.rkt")
 
 
@@ -22,7 +22,7 @@
 (define NEXT (make-world "asleep" 40 210 580 820 100))
 
 ;; GRAPHICS
-(define BACKGROUND (bitmap "Teachpacks/teachpack-images/BG.jpg"))
+(define BACKGROUND (bitmap "Teachpacks/teachpack-images/bg.jpg"))
 (define DANGER (scale .7 (bitmap "Teachpacks/teachpack-images/wumpus.png")))
 (define FLOCK (bitmap "Teachpacks/teachpack-images/bats.png"))
 (define PLAYER (scale .7 (bitmap "Teachpacks/teachpack-images/archer.png")))
